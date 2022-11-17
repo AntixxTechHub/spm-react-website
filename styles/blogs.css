@@ -1,0 +1,36 @@
+.card-paragraph{
+    font-size: 12px;
+}
+.blogs-card-body{
+    background: rgb(149, 55, 124);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.read-more{
+    background-color: rgb(235, 100, 122);
+    text-transform: uppercase;
+    font-size: 12px;
+    /* width: 170px; */
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.blogs-card {
+    border-radius: 10px;
+}
+.blogs-card img{
+    border-radius: 10px;
+}
+
+.card-h3{
+    color: rgb(55, 55, 218);
+}
+.discover-btn{
+    background: linear-gradient(to right,rgb(204, 102, 13),rgb(166, 39, 155));
+    color: white;
+    border: none;
+    height: 35px;
+    width: 140px;
+    border-radius: 5px;
+}

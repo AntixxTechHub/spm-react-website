@@ -1,0 +1,6 @@
+.SpmStandForBackgroundImg {
+    background-image: url(/images/spm_stands_for.svg);
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    background-position: center;
+}

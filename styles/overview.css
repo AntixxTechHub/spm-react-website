@@ -1,0 +1,98 @@
+.back_ground {
+    background: linear-gradient(90deg, #544b9f, #624ba0, #704ba1, #7c4ba1, #884ba0, #944b9f, #9f4b9e, #a94b9c);
+}
+
+.contact-from-size {
+    width: 58vw;
+    height: 75vh;
+    position: absolute;
+}
+
+.contactFormBgImg {
+    background-image: url(/images/contact_form_bg-01.svg);
+    background-repeat: no-repeat;
+    /* background-size: 54vw; */
+    background-position: center;
+}
+.contact-from-size .contact-form {
+    width: 40%;
+    position: absolute;
+    top: 23%;
+    left: 29%;
+}
+.contact-form {
+    width: 100%;
+}
+
+.addr-border{
+    border: 3px solid #29abe2;
+}
+
+.addr-border p {
+    line-height: 21px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.location-icon {
+    position: relative;
+}
+.location-icon img{
+    margin-top: 30%;
+    width: 60%;
+    float: right;
+}
+.addr-border1::after {
+    height: 16vh;
+    display: block;
+    width: 13px;
+    background: #29abe2;
+    border: 1px white;
+    content: '';
+    float: left;
+}
+
+.addr-border2::after {
+    height: 16vh;
+    display: block;
+    width: 7px;
+    background: #29abe2;
+    border: 1px white;
+    content: '';
+    float: right;
+}
+.solid.bg-white {
+    margin: 1rem 0;
+    background-color: #fff!important;
+    opacity: 1!important;
+}
+.contact-form .label {
+    display: none;
+}
+
+.contact-form1-page {
+    width: 70vw;
+    height: 90vh;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+
+.contact-form-val {
+    position: absolute;
+    top: 25%;
+    width: 45%;
+    left: 27%;
+}
+.contact-form-val h5{
+    color: #93278f;
+}
+.contact-form-val .form-control {
+    border: 1px solid #93278f;
+}
+
+.contact-form-val .btn-danger {
+    background:  #93278f!important;
+    border: 1px solid #93278f;
+}

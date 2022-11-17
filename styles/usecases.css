@@ -1,0 +1,34 @@
+.usecase-section h1{
+    color: white;
+    background: rgb(98, 203, 98);
+    border-top-left-radius:50px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    padding-top: 50px!important;
+    padding-bottom: 50px!important;
+    box-shadow: 14px 0px rgb(138, 222, 138);
+    text-align: center;
+}
+.usecase-section p{
+    color: rgb(98, 203, 98);
+    padding-top: 50px!important;
+    padding-bottom: 50px!important;
+    font-size: 26px;
+    font-weight: 900;
+}
+.usecase-body {
+    background: white;
+    box-shadow:10px 0px rgb(126, 240, 126);  
+}
+.usecase-body .usecase-p{
+    font-size: 14px;
+    margin-left: 70px;
+    text-align: justify;
+    color: black;
+}
+.usecase-body .learn-more{
+    font-size: 18px;
+    margin-left: 70px;
+    color: black;
+    font-weight: bold;
+}

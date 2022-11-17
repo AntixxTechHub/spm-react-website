@@ -1,0 +1,52 @@
+.BMC_VendersbackgroundImage{
+    background-image: url(https://res.cloudinary.com/dkjjp9tt8/image/upload/v1658750354/globe_bg_aweu25.svg);
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    background-position: center;
+}
+.BMC_IMAGE{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.card_height_width{
+    width: 15rem;
+    height: 15rem
+}
+.card_background1{
+    background:#FC5732;
+}
+.card_background2{
+    background: #7B3DD9;
+}
+.card_background3{
+    background: #00B59A;
+}
+.card_background4{
+    background: #62777E;
+}
+.card_background5{
+    background: #EFBC30;
+}
+.card_background6{
+    background: #45ACC4;
+}
+.card_background7{
+    background:#06527f;
+}
+.card_background8{
+    background: #7DA928;
+}
+.card_background9{
+    background:#34B2E4;
+}
+.BMC_Helix_ITSM_Image{
+    width: 62%;
+    /* text-align: center; */
+}
+/* .col{
+    text-align: center;
+} */
+.bmc_helix_itsmbackground{
+    background-color: #EAEAEA;
+}
