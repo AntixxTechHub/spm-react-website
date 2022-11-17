@@ -69,17 +69,6 @@ function MyApp({ Component, pageProps }) {
             gtag('config', 'UA-158260568-1',{
               page_path: window.location.pathname,
             });
-          `,
-        }}
-      />
-      <Script
-        id="gtag-init"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
             gtag('config', 'AW-11018017801',{
               page_path: window.location.pathname,
             });
