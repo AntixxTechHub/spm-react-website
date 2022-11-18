@@ -52,11 +52,11 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=UA-158260568-1`}
+        src={`https://www.googletagmanager.com/gtag/js?id=AW-11018017801`}
       />
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=AW-11018017801`}
+        src={`https://www.googletagmanager.com/gtag/js?id=UA-158260568-1`}
       />
       <Script
         id="gtag-init"
@@ -66,10 +66,10 @@ function MyApp({ Component, pageProps }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'UA-158260568-1',{
+            gtag('config', 'AW-11018017801',{
               page_path: window.location.pathname,
             });
-            gtag('config', 'AW-11018017801',{
+            gtag('config', 'UA-158260568-1',{
               page_path: window.location.pathname,
             });
           `,
