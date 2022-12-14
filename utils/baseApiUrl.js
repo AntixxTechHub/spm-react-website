@@ -2,7 +2,7 @@
 
 //const baseApiUrl = "https://api.spmglobaltech.com"
 
-const baseApiUrl = "https://spmgt.herokuapp.com"
+const baseApiUrl = "https://spm-strapi.herokuapp.com/"
 
 // process.env.NODE_ENV === "production" 
 // ? 'http://localhost:1337' 
