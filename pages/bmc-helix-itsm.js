@@ -127,7 +127,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <MediaImage name="bmcheliximplementation.jpg" data={seo} />
+                <MediaImage name="itsm.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
