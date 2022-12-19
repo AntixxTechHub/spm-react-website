@@ -62,14 +62,14 @@ const CaseStudies = () => {
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12">
                 <div className="big-data-banner-content">
-                  <h2
+                  <h1
                     className="nunito-font"
                     data-aos="fade-up"
                     data-aos-duration="1200"
                     data-aos-delay="100"
                   >
                     IT Services
-                  </h2>
+                  </h1>
                   <p
                     data-aos="fade-up"
                     data-aos-duration="1200"
@@ -160,14 +160,14 @@ const CaseStudies = () => {
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12">
                 <div className="big-data-banner-content">
-                  <h2
+                  <h1
                     className="nunito-font"
                     data-aos="fade-up"
                     data-aos-duration="1200"
                     data-aos-delay="100"
                   >
                     App Development
-                  </h2>
+                  </h1>
                   <p
                     data-aos="fade-up"
                     data-aos-duration="1200"
@@ -209,14 +209,14 @@ const CaseStudies = () => {
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12">
                 <div className="big-data-banner-content">
-                  <h2
+                  <h1
                     className="nunito-font"
                     data-aos="fade-up"
                     data-aos-duration="1200"
                     data-aos-delay="100"
                   >
                     Artificial Intelligence & Machine Learning
-                  </h2>
+                  </h1>
                   <p
                     data-aos="fade-up"
                     data-aos-duration="1200"
@@ -258,14 +258,14 @@ const CaseStudies = () => {
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12">
                 <div className="big-data-banner-content">
-                  <h2
+                  <h1
                     className="nunito-font"
                     data-aos="fade-up"
                     data-aos-duration="1200"
                     data-aos-delay="100"
                   >
                     Design
-                  </h2>
+                  </h1>
                   <p
                     data-aos="fade-up"
                     data-aos-duration="1200"
@@ -307,14 +307,14 @@ const CaseStudies = () => {
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12">
                 <div className="big-data-banner-content">
-                  <h2
+                  <h1
                     className="nunito-font"
                     data-aos="fade-up"
                     data-aos-duration="1200"
                     data-aos-delay="100"
                   >
                     Accredited ISO 9001:2015
-                  </h2>
+                  </h1>
                   <p
                     data-aos="fade-up"
                     data-aos-duration="1200"
