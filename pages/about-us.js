@@ -324,7 +324,7 @@ const Services = () => {
             </div>
           </div>
           <div className="section-title">
-            <h3 className="nunito-font">Trainings</h3>
+            <h3 className="nunito-font">Training</h3>
             <span className="sub-title purple-color">We also specialize in providing all kinds of training in planning, implementing, and maintaining all the products available in the IT and ITSM market.</span>
           </div>
         </div>
