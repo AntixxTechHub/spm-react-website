@@ -6,15 +6,67 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
+import Accordion from "@/components/Accordion";
 
 
 import dummyimg from "@/public/images/dummy-img.png";
 import dummyicon from "@/public/images/dummy-icon.png";
 
 
-const Services = () => {
+
+{/* ------------------------------Faq Q/A--------------------------------- */ }
+const questionsAnswers = [
+  {
+    question: "Q1:What is the difference between Sales Cloud vs Marketing Cloud?",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Answer: Salesforce Sales Cloud belongs to the sales automation category under CRM; Marketing Cloud is aligned to the "Marketing Automation" category.  Sales Cloud is a start-to-end program that integrates, automates, and scales the entire sales process to increase sales volume and revenue.
+
+        <li>Marketing Cloud is a unified solution to improve the customer journey, web personalization, content management, email campaigns, mobile networking, social media engagements, data analysis, and advertising..</li>
+      </p>
+
+  },
+  {
+    question: "Q2: How does Salesforce Sales Cloud improve the performance of sales people?",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Lightning Salesforce Sales Cloud recommends the best sales practices and provides the relevant documents based on the insights about the customer interaction. It fosters collaboration through in-built social tools that expedites the personalized sales activities to close a particular lead in favor. .
+    
+      </p>
+  },
+  {
+    question: "Q3:What is the career scope of Salesforce Trainings?",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>As being one of best performing Sales Cloud third party vendors, we conduct value-added Salesforce trainings for different job roles like customer management, workflow management, monitoring, analytics, social media management, IoT integration etc. Salesforce technical architect in the U.S. 
+        <li>earns up to $150,000/year. Almost 3.3 million new jobs for certified Salesforce are estimated to come on the surface by 2022.  .</li>
+      </p>
+  },
+  {
+    question: "Q4: What is Partner & Channel Management in Sales Cloud?",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Partner Relationship Management (PRM), integrated with Salesforce, simplifies and automates personalized partner onboarding, recruitment, and sales. It makes the partners more efficient marketers by providing integrated real-time information relevant to particular leads..
+        
+      </p>
+  },
+  
+  {
+    question: "Q5:How can one leverage the benefits of Sales Cloud by adding more products/tools at a later stage?",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}> As being one of the top Sales Cloud consultants and Sales Cloud managed services providers, we offer comprehensive support to advance existing Sales Cloud by integrating, configuring, customizing task-oriented products/tools like - Partner Communities, Einstein Sales Analytics, Salesforce Inbox, AppExchange, Salesforce Sustainability Cloud etc.</p>
+  },
+  
+];
+{/* ------------------------------End Faq Q/A--------------------------------- */ }
+
+
+
+
+
+const Services = ({ seo }) => {
   return (
     <>
+     <PageSeo seo={seo} pageName = "Salesforce Sales Cloud" />
       <PageTitle page="Salesforce Sales Cloud" />
       <Navbar />
       <PageTopTitle
@@ -77,7 +129,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="sales cloud images.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -93,15 +145,17 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="spm-well-trained-servicesow-experts.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
               <div className="goal-content">
                 <h3 className="nunito-font">
-                  SPM Global Technologies | Well-trained ServiceNow Experts
+                What is Salesforce Sales Cloud?  
                 </h3>
-                <p style={{ textAlign: "justify" }}>Sales Cloud refers to the “sales” module of Salesforce Lightning. It is a cloud-based CRM platform designed to integrate and manage real-time information about customers, leads, and sales. The prime objective of Salesforce Lightning Sales Cloud is to automate the lead management and sales process to improve the performance and productivity of sales managers, field sales executives, presales specialists, and reps. Salesforce Lightning Sales Cloud is available in four different editions (Essentials, Professional, Enterprise, and Unlimited) with different capabilities to suit your optimized business objectives and budget. Sales Cloud can be integrated with other Salesforce Cloud platforms also like Analytics Cloud, Marketing Cloud, Community Cloud, Service Cloud, etc. The top business sectors that highly benefitted by embracing and relying on Sales Cloud for their strategic growth are financial services, automotive, communications, CPG/retail, higher ED, healthcare, life sciences, media, manufacturing, non-profit, public sector, etc.</p>
+                <p style={{ textAlign: "justify" }}>Sales Cloud refers to the “sales” module of Salesforce Lightning. It is a cloud-based CRM platform designed to integrate and manage real-time information about customers, leads, and sales. The prime objective of Salesforce Lightning Sales Cloud is to automate the lead management and sales process to improve the performance and productivity of sales managers, field sales executives, presales specialists, and reps. </p>
+                <p style={{ textAlign: "justify" }}>Salesforce Lightning Sales Cloud is available in four different editions (Essentials, Professional, Enterprise, and Unlimited) with different capabilities to suit your optimized business objectives and budget. Sales Cloud can be integrated with other Salesforce Cloud platforms also like Analytics Cloud, Marketing Cloud, Community Cloud, Service Cloud, etc. The top business sectors that highly benefitted by embracing and relying on Sales Cloud for their strategic growth are financial services, automotive, communications, CPG/retail, higher ED, healthcare, life sciences, media, manufacturing, non-profit, public sector, etc.
+                </p>.
                 <div
                   className="btn-box"
                   data-aos="fade-up"
@@ -132,7 +186,7 @@ const Services = () => {
                 <ul className="overview-list">
                   <li data-aos="fade-up" data-aos-duration="1200">
                     <i className="flaticon-draw-check-mark"></i>
-                    ncreased opportunities (Specifically designed for salespeople)
+                    Increased opportunities (Specifically designed for salespeople)
                   </li>
                   <li
                     data-aos="fade-up"
@@ -192,7 +246,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="importance of outsourcing sales cloud support services and benefits.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -208,7 +262,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="sales-cloud-business-feature-and-capabilities.jpg" data={seo} />
               </div>
             </div>
 
@@ -238,7 +292,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="sales path process automation.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                 Sales Path Process Automation
@@ -253,7 +307,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="sales cloud einstein ai.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                 Sales Cloud Einstein / AI
@@ -268,7 +322,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Sales-CPQ.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                 Sales – CPQ
@@ -283,7 +337,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="products &price book.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                 Products & Price Books
@@ -313,7 +367,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Sales Enablement.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Sales Enablement</a>
@@ -328,7 +382,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="mulessoft integration with sales cloud.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>MuleSoft Integration with Sales Cloud</a>
@@ -359,7 +413,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="sales-collaboration.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Sales Collaboration</a>
@@ -375,7 +429,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="lightening-voice.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Lightning Voice</a>
@@ -410,7 +464,7 @@ const Services = () => {
                   <Image src={dummyicon} alt="" />
                 </div>
                 <h3 className="nunito-font">
-                  <a>Sales Cloud Consultation as a Sales Cloud Third-Party Vendor....other</a>
+                  <a>Sales Cloud Consultation as a Sales Cloud Third-Party Vendor</a>
                 </h3>
               </div>
             </div>
@@ -421,7 +475,7 @@ const Services = () => {
             >
               <div className="services-box" style={{ height: '200px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="migration-to-lightning-sales-cloud-experience.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Migration to Lightning Sales Cloud Experience</a>
@@ -435,7 +489,7 @@ const Services = () => {
             >
               <div className="services-box" style={{ height: '200px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="salesforce-sales-cloud-implementation.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Salesforce sales Cloud Implementation</a>
@@ -449,7 +503,7 @@ const Services = () => {
             >
               <div className="services-box" style={{ height: '200px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Salesforce Sales Cloud Integration.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Salesforce Sales Cloud Integration</a>
@@ -463,7 +517,7 @@ const Services = () => {
             >
               <div className="services-box" style={{ height: '200px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="sales-cloud-customization.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Sales Cloud Customization</a>
@@ -524,7 +578,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Sales cloud training.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -540,7 +594,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Sales cloud third party vendor Services providers.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -588,12 +642,58 @@ const Services = () => {
           </div>
         </div>
       </div>
-      
+      {/* New content is added in Salesforce sales cloud it is QA */}
+
+      <div className="faq-area pb-100">
+        <div className="container">
+          <div className="section-title">
+            <span className="sub-title dark-green-color">
+
+            </span>
+            <h2 className="nunito-font">
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div className="row align-items-center">
+            <div className="col-lg- col-md-12">
+              <div className="faq-accordion">
+                <div className="accordion" id="faqAccordion">
+                  <Accordion questionsAnswers={questionsAnswers} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
       <SubscribeStyle1 />
       <div className="border-tb" />
       <FooterOne />
     </>
   );
 };
+
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=salesforce-sales-cloud&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
+
+
 
 export default Services;
