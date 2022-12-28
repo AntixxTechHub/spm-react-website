@@ -7,15 +7,20 @@ import PageTitle from "@/components/Layout/PageTitle";
 import Navbar from "@/components/Layout/Navigations/Navbar1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 
 import bmc from "@/public/images/icon/bmc.svg";
 import bmcitsm from "@/public/images/ITSM-Solutions-for-better-productivity.jpg";
 
 
-const Services = () => {
+
+const Services = ({ seo }) => {
   return (
     <>
+    <PageSeo seo={seo} pageName = "bmc" />
       <PageTitle page="BMC Suite of Products" />
       <Navbar />
       <PageTopTitle
@@ -45,7 +50,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={bmcitsm} alt="man-with-son-image" />
+              <MediaImage name="BMC Suite of product.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -61,7 +66,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={bmcitsm} alt="goal-image" />
+              <MediaImage name="Execute better IT operations management.jpg" data={seo} />
               </div>
             </div>
 
@@ -362,5 +367,23 @@ const Services = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=bmc&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 export default Services;
