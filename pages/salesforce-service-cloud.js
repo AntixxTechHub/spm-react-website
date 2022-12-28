@@ -6,16 +6,19 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 
 import dummyimg from "@/public/images/dummy-img.png";
 import dummyicon from "@/public/images/dummy-icon.png";
 
 
-const Services = () => {
+const Services = ({ seo }) => {
   return (
     <>
-      <PageTitle page="Salesforce Service Cloud" />
+    <PageSeo seo={seo} pageName = "Salesforce Service Cloud" />
       <Navbar />
       <PageTopTitle
         subTitle=""
@@ -42,7 +45,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="lightning salesforce services cloud.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -58,7 +61,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="features-&-funtionalities-of-salesforce-services.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -134,7 +137,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="higher ed.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   Higher Ed
@@ -149,7 +152,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="case-management.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   Case Management
@@ -164,7 +167,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="service-process-automation.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   Service Process Automation
@@ -179,7 +182,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="omni-channel-routing.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   Omni Channel Routing
@@ -194,7 +197,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="computer-telephone-integration.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Computer Telephony Integration</a>
@@ -224,7 +227,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Agent workspace.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Agent Workspace</a>
@@ -239,7 +242,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="knowledge management.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Knowledge Management</a>
@@ -308,7 +311,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="field-service.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Field Service</a>
@@ -337,7 +340,7 @@ const Services = () => {
             >
               <div className="services-box" style={{ height: '200px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Salesforce Service cloud Integration.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Salesforce Service Cloud Integration</a>
@@ -351,7 +354,7 @@ const Services = () => {
             >
               <div className="services-box" style={{ height: '200px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Service cloud implementation.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Service Cloud Implementation</a>
@@ -407,7 +410,7 @@ const Services = () => {
             >
               <div className="services-box" style={{ height: '200px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="On the site service cloud salesforce training.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>On the Site Service Cloud Salesforce Trainings</a>
@@ -490,7 +493,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Salesforce services cloud certification training we conduct the best.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -506,7 +509,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Service cloud managed services provider.png" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -575,5 +578,24 @@ const Services = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=salesforce-service-cloud&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
+
 
 export default Services;
