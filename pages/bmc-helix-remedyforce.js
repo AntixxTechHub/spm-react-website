@@ -120,6 +120,8 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
+              <MediaImage name="about-bmc-helix-remedyforce.jpg" data={seo} />
+
               </div>
             </div>
           </div>
@@ -227,7 +229,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Techanical-Expertise-Matters.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                 Technical Expertise Matters
@@ -242,7 +244,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="We have done it before.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                 We Have Done It Before
@@ -257,7 +259,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="We Transform Product Know-how.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                 We Transform Product Know-how
@@ -272,7 +274,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Customizing as per your needs.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Customizing as per Your Needs</a>
@@ -288,7 +290,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="We Are Just A Call Away.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>We Are Just A Call Away</a>
@@ -343,4 +345,22 @@ const Services = ({ seo }) => {
     </>
   );
 };
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=bmc-helix-remedyforce&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
+
 export default Services;
