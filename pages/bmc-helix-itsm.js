@@ -111,7 +111,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <MediaImage name="itsm.jpg" data={seo} />
+              <MediaImage name="BMC-Helix-ITSM-a-robust-services-management-platforms-revolutionizing-IT1.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <MediaImage name="itsm.jpg" data={seo} />
+              <MediaImage name="BMC-Helix-ITSM-Scenario-supporting-the-development-of-BMC-Helix-ITSM.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -267,7 +267,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '900px' }}>
                 <div className="icon">
-                  <Image src={change} alt="" />
+                <MediaImage name="Change-releasa-management.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Change Release Management</a>
@@ -315,7 +315,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '900px' }}>
                 <div className="icon">
-                  <Image src={Knowledge} alt="" />
+                <MediaImage name="knowledge-management.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Knowledge Management</a>
