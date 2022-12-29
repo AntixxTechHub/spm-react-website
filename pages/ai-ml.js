@@ -6,6 +6,9 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 import goalImg from "@/public/images/goal.png";
 import manWithSon from "@/public/images/man-with-son.png";
@@ -18,11 +21,10 @@ import dummyicon from "@/public/images/dummy-icon.png";
 
 
 
-
-const Services = () => {
+const Services = ({ seo }) => {
   return (
     <>
-      <PageTitle page="Artificial Intelligence and Machine Learning" />
+      <PageSeo seo={seo} pageName = "AI & ML" />
       <Navbar />
       <PageTopTitle
         subTitle=""
@@ -43,7 +45,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Artificial Intelligence and Machine Learning.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -59,7 +61,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Increasing Importance of Predicitive Analytics with ML and AI.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -601,5 +603,23 @@ const Services = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=ai-ml&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 export default Services;
