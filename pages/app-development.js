@@ -6,16 +6,19 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 
 import dummyimg from "@/public/images/dummy-img.png";
 import dummyicon from "@/public/images/dummy-icon.png";
 
 
-const Services = () => {
+const Services = ({ seo }) => {
   return (
     <>
-      <PageTitle page="App Development" />
+      <PageSeo seo={seo} pageName = "App Development" />
       <Navbar />
       <PageTopTitle
         subTitle=""
@@ -23,10 +26,10 @@ const Services = () => {
 
       <div className="services-area with-top-border pt-100 pb-75">
         <div className="container">
-          <div className="section-title">
+          {/* <div className="section-title">
             <h3 className="nunito-font">We offer a wide range of app development services, including:</h3>
             <p>We develop web and mobile applications to create excellent experiences for your users. We perfectly blend the power of design and excellence in technology. We craft customised apps according to your business requirements.</p>
-          </div>
+          </div> */}
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="goal-content style-two">
@@ -43,7 +46,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Development of mobile application.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -59,7 +62,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Development of web application.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -67,8 +70,9 @@ const Services = () => {
                 <h4 className="nunito-font">
                   Development of Web Applications
                 </h4>
-                <p className="w-100" style={{ textAlign: "justify" }}>Many enterprises look for technology-driven solutions to conquer their target audience across a widespread business territory. Well-designed web applications act as the most powerful tools to let users access your products and services effortlessly. We have been a leading web application development company for many years now. We have worked with hundreds of satisfied clients from across the world to develop the most user-friendly web apps exceeding their aspirations.</p>
+                <p className="w-100" style={{ textAlign: "justify" }}>Many enterprises look for technology-driven solutions to conquer their target audience across a widespread business territory. Well-designed web applications act as the most powerful tools to let users access your products and services effortlessly. We are among<b> top web app development firms </b>for many years now. We have worked with hundreds of satisfied clients from across the world to develop the most user-friendly web apps exceeding their aspirations.</p>
                 <p className="w-100" style={{ textAlign: "justify" }}>We deploy the latest technologies and adopt best agile practises to bring out excellent web apps that will help you achieve your business goals. Our web app development team is highly trained and experienced in integrating different features into your web apps to make them the most preferred solutions for your target audience.</p>
+                <p className="w-100" style={{ textAlign: "justify" }}>We have been the most trusted partners for<b> web and mobile app development services </b>for many clients. Our technical expertise and extensive experience make us <b>the best web application development software company.</b></p>
               </div>
             </div>
           </div>
@@ -93,7 +97,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Enterprise Application Development.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -109,7 +113,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="SaaS Application Implementation.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -143,12 +147,18 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Custom Application Development.jpg" data={seo} />
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <h4 className="nunito-font">
+               <center> Get in Touch with Our Experts Today! </center>
+                </h4>
+                <p className="w-100" style={{ textAlign: "justify" }}><center>Please feel free to contact our app development experts to discuss your requirements</center></p>
+                <p className="w-100" style={{ textAlign: "justify" }}> <center>Please fill up the form below and one of our team members will get back to you shortly. </center> </p>
 
       <SubscribeStyle1 />
       <FooterOne />
@@ -156,4 +166,26 @@ const Services = () => {
   );
 };
 
+
+
+
+
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=app-development&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 export default Services;
