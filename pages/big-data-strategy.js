@@ -6,16 +6,20 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 
 import dummyimg from "@/public/images/dummy-img.png";
 import dummyicon from "@/public/images/dummy-icon.png";
 
 
-const Services = () => {
+
+const Services = ({ seo }) => {
   return (
     <>
-      <PageTitle page="Big Data Strategy" />
+    <PageSeo seo={seo} pageName = "Big Data Strategy" />
       <Navbar />
       <PageTopTitle
         subTitle=""
@@ -186,7 +190,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="man-with-son-image" />
+              <MediaImage name="Guiding Your Business to Adopt DevOps.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -205,9 +209,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Ensuring compliance &governance.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Ensuring Compliance & Governance</a>
@@ -221,9 +225,9 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Scalability of data solution.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Scalability of Data Solutions</a>
@@ -237,9 +241,9 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Determining the best tech solution.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Determining the Best Tech Solutions</a>
@@ -263,9 +267,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Drawing data strategy for growth.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Drawing Data Strategy for Growth</a>
@@ -279,9 +283,9 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Work together throughout the data lifecycle.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Work Together Throughout the Data Lifecycle</a>
@@ -295,9 +299,9 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Effective decision making1.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Effective Decision-Making</a>
@@ -334,7 +338,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="AWS.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>AWS</a>
@@ -348,7 +352,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Google cloud.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Google Cloud </a>
@@ -362,7 +366,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Azure.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Microsoft Azure</a>
@@ -382,5 +386,23 @@ const Services = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=big-data-strategy&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 export default Services;
