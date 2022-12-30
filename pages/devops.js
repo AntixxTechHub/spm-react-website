@@ -6,22 +6,27 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
+
 
 
 import dummyimg from "@/public/images/dummy-img.png";
 import dummyicon from "@/public/images/dummy-icon.png";
 
 
-const Services = () => {
+const Services = ({ seo }) => {
+  
   return (
     <>
-      <PageTitle page="Devops" />
+      <PageSeo seo={seo} pageName = "Devops" />
       <Navbar />
       <PageTopTitle
-        subTitle="SPM Global Technologies
-        DevOps Consulting and Solutions Partner
+        title="Devops" 
+        subTitle="
         "
-        title="Devops" />
+        />
 
       <div className="services-area with-top-border pt-100 pb-75">
         <div className="container">
@@ -29,6 +34,7 @@ const Services = () => {
             <h2 className="nunito-font"></h2>
             <span className="sub-title purple-color">Helping You Adopt Agility Through DevOps For Faster Software Delivery</span>
             <p>SPM Global Technologies partners with leading tech brands globally. We help you embrace agile methodology for your software development operations. We deliver custom cloud-native solutions and modernize your applications for better performance and productivity.</p>
+            <span className="sub-title purple-color">SPM Global Technologies DevOps Consulting and Solutions Partner</span>
           </div>
           <div className="row justify-content-center">
             <div
@@ -36,9 +42,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '425px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Workflow orchestration for product release.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Workflow Orchestration for Product Release</a>
@@ -53,9 +59,9 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <div className="single-services-item style-two" style={{ height: '425px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Automate Implementation.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Automate Implementation</a>
@@ -69,9 +75,9 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="200"
             >
-              <div className="single-services-item style-two" style={{ height: '425px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Real time performance overview.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Real-Time Performance Overview</a>
@@ -103,7 +109,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="man-with-son-image" />
+              <MediaImage name="Guiding Your Business to Adopt DevOp.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -180,9 +186,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="AWS Devops Services.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>AWS DevOps Services</a>
@@ -195,9 +201,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Google Cloud Devops Services.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Google Cloud DevOps Services</a>
@@ -211,9 +217,9 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Azure Devops Services.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Azure DevOps Services</a>
@@ -228,7 +234,7 @@ const Services = () => {
       <div className="services-area with-top-border pt-100 pb-75">
         <div className="container">
           <div className="section-title">
-            <h2 className="nunito-font">DevOps Insights</h2>
+            <h2 className="nunito-font">Talk to Our DevOps and Cloud Experts Today!</h2>
             <span className="sub-title purple-color"></span>
           </div>
         </div>
@@ -239,5 +245,24 @@ const Services = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=devops&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
+
 
 export default Services;
