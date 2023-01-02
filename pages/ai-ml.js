@@ -45,7 +45,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-              <MediaImage name="Artificial Intelligence and Machine Learning.jpg" data={seo} />
+              <MediaImage name="Artificial Intelligence and Machine Learning (2).jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -87,9 +87,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '300px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Enhanced customer relationship.jpg" data={seo} />
                 </div>
                 <h6 className="nunito-font">
                   <a>Enhanced customer relationship</a>
@@ -101,9 +101,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '300px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Increased operational efficiency by minimizing errors.jpg" data={seo} />
                 </div>
                 <h6 className="nunito-font">
                   <a>Increased operational efficiency by minimizing errors</a>
@@ -115,9 +115,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '300px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Smarter decision making to minimize risks.jpg" data={seo} />
                 </div>
                 <h6 className="nunito-font">
                   <a>Smarter decision making to minimize risks</a>
@@ -129,9 +129,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '300px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Robotic process automation to reduce repetitive tasks.jpg" data={seo} />
                 </div>
                 <h6 className="nunito-font">
                   <a>Robotic process automation to reduce repetitive tasks</a>
@@ -145,9 +145,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '300px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Dsktop as a services DAAS.jpg" data={seo} />
                 </div>
                 <h6 className="nunito-font">
                   <a>Desktop as a Service (DaaS) integration for more agility and data security</a>
@@ -159,9 +159,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '300px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Improved customer experience by interactive chatbots.jpg" data={seo} />
                 </div>
                 <h6 className="nunito-font">
                   <a>Improved customer experience by interactive chatbots</a>
@@ -173,9 +173,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '300px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Reliable Big data analytics for cost optimization, efficiency improvement etc..jpg" data={seo} />
                 </div>
                 <h6 className="nunito-font">
                   <a>Reliable Big data analytics for cost optimization, efficiency improvement etc.</a>
@@ -187,9 +187,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '300px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Deep learning for feature engineering.jpg" data={seo} />
                 </div>
                 <h6 className="nunito-font">
                   <a>Deep learning for feature engineering</a>
@@ -212,9 +212,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '325px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Deep Learning solutions to improve capabilities for forecasting, decision-making, and other operations.jpg" data={seo} />
                 </div>
                 <h6 className="nunito-font">
                   <a>Deep Learning solutions to improve capabilities for forecasting, decision-making, and other operations</a>
@@ -226,9 +226,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '325px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Predictive Analytics to identifying underlying patterns.jpg" data={seo} />
                 </div>
                 <h6 className="nunito-font">
                   <a>Predictive Analytics to identifying underlying patterns</a>
@@ -240,9 +240,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '325px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <Image src={dummyimg} alt="" />
                 </div>
                 <h6 className="nunito-font">
                   <a>Image Analytics to help you detect an attribute/ object in an image</a>
@@ -254,9 +254,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '325px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Video Analytics to help you identify & tag different entities in motion pictures.jpg" data={seo} />
                 </div>
                 <h6 className="nunito-font">
                   <a>Video Analytics to help you identify & tag different entities in motion pictures/ video</a>
@@ -270,9 +270,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '325px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Natural Language Processing to create natural interactions with users as well as to identify key patterns.jpg" data={seo} />
                 </div>
                 <h6 className="nunito-font">
                   <a>Natural Language Processing to create natural interactions with users as well as to identify key patterns</a>
@@ -284,9 +284,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '325px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Computer Vision to extract actionable relevant information from videos and images.jpg" data={seo} />
                 </div>
                 <h6 className="nunito-font">
                   <a>Computer Vision to extract actionable relevant information from videos and images</a>
@@ -298,9 +298,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '325px' }}>
+              <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Data Science to find valuable insights for improving the product, services, supply chain, etc.jpg" data={seo} />
                 </div>
                 <h6 className="nunito-font">
                   <a>Data Science to find valuable insights for improving the product, services, supply chain, etc</a>
@@ -323,9 +323,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Our expertise in both AI and ML.jpg" data={seo} />
                 </div>
                 <p>Our expertise in both AI and ML helps us create the best solutions that your business needs to address the particular concerns for continuous improvement. As an Artificial Intelligence services company, SPM Global Technologies offers a range of the best-aligned AI solutions</p>
               </div>
@@ -336,9 +336,9 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Chatbots development to interact with customers and to streamline transactions.jpg" data={seo} />
                 </div>
                 <p>Chatbots development to interact with customers and to streamline transactions</p>
               </div>
@@ -349,9 +349,9 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
               data-aos-delay="200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Natural Language Understanding (NLU).jpg" data={seo} />
                 </div>
                 <p>Natural Language Understanding (NLU) to interpret text and to perform relevant tasks like grammar checking, classification, translation, etc.</p>
               </div>
@@ -365,9 +365,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Predictive & User Behavior Analytics to provide an actionable data-oriented.jpg" data={seo} />
                 </div>
                 <p>Predictive & User Behavior Analytics to provide an actionable data-oriented holistic view of performance, efficiency, resource management, etc.</p>
               </div>
@@ -378,9 +378,9 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <Image src={dummyimg} alt="" />
                 </div>
                 <p>Image Recognition and Visual Search to create pattern recognition and visual search apps for customer journey improvement.</p>
               </div>
@@ -391,9 +391,9 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Cognitive Customer Analytics to improve personalized customer service.jpg" data={seo} />
                 </div>
                 <p>Cognitive Customer Analytics to improve personalized customer service and decision making based on predictions</p>
               </div>
@@ -404,9 +404,9 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '600px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Real-time Enterprise Operational Analytics for actionable management.png" data={seo} />
                 </div>
                 <p>Real-time Enterprise Operational Analytics for actionable management to improve collaboration and consumer engagement as well as to streamline & automate information management for better predictions</p>
               </div>
@@ -428,7 +428,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box" style={{ height: '225px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Artificial Intelligence consulting services.jpg" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Artificial Intelligence consulting services</a>
@@ -436,21 +436,21 @@ const Services = ({ seo }) => {
               </div>
               <div className="services-box" style={{ height: '225px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Natural Language Understanding (NLU).jpg" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>AI powered predictive proactive maintenance solutions</a>
                 </h3></div>
               <div className="services-box" style={{ height: '225px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Artificial Intelligence product configuration.jpg" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Artificial Intelligence product configuration</a>
                 </h3></div>
               <div className="services-box" style={{ height: '225px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Artifical Intelligence managed services for post deployment support.jpg" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Artificial Intelligence managed services for post-deployment support</a>
@@ -464,14 +464,14 @@ const Services = ({ seo }) => {
             >
               <div className="services-box" style={{ height: '225px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="IoT Analytics consultancy.jpg" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>IoT Analytics consultancy</a>
                 </h3></div>
               <div className="services-box" style={{ height: '225px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Data visualization consulting.jpg" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Data visualization consulting </a>
@@ -479,7 +479,7 @@ const Services = ({ seo }) => {
               </div>
               <div className="services-box" style={{ height: '225px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <Image src={dummyimg} alt="" />
                 </div>
                 <h3 className="nunito-font">
                   <a>Optimizing customer services for the enhanced experience with machine learning</a>
@@ -487,7 +487,7 @@ const Services = ({ seo }) => {
               </div>
               <div className="services-box" style={{ height: '225px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Big Data Analytics services.jpg" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Big Data Analytics services</a>
@@ -510,7 +510,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="goal-image" />
+              <MediaImage name="Azure Machine Learning Studio.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -604,6 +604,7 @@ const Services = ({ seo }) => {
   );
 };
 
+
 export async function getStaticProps({ params }) {
   // console.log(params);
   // Call an external API endpoint to get products.
@@ -621,5 +622,8 @@ export async function getStaticProps({ params }) {
     },
   };
 }
+
+
+
 
 export default Services;
