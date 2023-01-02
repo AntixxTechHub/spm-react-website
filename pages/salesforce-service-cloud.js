@@ -9,10 +9,59 @@ import FooterOne from "@/components/Layout/Footer/FooterOne";
 import baseApiUrl from "@/utils/baseApiUrl";
 import PageSeo from "../components/Common/PageSeo";
 import MediaImage from "../components/Common/Media";
+import Accordion from "@/components/Accordion";
 
 
 import dummyimg from "@/public/images/dummy-img.png";
 import dummyicon from "@/public/images/dummy-icon.png";
+
+
+{/* ------------------------------Faq Q/A--------------------------------- */ }
+const questionsAnswers = [
+  {
+    question: "Q1: Do you provide Salesforce trainings for marketing Cloud certification also?",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Answer: As being the authorized Salesforce vendor, we conduct a range of Salesforce trainings for top-in-demand Salesforce certifications like Salesforce Administrator and App Builder, Salesforce Sales Cloud Consultant Certification, Salesforce Marketing Cloud Consultant Certification, Salesforce Marketing Cloud Email Specialist Certification etc.
+
+        
+      </p>
+
+  },
+  {
+    question: "Q2: What is the difference between Salesforce Service Cloud vs Sales Cloud?  ",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Salesforce Service Cloud is focused more to help businesses sell services and products by resolving the cases faster with automation and knowledge base. Service Cloud managed services are highly effective for selling services in a better way. Sales Cloud is more focused to help the businesses generate more leads and opportunities to sell. Customer engagement for improved CRM is the combined trait of both.  
+      </p>
+  },
+  {
+    question: "Q3: Does Salesforce offer a free trial of Service Cloud?  ",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Yes, Salesforce offers free trial of Service Cloud with limited features and capabilities.
+       
+
+
+      </p>
+  },
+  {
+    question: "Q4:Is Lightning Salesforce Service Cloud effective to improve agent productivity?  ",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Salesforce Lightning Service Cloud support services empower the agents to respond the customers on any platform quickly, relevantly and efficiently. The in-built knowledge base provides a 360-degree view of customers to improve technical expertise of agents.  
+      </p>
+  },
+  {
+    question: "Q5: What are the key business objectives that make hiring a Service Cloud consultant a justified decision? ",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Following are key objectives that are met by the majority of Service Cloud users:   
+        <li>• Personalized Service  </li>
+        <li>• Faster customer support </li>
+        <li>• Always on Service - 24/7 availability   </li>
+        <li>• Upgrade your data infrastructure. </li>
+        <li>• Multi-channel and multi-device customer support </li>
+      </p>
+  },
+  
+];
+{/* ------------------------------End Faq Q/A--------------------------------- */ }
 
 
 const Services = ({ seo }) => {
@@ -572,6 +621,31 @@ const Services = ({ seo }) => {
         </div>
       </div>
 
+
+
+      <div className="faq-area pb-100">
+        <div className="container">
+          <div className="section-title">
+            <span className="sub-title dark-green-color">
+
+            </span>
+            <h2 className="nunito-font">
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div className="row align-items-center">
+            <div className="col-lg- col-md-12">
+              <div className="faq-accordion">
+                <div className="accordion" id="faqAccordion">
+                  <Accordion questionsAnswers={questionsAnswers} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
       <SubscribeStyle1 />
       <div className="border-tb" />
       <FooterOne />
