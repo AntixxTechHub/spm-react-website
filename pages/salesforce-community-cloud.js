@@ -9,12 +9,77 @@ import FooterOne from "@/components/Layout/Footer/FooterOne";
 import baseApiUrl from "@/utils/baseApiUrl";
 import PageSeo from "../components/Common/PageSeo";
 import MediaImage from "../components/Common/Media";
-
+import Accordion from "@/components/Accordion";
 
 import dummyimg from "@/public/images/dummy-img.png";
 import dummyicon from "@/public/images/dummy-icon.png";
 
 
+
+{/* ------------------------------Faq Q/A--------------------------------- */ }
+const questionsAnswers = [
+  {
+    question: "Q1: What is Salesforce Community Cloud?",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Answer: Salesforce Community Cloud is a social network designed by Salesforce. It enables users to form their communities online. The users can bring together their employees, partners, and customers on a dashboard. This ease of access helps communicate integrating various business apps. Users can conduct meetings and share content in different forms. 
+
+        
+      </p>
+
+  },
+  {
+    question: "Q2: Why is working with Community Cloud Third-Party Vendor essential?",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Consider the following factors while choosing Salesforce Integration Cloud Service.
+         <li>• Understand the communication needs of clients, </li>
+        <li>• Customize the community cloud accordingly, </li>
+        <li>• Deploy the solution, </li>
+        <li>• Offer Salesforce Trainings to the staff, and   </li>
+        <li>• Render Community Cloud Support Services.     </li>
+
+
+      </p>
+  },
+  {
+    question: "Q3:  How to choose the right Salesforce Community Cloud Service Providers?",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Consider the following factors while choosing your Salesforce Community Cloud Implementation Partner: 
+        <li>1. Experience in developing, customizing, and deploying Salesforce Community Cloud, </li>
+        <li>2. Product expertise,  </li>
+        <li>3. Technical capabilities to offer Community Cloud Trainings,  </li>
+        <li>4. Prompt Community Cloud Support Services, </li>
+        <li>5. Competitive charges for implementation in time and further service support.  </li>
+
+
+      </p>
+  },
+  {
+    question: "Q4: How can Salesforce Community Cloud help in managing workflow?",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Organizations can make effective use of Salesforce Commerce Cloud. They can set up their online communities. Enterprises can bring their workforce, partners, associates, and customers on one social network. The managers can assign tasks, discuss a project, make and rectify decisions<b> This tool is useful to: </b>. 
+       <li>•Chat, </li>
+        <li>• Share files on cloud memory. </li>
+        <li>• Share files on cloud memory. </li>
+        <li>• Conduct online calls and conferences. </li>
+      </p>
+  },
+  {
+    question: "Q5: How can Community Cloud enhance customer experience? ",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Community Cloud in Salesforce brings your customers to a well-designed social platform. The customers can give their feedback and reviews. They can express themselves about the products and services they buy.  
+       <p className="w-100" style={{ textAlign: "justify" }}>Along with this, customers can also use this platform to raise their service queries. The organizations can use this platform for:   </p>
+        <li>• Branding,   </li>
+        <li>• Marketing,   </li>
+        <li>• Getting referrals from existing customers,   </li>
+        <li>• Using customer feedback for product development, and   </li>
+        <li>• Offering service backup as a response to the service queries. </li>
+        <br></br>
+        <li> Thus, Salesforce Community Cloud enhances the customer experience.  </li>
+      </p>
+  },
+  
+];
+{/* ------------------------------End Faq Q/A--------------------------------- */ }
 
 const Services = ({ seo }) => {
   return (
@@ -30,6 +95,9 @@ const Services = ({ seo }) => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="goal-content style-two">
+              <h3 className="nunito-font">
+                  Introduction
+                </h3>
                 <p style={{ textAlign: "justify" }}>Modern-day businesses need to equip themselves with technology-driven tools for effective internal communication. Better customer relationship management is another challenge. Community Cloud Managed Services would be the best solution. The solution helps your business bring all crucial stakeholders on a single platform.</p>
                 <p style={{ textAlign: "justify" }}> Building an online community opens up many growth possibilities today. Investing in the enablement of communication tools is a must. It boosts the productivity of your business. Your key personnel can keep track of progress and assign tasks to the right teams. They can also attend to customer service queries right away.</p>
                 <p style={{ textAlign: "justify" }}>We work with hundreds of clients worldwide as a Community Cloud Third-Party Vendor. We put in place the world-class Salesforce Cloud-based communication tool. The tool helps our clients build their branded online communities. As globally acclaimed Community Cloud Service Providers, we provide Salesforce community cloud implementation services, community cloud support services, and Salesforce community cloud trainings to our clients.</p>
@@ -404,6 +472,32 @@ const Services = ({ seo }) => {
           </div>
         </div>
       </div>
+
+
+
+      <div className="faq-area pb-100">
+        <div className="container">
+          <div className="section-title">
+            <span className="sub-title dark-green-color">
+
+            </span>
+            <h2 className="nunito-font">
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div className="row align-items-center">
+            <div className="col-lg- col-md-12">
+              <div className="faq-accordion">
+                <div className="accordion" id="faqAccordion">
+                  <Accordion questionsAnswers={questionsAnswers} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <SubscribeStyle1 />
       <div className="border-tb" />
       <FooterOne />
