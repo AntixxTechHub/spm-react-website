@@ -7,6 +7,9 @@ import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
 import Accordion from "@/components/Accordion";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 
 import installing from "@/public/images/installing.jpg";
@@ -78,10 +81,12 @@ const questionsAnswers = [
   },
 ];
 
-const Services = () => {
+
+const Services = ({ seo }) => {
   return (
     <>
-      <PageTitle page="BMC Helix Digital WorkPlace" />
+    <PageSeo seo={seo} pageName = "Helix Digital WorkPlace" />
+      <PageTitle page="Helix Digital WorkPlace" />
       <Navbar />
       <PageTopTitle
         subTitle=""
@@ -109,7 +114,8 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={installing} alt="" />
+              <MediaImage name="BMC Helix DWP.jpg" data={seo} />
+
               </div>
             </div>
           </div>
@@ -340,5 +346,23 @@ const Services = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=bmc-helix-digital-work-place&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 export default Services;
