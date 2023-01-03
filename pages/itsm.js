@@ -6,15 +6,19 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 
 import dummyimg from "@/public/images/dummy-img.png";
 import dummyicon from "@/public/images/dummy-icon.png";
 
 
-const Services = () => {
+const Services = ({ seo }) => {
   return (
     <>
+    <PageSeo seo={seo} pageName = "ITSM" />
       <PageTitle page="ITSM" />
       <Navbar />
       <PageTopTitle
@@ -37,7 +41,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="IT Service Management Consulting Partner.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -53,7 +57,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="We Empower Your Business Through IT Service Management System.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -84,9 +88,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '550px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="We create a centralised IT support system.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>We Create a Centralised IT Support System</a>
@@ -99,9 +103,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '550px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Proper services level agreement configuration.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Proper Service Level Agreement Configuration</a>
@@ -114,9 +118,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '550px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Effective Vendor Performance Management.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Effective Vendor Performance Management</a>
@@ -133,9 +137,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '550px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Effective Employee Performance Management.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Effective Employee Performance Management</a>
@@ -148,9 +152,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '550px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Achieve well organised financial management for IT services.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Achieve Well-Organised Financial Management for IT Services</a>
@@ -163,9 +167,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '550px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Overcome IT Service Issues Due to Mergers and Acquisitions.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Overcome IT Service Issues Due to Mergers and Acquisitions</a>
@@ -193,7 +197,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Problem centric ITSM consulting.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Problem-Centric ITSM Consulting</a>
@@ -212,7 +216,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Selecting an appropriate ITSM plartform.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Selecting an Appropriate ITSM Platform</a>
@@ -227,7 +231,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Implementation of the desired ITSM platform.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Implementation of the Desired ITSM Platform</a>
@@ -249,7 +253,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Improving your ITSM as acontinous process.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Improving Your ITSM as a Continuous Process</a>
@@ -276,7 +280,9 @@ const Services = () => {
                   Technologies We Implement
                 </h2>
                 <p style={{ textAlign: "justify" }}>SPM Global Technologies are leading enterprise IT service management partners globally. We are certified vendors for various world-renowned ITSM solutions. We help you choose the best-suited ITSM platform, design, customise, develop, and implement them as per your business needs.</p>
+                <br></br>
                 <h6>We are Technology Partners with leading tech brands, such as:</h6>
+                <br></br>
                 <ul className="overview-list">
                   <li data-aos="fade-up" data-aos-duration="1200">
                     <i className="flaticon-draw-check-mark"></i>
@@ -336,7 +342,8 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="=" />
+              <MediaImage name="Discuss Your ITSM Requirements.jpg" data={seo} />
+
               </div>
             </div>
           </div>
@@ -349,5 +356,23 @@ const Services = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=itsm&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 export default Services;
