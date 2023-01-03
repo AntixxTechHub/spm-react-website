@@ -6,15 +6,20 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
+
 
 
 import dummyimg from "@/public/images/dummy-img.png";
 import dummyicon from "@/public/images/dummy-icon.png";
 
 
-const Services = () => {
+const Services = ({ seo }) => {
   return (
     <>
+    <PageSeo seo={seo} pageName = "Enterprise Apps" />
       <PageTitle page="Enterprise Apps" />
       <Navbar />
       <PageTopTitle
@@ -87,7 +92,7 @@ const Services = () => {
                 <h3>SPM Global Technologies
                   Your Most Trusted Enterprise App Services & Consulting Partner!
                 </h3>
-                <Image src={dummyimg} alt="" />
+                <MediaImage name="Revolutionary Enterprise App Solutions for Excellent Experiences.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -110,7 +115,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="App Development & Testing Roadmap.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -155,7 +160,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Agile Execution of App Development Process.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -174,9 +179,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{height: '500px'}}>
+              <div className="single-services-item style-two" style={{height: '700px'}}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="We Know the Technicalities.png" data={seo} />
+
                 </div>
                 <h5 className="nunito-font">
                   <a>We Know the Technicalities</a>
@@ -189,9 +195,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{height: '500px'}}>
+              <div className="single-services-item style-two" style={{height: '700px'}}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="We Are Highly Experienced.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>We Are Highly Experienced</a>
@@ -204,9 +210,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{height: '500px'}}>
+              <div className="single-services-item style-two" style={{height: '700px'}}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="We Are Flexible.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>We Are Flexible</a>
@@ -223,9 +229,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{height: '550px'}}>
+              <div className="single-services-item style-two" style={{height: '700px'}}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Round the Clock Technical Support.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Round the Clock Technical Support</a>
@@ -238,9 +244,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{height: '550px'}}>
+              <div className="single-services-item style-two" style={{height: '700px'}}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Sophisticated Access Control.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Sophisticated Access Control</a>
@@ -271,7 +277,7 @@ const Services = () => {
             >
               <div className="services-box" style={{height: '200px'}}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="The enterprise apps perform to their best..png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>The enterprise apps perform to their best.</a>
@@ -285,7 +291,7 @@ const Services = () => {
             >
               <div className="services-box" style={{height: '200px'}}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Applications work most efficiently..png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Applications work most efficiently.</a>
@@ -299,7 +305,7 @@ const Services = () => {
             >
               <div className="services-box" style={{height: '200px'}}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="The user experience delivered by the apps is excellent..png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>The user experience delivered by the apps is excellent.</a>
@@ -313,7 +319,8 @@ const Services = () => {
             >
               <div className="services-box" style={{height: '200px'}}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="integrations with business back-office functions, such as database, ERP, CRM, SaaS-based solutions, work effectively.png" data={seo} />
+
                 </div>
                 <h3 className="nunito-font">
                   <a>The integrations with business back-office functions, such as database, ERP, CRM, SaaS-based solutions, work effectively.</a>
@@ -329,9 +336,10 @@ const Services = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="goal-content style-two">
+              <h3>Discuss Your Enterprise App Requirements</h3>
                 <p style={{ textAlign: "justify" }}>You don’t need to employ a technical workforce for application management, as we perform this crucial task through our end. We leverage modern enterprise application management tools. We help you augment your enterprise app management capabilities.</p>
                 <p style={{ textAlign: "justify" }}>We maintain, monitor, and enhance your enterprise apps by resolving bugs from time to time. We remain with you throughout your digital transformation journey. We also ensure that your app usage is trouble-free, and the enterprise app serves as a centralised platform to govern your business.</p>
-                <h3>Discuss Your Enterprise App Requirements</h3>
+                
                 <p style={{ textAlign: "justify" }}>Please feel free to contact us by specifying your requirements for consulting, adoption, development, and management of world-class enterprise apps. Our enterprise app experts will be happy to resolve your queries and let you know what best we offer.</p>
               </div>
             </div>
@@ -341,7 +349,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Discuss Your Enterprise App Requirements.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -355,4 +363,22 @@ const Services = () => {
   );
 };
 
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=enterprise-apps&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 export default Services;
