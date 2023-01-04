@@ -7,6 +7,9 @@ import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
 import Accordion from "@/components/Accordion";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 
 import bmc from "@/public/images/icon/bmc.png";
@@ -94,10 +97,11 @@ const questionsAnswers = [
   },
 ];
 
-const Services = () => {
+const Services = ({ seo }) => {
+  
   return (
     <>
-      <PageTitle page="BMC TrueSight" />
+      <PageSeo seo={seo} pageName = "BMC TrueSight" />
       <Navbar />
       <PageTopTitle
         subTitle=""
@@ -156,10 +160,10 @@ const Services = () => {
                     <p>
                       <p style={{ textAlign: "justify" }}>This constitutes to be a capacity management service, offering the acumen for IT resource optimization to plan the new. The technique facilitates BMC TSOM Service Providers in collecting and analyzing the capacity data and core metrics for Central Processing Units, memory, as well as storage, and offers recommendations for optimizing them. Through BMC TrueSight Capacity Optimization, IT professionals can model future resource requirements and analyze what IT resources you would require. The IT infrastructure comprises physical, virtual, private cloud, as well as public clouds.</p>
                         <p style={{ marginBottom: '5px' }}><strong>capabilities of BMC TrueSight Capacity Optimization include:</strong></p>
-                        <p style={{ marginBottom: '5px' }}><strong>•</strong> visibility</p>
-                        <p style={{ marginBottom: '5px' }}><strong>•</strong> management</p>
-                        <p style={{ marginBottom: '5px' }}><strong>•</strong> optimization</p>
-                        <p style={{ marginBottom: '5px' }}> <strong>•</strong> planning</p>
+                        <p style={{ marginBottom: '5px' }}><strong>•</strong> Capacity visibility</p>
+                        <p style={{ marginBottom: '5px' }}><strong>•</strong> Risk  management</p>
+                        <p style={{ marginBottom: '5px' }}><strong>•</strong>Resource optimization</p>
+                        <p style={{ marginBottom: '5px' }}> <strong>•</strong>Capacity planning</p>
                       </p>
                   </li>
                   <li data-aos="fade-up" data-aos-duration="1200">
@@ -222,7 +226,8 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={proactiveanalytics} alt="" />
+                <MediaImage name="PRO-ACTIVE-ANALYTICS.png" data={seo} />
+
                 </div>
                 <h5 className="nunito-font">
                   Proactive analytics
@@ -239,7 +244,8 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={usercentricperformance} alt="" />
+                <MediaImage name="USER-CENTRICS-PERFORMANCE.png" data={seo} />
+
                 </div>
                 <h5 className="nunito-font">
                   User-centric performance
@@ -256,7 +262,8 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                <MediaImage name="Mobile-ready.png" data={seo} />
+
                 </div>
                 <h5 className="nunito-font">
                   Mobile-ready
@@ -273,7 +280,8 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                <MediaImage name="Capacity-Insight.png" data={seo} />
+
                 </div>
                 <h5 className="nunito-font">
                   Capacity insight
@@ -290,7 +298,8 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={reporting} alt="" />
+                <MediaImage name="REPORTING.png" data={seo} />
+
                 </div>
                 <h5 className="nunito-font">
                   Reporting
@@ -300,7 +309,8 @@ const Services = () => {
               </div>
               <div className="services-box">
                 <div className="icon">
-                  <Image src={rootcauseinvestigation} alt="" />
+                <MediaImage name="ROOT-CAUSE-INVESTIGATION.png" data={seo} />
+
                 </div>
                 <h5 className="nunito-font">
                   Root-cause investigation
@@ -392,7 +402,8 @@ const Services = () => {
             >
               <div className="single-services-box" style={{ height: '425px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="man-with-son-image" />
+                <MediaImage name="Virtual-network-management-support.png" data={seo} />
+
                 </div>
                 <h3>
                   <a>Virtual network management support</a>
@@ -410,7 +421,8 @@ const Services = () => {
             >
               <div className="single-services-box" style={{ height: '425px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="man-with-son-image" />
+                <MediaImage name="Monitoring-performance-of-application-infrastructure-middleware.png" data={seo} />
+
                 </div>
                 <h3>
                   <a>Monitoring performance of applications, infrastructure & middleware</a>
@@ -429,7 +441,8 @@ const Services = () => {
             >
               <div className="single-services-box" style={{ height: '425px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="man-with-son-image" />
+                <MediaImage name="Dynamic-application-Visualization.png" data={seo} />
+
                 </div>
                 <h3>
                   <a>Dynamic application visualization</a>
@@ -446,7 +459,8 @@ const Services = () => {
             >
               <div className="single-services-box" style={{ height: '425px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="man-with-son-image" />
+                <MediaImage name="Decreasing-event-noise-with-IT-analytics.jpg" data={seo} />
+
                 </div>
                 <h3>
                   <a>Decreasing event noise with IT analytics</a>
@@ -463,7 +477,8 @@ const Services = () => {
             >
               <div className="single-services-box" style={{ height: '425px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="man-with-son-image" />
+                <MediaImage name="Getting-proactive-with-log-analytics-making-root-cause-analysis.png" data={seo} />
+
                 </div>
                 <h3>
                   <a>Getting proactive with log analytics & making root cause analysis</a>
@@ -480,7 +495,8 @@ const Services = () => {
             >
               <div className="single-services-box" style={{ height: '425px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="man-with-son-image" />
+                <MediaImage name="Comprehending service impact of events.png" data={seo} />
+
                 </div>
                 <h3>
                   <a>Comprehending service impact of events</a>
@@ -497,7 +513,8 @@ const Services = () => {
             >
               <div className="single-services-box" style={{ height: '425px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="man-with-son-image" />
+                <MediaImage name="Automatic-incidence-prioritization.png" data={seo} />
+
                 </div>
                 <h3>
                   <a>Automatic incidence prioritization</a>
@@ -513,7 +530,8 @@ const Services = () => {
             >
               <div className="single-services-box" style={{ height: '425px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="man-with-son-image" />
+                <MediaImage name="Mechanize-event-remediation-self-healing.png" data={seo} />
+
                 </div>
                 <h3>
                   <a>Mechanize event remediation & self-healing</a>
@@ -547,7 +565,8 @@ const Services = () => {
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                  <Image src={dummyimg} alt="" />
+                <MediaImage name="BMC Bladelogic network automation.jpg" data={seo} />
+
                 </div>
                 <h5 className="nunito-font">
                   <a>BMC BladeLogic Network Automation</a>
@@ -562,7 +581,8 @@ const Services = () => {
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                  <Image src={dummyimg} alt="" />
+                <MediaImage name="BMC TrueSight Capacity Optimization.png" data={seo} />
+
                 </div>
                 <h5 className="nunito-font">
                   <a>BMC TrueSight Capacity Optimization</a>
@@ -578,7 +598,8 @@ const Services = () => {
             >
               <div className="single-services-item style-two" style={{ height: '1100px' }}>
                 <div className="icon">
-                  <Image src={dummyimg} alt="" />
+                <MediaImage name="BMC remedy IT services management suit.jpg" data={seo} />
+
                 </div>
                 <h5 className="nunito-font">
                   <a>BMC Remedy IT Service Management Suite</a>
@@ -591,9 +612,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two">
+              <div className="single-services-item style-two"  style={{ height: '1100px' }}>
                 <div className="icon">
-                  <Image src={dummyimg} alt="" />
+                <MediaImage name="BMC Atrium Orchestrator.jpg" data={seo} />
+
                 </div>
                 <h5 className="nunito-font">
                   <a>BMC Atrium Orchestrator</a>
@@ -636,5 +658,24 @@ const Services = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=bmc-truesight&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
+
 
 export default Services;
