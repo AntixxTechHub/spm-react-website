@@ -70,7 +70,6 @@ const questionsAnswers = [
   },
 ];
 
-
 const Services = ({ seo }) => {
   
   return (
@@ -277,8 +276,8 @@ const Services = ({ seo }) => {
                 <div className="goal-text">
 
                   <ul className="overview-list">
-                    <li data-aos="fade-up" data-aos-duration="1200" style={{ height: '300px' }}>
-                      <i><Image src={dummyicon} alt="" /></i>
+                    <li data-aos="fade-up" data-aos-duration="1200" style={{ height: '430px' }}>
+                    <MediaImage name="Deployment Functionalities1.png" data={seo} />
                       <h3>Deployment Functionalities</h3>
                       <p><strong>1.</strong> Available on enterprise</p>
                       <p><strong>2.</strong> Available on SaaS environment</p>
@@ -287,9 +286,9 @@ const Services = ({ seo }) => {
                     <li
                       data-aos="fade-up"
                       data-aos-duration="1200"
-                      style={{ height: '300px' }}
+                      style={{ height: '430px' }}
                     >
-                      <i><Image src={dummyicon} alt="" /></i>
+                      <MediaImage name="Self Services Reporting Functionalities1.png" data={seo} />
                       <h3>Self Service Reporting Functionalities</h3>
                       <p><strong>1.</strong> Easy report creation with drag & drop facility</p>
                       <p><strong>2.</strong> Rich data visualization</p>
@@ -304,8 +303,8 @@ const Services = ({ seo }) => {
                 <div className="goal-text">
 
                   <ul className="overview-list">
-                    <li data-aos="fade-up" data-aos-duration="1200" style={{ height: '300px' }}>
-                      <i><Image src={dummyicon} alt="" /></i>
+                    <li data-aos="fade-up" data-aos-duration="1200" style={{ height: '430px' }}>
+                    <MediaImage name="Improved Collaboration Functionalities1.png" data={seo} />
                       <h3>Improved Collaboration Functionalities</h3>
                       <p><strong>1.</strong> Broadcasting of reports</p>
                       <p><strong>2.</strong> Commenting on reports</p>
@@ -316,9 +315,10 @@ const Services = ({ seo }) => {
                     <li
                       data-aos="fade-up"
                       data-aos-duration="1200"
-                      style={{ height: '300px' }}
+                      style={{ height: '430px' }}
                     >
-                      <i><Image src={dummyicon} alt="" /></i>
+                      <MediaImage name="Administration Functionalities2.png" data={seo} />
+
                       <h3>Administration Functionalities</h3>
                       <p><strong>1.</strong> Custom reports/dashboards creation</p>
                       <p><strong>2.</strong> Out-of-the-box KPI metrics for quick assessment</p>
