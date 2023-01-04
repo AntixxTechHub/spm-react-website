@@ -7,7 +7,9 @@ import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
 import Accordion from "@/components/Accordion";
-
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 
 import ControlM from "@/public/images/Control-M.jpg";
@@ -94,11 +96,11 @@ const questionsAnswers = [
   },
 ];
 
-
-const Services = () => {
+const Services = ({ seo }) => {
+  
   return (
     <>
-      <PageTitle page="BMC Control-M" />
+      <PageSeo seo={seo} pageName = "BMC TrueSight" />
       <Navbar />
       <PageTopTitle
         subTitle=""
@@ -145,7 +147,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two" style={{ height: '800px' }}>
                 <div className="icon">
-                  <Image src={Powerfulworkflow} alt="" />
+                <MediaImage name="Powerful workflow orchestration.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Powerful Workflow Orchestration</a>
@@ -243,7 +245,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two" style={{ height: '850px' }}>
                 <div className="icon">
-                  <Image src={ControlM} alt="icon" />
+                <MediaImage name="Trained and certified IT Professionals.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   Trained and Certified IT Professionals
@@ -388,5 +390,24 @@ const Services = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=bmc-control-m&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
+
 
 export default Services;
