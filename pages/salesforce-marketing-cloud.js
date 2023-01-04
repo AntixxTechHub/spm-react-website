@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Accordion from "@/components/Accordion";
 import PageTitle from "@/components/Layout/PageTitle";
 import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
@@ -8,11 +9,66 @@ import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
 import dummyimg from "@/public/images/dummy-img.png";
 import dummyicon from "@/public/images/dummy-icon.png";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 
-const Services = () => {
+
+{/* ------------------------------Faq Q/A--------------------------------- */ }
+const questionsAnswers = [
+  {
+    question: "Q1. Is it good to invest for Salesforce Marketing Cloud integration?  ",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Yes, the increasing numbers of Marketing Cloud customer in diverse business sectors certify the importance of Salesforce Marketing Cloud integration. It is more important than ever before to develop and foster real relationships with existing and potential customers. The improved experience of customer journey drives in more revenue and improves ROI because of increased leads generation, conversion rate, and faster closing of deals with lessen efforts.    </p>
+
+  },
+  {
+    question: "Q2. Can I optimize the purchase of Marketing Cloud products as per my budget? ",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Yes
+       <p className="w-100" style={{ textAlign: "justify" }}>Salesforce Marketing Cloud offers a range of subscription plans facilitating you to choose the different products. You can switch the subscription according to varying needs. Our Marketing Cloud specialists will help you choose the right Salesforce Marketing Cloud plan.  </p> 
+
+      </p>
+  },
+  {
+    question: "Q3. What are channels that I can use to reach customers more effectively through Salesforce Marketing Cloud help? ",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Marketing Cloud provides a unified window to manage cross-channel content that strengthens your brand to deliver a consistent experience throughout the customer journey. Marketing Cloud helps you use email, mobile, social platforms, advertisements, apps, or web content to tap the customers more effectively at right time in the right manner.
+       
+      </p>
+  },
+  {
+    question: "Q4. What is difference between Salesforce Marketing Cloud and Salesforce Sales Cloud? ",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>Salesforce Sales Cloud is more oriented to CRM while Salesforce Marketing Cloud is more oriented to marketing automation. Journey Builder, Email Studio and Salesforce DMP are the key features of Marketing Cloud. Sales Cloud is featured with contact management, opportunity management, lead management, reports /dashboards, mobile, and email integration.
+        
+      </p>
+  },
+  {
+    question: "Q5. What is the learning scope of Marketing Cloud Salesforce trainings? ",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}>During the self-paced learning training or instructor-led live training for Marketing Cloud certification, you learn to use all the features and functionalities to maximize the ROI of strategic marketing efforts. You come across hands-on practices for automation, journey builder, contact builder, and data design etc. :
+        
+      </p>
+  },
+  {
+    question: "Q6. Is Marketing Cloud linked with Google Analytics 360?  ",
+    answer:
+      <p className="w-100" style={{ textAlign: "justify" }}> Yes. Google Analytics 360 can be integrated with Marketing Cloud. Salesforce Marketing Cloud helps you access advanced marketing solutions provided by Google Marketing Platform. Marketing Cloud helps you turn the data-driven insights gained with Google Analytics 360 into action.   
+        
+      </p>
+  },
+  
+];
+
+{/* ------------------------------End Faq Q/A--------------------------------- */ }
+
+
+const Services = ({ seo }) => {
   return (
     <>
+    <PageSeo seo={seo} pageName = "Salesforce Marketing Cloud" />
       <PageTitle page="Salesforce Marketing Cloud" />
       <Navbar />
       <PageTopTitle
@@ -26,12 +82,10 @@ const Services = () => {
               <div className="goal-content style-two">
                 <h4>Welcome to SPM Global Technologies- The Leading Salesforce Marketing Cloud Service Providers!</h4>
                 <p style={{ textAlign: "justify" }}>Salesforce Marketing Cloud (SFMC) is features an enriched marketing automation platform that helps you improve customer engagement with fostered personalized experience. SPM Global Technologies as the top-performing Marketing Cloud Third Party Vendor and dependable Marketing Cloud consultant offer objective-oriented Marketing Cloud Support services.</p>
-                <h4 className="nunito-font">
-                  Qlik Sense Consultant
-                </h4>
+                
                 <h6>Salesforce Marketing Cloud – A Game Changer SaaS Platform
                 </h6>
-                <p style={{ textAlign: "justify" }}>Outsourcing Marketing Cloud managed services have become an increasing trend for businesses poised to grow by improving customer relationships and engagement. As being a prominent Marketing Cloud vendor, SPM Global Technologies adds more value to features & functionalities of SFMC that become a game-changer for the performance and growth rate of private and public sector businesses in automotive, communications, CPG/retail, financial services, healthcare, higher education, life sciences, manufacturing, media, non-profit</p>
+                <p style={{ textAlign: "justify" }}>Outsourcing Marketing Cloud managed services have become an increasing trend for businesses poised to grow by improving customer relationships and engagement. As being a prominent Marketing Cloud vendor, SPM Global Technologies adds more value to features & functionalities of SFMC that become a game-changer for the performance and growth rate of private and public sector businesses in automotive, communications, CPG/retail, financial services, healthcare, higher education, life sciences, manufacturing, media, non-profit activities trades operating on B2C and/or B2B models.  </p>
                 <p style={{ textAlign: "justify" }}>In the capacity of Marketing Cloud consultant or Salesforce marketing Cloud Service providers, we offer a purpose-oriented comprehensive range of on-site and virtual Salesforce trainings facilitating you to enrol for the best suitable and required Salesforce Marketing Cloud trainings that have become a must-have competitive advantage for-</p>
                 <ul className="overview-list">
                   <li data-aos="fade-up" data-aos-duration="1200">
@@ -61,7 +115,8 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="qlik sense consultant.png" data={seo} />
+
               </div>
             </div>
           </div>
@@ -153,7 +208,7 @@ const Services = () => {
                   data-aos-duration="1200"
                 >
                   <a className="btn-style-one dark-green-color" style={{ textAlign: "justify" }}>
-                    Our Salesforce Marketing cloud experts optimize each functionality to give an edge to marketing campaigns and individuals’ performances. We analyze your concerns and data to explore the possibilities and chart out the best strategy for Marketing Cloud implementation. Our tailor-made Marketing Cloud Managed Services help you embrace particular features and capabilities: </a>
+                    Our Salesforce Marketing cloud experts optimize each functionality to give an edge to marketing campaigns and individuals’ performances. We analyze your concerns and data to explore the possibilities and chart out the best strategy for Marketing Cloud implementation. Our tailor-made Marketing Cloud Managed Services help you embrace particular features and capabilities. </a>
                 </div>
               </div>
             </div>
@@ -171,7 +226,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="salesforce marketing social studio.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   Salesforce Marketing Social Studio
@@ -186,7 +241,8 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="salesforce marketing email studio.jpg" data={seo} />
+
                 </div>
                 <h5 className="nunito-font">
                   Salesforce Marketing Email Studio
@@ -201,7 +257,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="salesforce marketing advertising studio.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   Salesforce Marketing Advertising Studio
@@ -216,7 +272,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="salesforce mulesoft integration.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   Salesforce MuleSoft Integration
@@ -231,7 +287,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Salesforce Einstein AI.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Salesforce Einstein AI</a>
@@ -246,7 +302,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Salesforce marketing pardot for B2B marketing.jpg" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Salesforce Marketing Pardot for B2B Marketing</a>
@@ -261,7 +317,8 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="salesforce lightening enablement pack.png" data={seo} />
+
                 </div>
                 <h3 className="nunito-font">
                   <a>Salesforce Lightning Enablement Pack</a>
@@ -276,7 +333,8 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Salesforce chatter for enterprise social network.png" data={seo} />
+
                 </div>
                 <h3 className="nunito-font">
                   <a>Salesforce Chatter for Enterprise Social Network</a>
@@ -291,7 +349,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Salesforce marketing DMP audience studio.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Salesforce Marketing DMP Audience Studio</a>
@@ -306,7 +364,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="salesforce productivity tools to improve sales.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Salesforce Productivity Tools to Improve Sales</a>
@@ -321,7 +379,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="salesforce marketing cloud connect.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Salesforce Marketing Cloud Connect</a>
@@ -385,7 +443,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="SALESFORCE-MARKETING-CLOUD-BENEFITS.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -401,7 +459,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Third-party-vendor-and-marketing-cloud-consultant.jpg" data={seo} />
               </div>
             </div>
 
@@ -570,11 +628,58 @@ const Services = () => {
         </div>
       </div>
       <div className="border-tb" />
+
+
+      <div className="faq-area pb-100">
+        <div className="container">
+          <div className="section-title">
+            <span className="sub-title dark-green-color">
+
+            </span>
+            <h2 className="nunito-font">
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div className="row align-items-center">
+            <div className="col-lg- col-md-12">
+              <div className="faq-accordion">
+                <div className="accordion" id="faqAccordion">
+                  <Accordion questionsAnswers={questionsAnswers} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <SubscribeStyle1 />
       <div className="border-tb" />
       <FooterOne />
     </>
   );
 };
+
+      
+
+
+
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=salesforce-marketing-cloud&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 export default Services;
