@@ -117,7 +117,7 @@ const CaseStudies = () => {
               <p>
                 We facilitate seamless communication and data transfer across applications.
               </p>
-              <Link href="/coming-soon">
+              <Link href="/aws-cloud-migration">
                 <a className="btn-style-one light-green-color">
                   View more...
                 </a>
