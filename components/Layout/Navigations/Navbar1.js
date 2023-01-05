@@ -342,7 +342,7 @@ const Navbar5 = () => {
                                     <Link
                                       href="/coming-soon">
                                       <a className="nav-link">
-                                        AWS Market Enablement...
+                                        AWS Market Enablement
                                       </a>
                                     </Link>
                                   </li>
