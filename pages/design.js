@@ -6,34 +6,20 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
-
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 import dummyimg from "@/public/images/dummy-img.png";
 import dummyicon from "@/public/images/dummy-icon.png";
 
-const Services = () => {
-  const [display, setDisplay] = React.useState(false);
 
-  React.useEffect(() => {
-    setDisplay(true);
-  }, []);
 
-  // SEO Local Pages API
-  const [testimonials, setpage] = React.useState();
-  React.useEffect(() => {
-    const getpage = async () => {
-      const response = await axios.get(
-        `${baseApiUrl}/api/page?populate=*`
-      );
-      setpage(response.data);
-      // console.log(response.data)
-    };
-    getpage();
-  }, []);
-
-  return (
-    <>
-      <PageTitle page="Design" />
+  const Services = ({ seo }) => {
+  
+    return (
+      <>
+        <PageSeo seo={seo} pageName = " Design" />
       <Navbar />
       <PageTopTitle
         subTitle=""
@@ -77,7 +63,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two" style={{ height: '550px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="UX Research1.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>UX Research</a>
@@ -93,7 +79,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two" style={{ height: '550px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="UX Design.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>UX Design</a>
@@ -109,7 +95,8 @@ const Services = () => {
             >
               <div className="single-services-item style-two" style={{ height: '550px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="UI Design.png" data={seo} />
+
                 </div>
                 <h5 className="nunito-font">
                   <a>UI Design</a>
@@ -128,7 +115,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two" style={{ height: '550px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Usability Testing.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Usability Testing</a>
@@ -144,7 +131,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two" style={{ height: '550px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Design Audit.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Design Audit</a>
@@ -166,7 +153,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Proven Design process lead to sucess.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -189,5 +176,24 @@ const Services = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=design&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
+
 
 export default Services;
