@@ -127,7 +127,7 @@ const CaseStudies = () => {
                                 <Image src={ecommerce} alt="icon" />
                             </div>
                             <h3 className="nunito-font">
-                                <a>e-Commerce</a>
+                                <a>E-Commerce</a>
                             </h3>
                             <p>
                                 Take your product range to buyers on a global scale using our custom eCommerce portals and apps.
