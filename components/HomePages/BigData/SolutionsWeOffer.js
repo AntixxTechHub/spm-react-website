@@ -246,7 +246,7 @@ const CaseStudies = () => {
                             <p>
                                 Make perfect decisions by analyzing a huge amount of data flowing through various directions by adopting our Data Analytics Solutions.
                             </p>
-                            <Link href="/data-analytics">
+                            <Link href="/analytics">
                                 <a className="link-btn">
                                     Learn More <i className="bx bx-chevron-right"></i>
                                 </a>
