@@ -7,6 +7,10 @@ import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
 import Accordion from "@/components/Accordion";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
+
 
 import dummyicon from "@/public/images/dummy-icon.png";
 import bmc from "@/public/images/icon/bmc.svg";
@@ -60,10 +64,11 @@ const questionsAnswers = [
 ];
 
 
-const Services = () => {
+const Services = ({ seo }) => {
+  
   return (
     <>
-      <PageTitle page="BMC Helix Discovery" />
+      <PageSeo seo={seo} pageName = " BMC Helix Discovery" />
       <Navbar />
       <PageTopTitle
         subTitle=""
@@ -340,7 +345,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="BMC-Discovery-Outpost.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   BMC Discovery Outpost:
@@ -355,7 +360,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="BMC-Helix-Discovery-Services.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   BMC Helix Discovery Service:
@@ -370,7 +375,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="icon" />
+                <MediaImage name="Security-Communication.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   Security of Communication
@@ -385,7 +390,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="CMDB-Synchronization.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   CMDB Synchronization
@@ -400,7 +405,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Data-Provenance.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Data Provenance:</a>
@@ -480,7 +485,7 @@ const Services = () => {
                 >
                   <div className="single-services-item style-two" style={{ height: '450px' }}>
                     <div className="icon">
-                      <Image src={bmc} alt="" />
+                    <MediaImage name="bmc helix discovery troubleshooting 1.png" data={seo} />
                     </div>
                     <h5 className="nunito-font">
                       BMC Helix Discovery Troubleshooting
@@ -660,5 +665,25 @@ const Services = () => {
     </>
   );
 };
+
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=bmc-helix-discovery&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
+
 
 export default Services;
