@@ -7,6 +7,10 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
+import baseApiUrl from "@/utils/baseApiUrl";
+
 
 
 import bmcheliximplementation from "@/public/images/bmcheliximplementation.jpg";
@@ -14,10 +18,12 @@ import analytics from "@/public/images/icon/analytics.svg";
 import dummyimg from "@/public/images/dummy-img.png";
 
 
-const Services = () => {
+
+const Services = ({ seo }) => {
+  
   return (
     <>
-      <PageTitle page="Analytics" />
+      <PageSeo seo={seo} pageName = "Analytics" />
       <Navbar />
       <PageTopTitle
         subTitle=""
@@ -35,9 +41,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '500px' }}>
                 <div className="icon">
-                  <Image src={analytics} alt="" />
+                <MediaImage name="Qlik View.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/qlikview">
@@ -45,7 +51,7 @@ const Services = () => {
                   </Link>
                 </h5>
                 <p>
-                  QlikView is a business intelligence tool for data integration, conversational analytics, and converting raw data into a knowledge base. QlikView contributes to features for ad hoc queries and...</p>
+                  QlikView is a business intelligence tool for data integration, conversational analytics, and converting raw data into a knowledge base. QlikView contributes to features for ad hoc queries and.</p>
                 <Link href="/qlikview">
                   <a className="link-btn">
                     View More <i className="bx bx-chevron-right"></i>
@@ -58,9 +64,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '500px' }}>
                 <div className="icon">
-                  <Image src={analytics} alt="" />
+                <MediaImage name="Tableau.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/tableau">
@@ -81,13 +87,13 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '500px' }}>
                 <div className="icon">
-                  <Image src={analytics} alt="" />
+                <MediaImage name="Powerbi.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/power-bi">
-                    <a>Powerbi</a>
+                    <a>PowerBi</a>
                   </Link>
                 </h5>
                 <p>
@@ -109,9 +115,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '500px' }}>
                 <div className="icon">
-                  <Image src={analytics} alt="" />
+                <MediaImage name="Qlik Sense.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/qliksense">
@@ -131,9 +137,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '400px' }}>
+              <div className="single-services-item style-two" style={{ height: '500px' }}>
                 <div className="icon">
-                  <Image src={analytics} alt="" />
+                <MediaImage name="SAP Analytics.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/sap-analytics">
@@ -339,5 +345,23 @@ const Services = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=analytics&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 export default Services;
