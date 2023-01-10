@@ -111,7 +111,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-              <MediaImage name="BMC-Helix-ITSM-a-robust-services-management-platforms-revolutionizing-IT1.jpg" data={seo} />
+              <MediaImage name="BMC-Helix-ITSM-a-robust-services-management-platforms-revolutionizing-IT.png" data={seo} />
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-              <MediaImage name="BMC-Helix-ITSM-Scenario-supporting-the-development-of-BMC-Helix-ITSM.jpg" data={seo} />
+              <MediaImage name="BMC-Helix-ITSM-Scenario-Supporting-the-development-of-BMC-Helix-ITSM.png" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
