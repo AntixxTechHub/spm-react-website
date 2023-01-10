@@ -6,16 +6,21 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
+import ContactForm from "@/components/Contact/ContactForm";
+import baseApiUrl from "@/utils/baseApiUrl";
 
 
 import dummyimg from "@/public/images/dummy-img.png";
 import dummyicon from "@/public/images/dummy-icon.png";
 
 
-const Services = () => {
+const Services = ({ seo }) => {
+  
   return (
     <>
-      <PageTitle page="Tableau" />
+      <PageSeo seo={seo} pageName = "Tableau" />
       <Navbar />
       <PageTopTitle
         subTitle="Analytics"
@@ -39,7 +44,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Tableau.png" data={seo} />
               </div>
             </div>
           </div>
@@ -55,7 +60,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Features of the Tableau analytics platform.png" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -90,9 +95,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '575px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <Image src={dummyimg} alt="" />
                 </div>
                 <h5 className="nunito-font">
                   Maps
@@ -110,9 +115,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '575px' }}>
+              <div className="single-services-item style-two" style={{ height: '710px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                  
+                <MediaImage name="Strong Security.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   Strong Security
@@ -131,9 +137,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '575px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Mobile View.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   Mobile View
@@ -154,9 +160,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '460px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Ask Data.jpg" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   Ask Data
@@ -181,7 +187,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Tableau analytics solution installation process.png" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -213,7 +219,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Custom Tableau installation and management.png" data={seo} />
               </div>
             </div>
           </div>
@@ -229,7 +235,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Exemplary Tableau managed services.png" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -251,5 +257,24 @@ const Services = () => {
     </>
   );
 };
+
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=tableau&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 export default Services;
