@@ -10,6 +10,7 @@ import Accordion from "@/components/Accordion";
 import baseApiUrl from "@/utils/baseApiUrl";
 import PageSeo from "../components/Common/PageSeo";
 import MediaImage from "../components/Common/Media";
+import Service1 from "@/components/Contact/Service1";
 
 
 import dummyicon from "@/public/images/dummy-icon.png";
@@ -661,6 +662,7 @@ const Services = ({ seo }) => {
       </div>
 
       <SubscribeStyle1 />
+      <Service1 />
       <FooterOne />
     </>
   );

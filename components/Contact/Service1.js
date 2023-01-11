@@ -23,11 +23,12 @@ const services = () => {
   
   return (
     <>
-      <PageTitle page="Service1" />
+      {/* <PageTitle page="Service1" />
       <Navbar />
       <PageTopTitle
         subTitle=""
-        title="Contact US" />
+        title="Contact US" /> */}
+        <h2><center> Get A Free Trial Service </center></h2>
 
      <div className="goal-area ptb-100">
         <div className="container">
@@ -150,5 +151,24 @@ const services = () => {
     </>
   );
 };
+
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=erp&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 export default services ;
