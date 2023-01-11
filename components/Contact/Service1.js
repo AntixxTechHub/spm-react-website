@@ -106,7 +106,7 @@ const services = () => {
                     
                     <div className="col-lg-12 col-md-12 col-sm-12">
                       <div className="form-group">
-                        <label>Message...</label>
+                        <label>Message..</label>
                         <textarea
                           cols="30"
                           rows="6"
