@@ -484,7 +484,7 @@ vendor management, inventory management, logistics management and control.</p>
               <h4>Manage Your Business from Almost Anywhere!  </h4>
               {/* <p>Get in touch with our ITSM experts today to discuss your business-specific needs related to ITSM. We will get back to you to discuss your pain points, resolve your queries, and discuss what best we offer.</p> */}
               <ul className="overview-list">
-                  <li>•Easily accessible ERP solutions through different devices and modes.  .</li>
+                  <li>•Easily accessible ERP solutions through different devices and modes. </li>
                   <li>•	Full-function Web Application.  </li>
                   <li>•	Desktop App for some software modules with a complicated user interface.  </li>
                   <li>•	Workflow automation notifications, operations monitoring dashboards, and more on Mobile Apps.    </li>
@@ -516,6 +516,7 @@ vendor management, inventory management, logistics management and control.</p>
       <Service1 />
 
       <FooterOne />
+      
     </>
   );
 };
