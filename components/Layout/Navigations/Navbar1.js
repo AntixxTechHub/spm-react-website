@@ -482,7 +482,7 @@ const Navbar5 = () => {
                                         <Link
                                           href="/coming-soon">
                                           <a className="nav-link">
-                                            System & Software
+                                            System And Software
                                           </a>
                                         </Link>
                                       </li>
