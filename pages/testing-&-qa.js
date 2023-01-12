@@ -91,7 +91,7 @@ const Services = ({ seo }) => {
             <div className="col-lg-6 col-md-12">
               <div className="goal-content">
                 <h4 className="nunito-font">
-                Importance of Automated Testing to Ensure Consistent Quality 
+                Importance of Automated Testing to Ensure Consistent Quality. 
                 </h4>
                 
                 <p className="w-100" style={{ textAlign: "justify" }}>Software testing and quality assurance play a critical role in the delivery of software products, applications, e-commerce portals, SaaS solutions, and IoT set-up involving software interacting with hardware components. 
