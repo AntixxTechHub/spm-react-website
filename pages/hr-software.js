@@ -6,29 +6,36 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
+
 
 import goalImg from "@/public/images/goal.png";
 import manWithSon from "@/public/images/man-with-son.png";
 import bmc from "@/public/images/icon/bmc.png";
 
+import dummyimg from "@/public/images/dummy-img.png";
+import dummyicon from "@/public/images/dummy-icon.png";
 
-const Services = () => {
+const Services = ({ seo }) => {
   return (
     <>
+    <PageSeo seo={seo} pageName = "HR Software" />
       <PageTitle page="HR Software" />
       <Navbar />
       <PageTopTitle
         subTitle=""
         title="HR Software" />
 
-      {/* <div className="goal-area ptb-100">
+      <div className="goal-area ptb-100">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="goal-content style-two">
-                <h3>Your Most Trusted IT Service Management Consulting Partner!</h3>
-                <p style={{ textAlign: "justify" }}>You must effectively manage software solutions, hardware, overall IT infrastructure, and your computing resources during the digital transformation. SPM Global Technologies takes care of these aspects through ITSM (IT Service Management) by leveraging extensive experience and expertise in ITSM for all sizes of companies.</p>
-                <p style={{ textAlign: "justify" }}>We offer Enterprise IT Service Management to help you deliver your services faster and with the best service quality.</p>
+                <h3>Your Preferred HR Software Development & Software Solution Partner </h3>
+                <p style={{ textAlign: "justify" }}>Reduce your product development costs and have a competitive edge in HR SaaS Solutions Market by assigning your HR Software projects to us. We are the one-stop solution for all your HR Software requirements!.</p>
+                <p style={{ textAlign: "justify" }}>We design, develop, and deploy the best Human Resource management system software. Our well-designed Human Resource Software helps you bring all your HR operations on a robust and user-friendly platform. You can sync recruitment, training, development initiatives, payroll and benefits management and more and orchestrate HR operations.  .</p>
               </div>
             </div>
             <div
@@ -59,11 +66,15 @@ const Services = () => {
             <div className="col-lg-6 col-md-12">
               <div className="goal-content">
                 <h3 className="nunito-font">
-                  We Empower Your Business Through IT Service Management System
+                HR System Architecture We Design 
+
                 </h3>
-                <p style={{ textAlign: "justify" }}>•	We develop an IT system management and enterprise architecture. We customise the solution to your business-specific needs and consider your IT infrastructure and environment.</p>
-                <p style={{ textAlign: "justify" }}>•	We deploy the most effective IT service management system tools to help you improve the management of IT assets, incidents, and changes. We help you make the most of your knowledge base for your routine business operations.</p>
-                <p style={{ textAlign: "justify" }}>•	We implement an IT service management platform to help you orchestrate your workflow, and organize your development, testing, and release processes. You can effectively standardize your IT procedures by using the features of this platform.</p>
+ <p style={{ textAlign: "justify" }}>We partner with well-known Cloud platforms like AWS, Google Cloud, IBM Cloud, and Microsoft Azure. We can develop Human Resource Management System Software on your desired cloud to help you sync them with your current business apps. We also provide on-premise and hybrid HR Solutions and mobile applications per your needs. </p>
+
+                <p style={{ textAlign: "justify" }}>•	We work on information security and access control. Also, we deploy the most effective tools for digital workloads migration. </p>
+                <p style={{ textAlign: "justify" }}>•	We work on the best user interface and user experience design to make your HR software convenient, intuitive and conversion-driven.   </p>
+                <p style={{ textAlign: "justify" }}>•The best quality API for smoother integration and OOTB security policies for secure API traffic are other aspects that make our HR System Architecture breach-free. </p>
+                <p style={{ textAlign: "justify" }}>•	We also deploy user behaviour monitoring and application monitoring mechanism for better insights. </p>
               </div>
             </div>
           </div>
@@ -73,25 +84,44 @@ const Services = () => {
       <div className="services-area with-top-border pt-100 pb-75">
         <div className="container">
           <div className="section-title">
-            <h2 className="nunito-font">Why Choose Us As your ITSM Partner?</h2>
-            <p>We partner with your business throughout the journey of implementing the best IT service management system administrator. Our ITSM experts work closely with you to understand your requirements, current IT infrastructure, and required upgrades and plan a roadmap for implementation and beyond.
+            <h2 className="nunito-font">Why Choose Us for HR Software Services </h2>
+            <br></br>
+            <p style={{ textAlign: "justify" }}>
+            <li> We have extensive experience in<b> HRIS & HRMS Software Development and Integration.</b>   </li>
+            <br></br>
+            <li> We recruit the most talented and experienced teams of IT experts to handle your projects.  </li>
+            <br></br>
+            <li> We have developed HR software solutions for many clients from across various industries.  </li>
+            <br></br>
+            <li> We deliver your HR solutions well within the mutually agreed project schedule.  </li>
+            <br></br>
+            <li> We ensure our HR software will add productivity to your business with splendid customer satisfaction.  </li>
+            <br></br>
+           </p>
+
+            
+            {/* <p>We partner with your business throughout the journey of implementing the best IT service management system administrator. Our ITSM experts work closely with you to understand your requirements, current IT infrastructure, and required upgrades and plan a roadmap for implementation and beyond.
               We address difficulties and challenges at different levels to resolve them and make your IT operations smoother.
-            </p>
+            </p> */}
+
           </div>
+          <h3><center> Our Principles for Effective Collaborations</center> </h3>
+          <br></br>
           <div className="row justify-content-center">
             <div
               className="col-lg-4 col-md-6 col-sm-6"
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two">
+            
+              <div className="single-services-item style-two" style={{ height: '550px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                <Image src={dummyicon} alt="" />
                 </div>
                 <h5 className="nunito-font">
-                  <a>We Create a Centralised IT Support System</a>
+                  <a>Unified Solution </a>
                 </h5>
-                <p>If your IT processes are spread across distributed business units, we help you get a centralised overview. We deploy IT service management with a system centre service manager to accelerate your support processes across business locations.</p>
+                <p>We cover every aspect of your HR software, from ideation to delivery and support. </p>
               </div>
             </div>
             <div
@@ -100,14 +130,14 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <div className="single-services-item style-two">
+              <div className="single-services-item style-two" style={{ height: '550px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                <Image src={dummyicon} alt="" />
                 </div>
                 <h5 className="nunito-font">
-                  <a>Proper Service Level Agreement Configuration</a>
+                  <a>Complete Clarity </a>
                 </h5>
-                <p>When you involve multiple vendors in your IT processes, it is essential to configure their Service Level Agreement, if their responsibilities and work areas overlap. We help you develop a proper configuration system to handle these aspects effectively, according to your expectations and standards.</p>
+                <p>We provide you with complete visibility of project execution. We keep you updated about the KPIs, such as the addition of features, project progress, time spent on various tasks, and more. We let you track the progress of your project through a project management platform</p>
               </div>
             </div>
             <div
@@ -116,18 +146,30 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="200"
             >
-              <div className="single-services-item style-two">
+              <div className="single-services-item style-two" style={{ height: '550px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                <Image src={dummyicon} alt="" />
                 </div>
                 <h5 className="nunito-font">
-                  <a>Effective Vendor Performance Management</a>
+                  <a>Minimised Risk </a>
                 </h5>
-                <p>We are among the best IT managed services companies. When you rely on vendors for various deliverables, we help you assess their performance by implementing an evaluation functionality. You can verify if the vendors’ performance and offerings comply with your standards and workflows.</p>
+                <p style={{ textAlign: "justify" }}>
+            <li>We help you improve KPIs by assessing your development process and suggesting the best ways. </li>
+            <br></br>
+            <li> We undertake a feasibility study before beginning an HR software development project to reduce financial risk.    </li>
+            <br></br>
+            <li> We offer technical project management consulting to monitor your project.   </li>
+            <br></br>
+            
+           </p>
               </div>
+
             </div>
           </div>
         </div>
+        <h3><center> The Range of Our HR Software Services </center> </h3>
+        <br></br>
+       <p><center> We offer various service options to execute your HR software development. You can choose a service option that suits your needs. </center></p>
         <div className="container">
           <div className="row justify-content-center">
             <div
@@ -135,14 +177,21 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two">
+              <div className="single-services-item style-two"  style={{ height: '550px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                <Image src={dummyicon} alt="" />
                 </div>
                 <h5 className="nunito-font">
-                  <a>Effective Employee Performance Management</a>
+                  <a>HR Software Development Consultancy </a>
                 </h5>
-                <p>We help you assess your IT employees’ performance through workflow orchestration and a real-time overview of the progress of every project your company executes. Similarly, our effective IT service request management system helps you split service requests at the employee level. With these features, you set employee accountability, manage, and assess employees’ performance.</p>
+                <p style={{ textAlign: "justify" }}>We help you prepare a product plan, reduce development costs, minimise risks in HR software development, and improve your HR System Metrics, such as: 
+                <li>Performance </li>
+                <li>Service Availability </li>
+                <li>Code Quality </li>
+                <li>Response Time </li>
+                <li>Security  </li>
+                </p>
+                
               </div>
             </div>
             <div
@@ -151,14 +200,22 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <div className="single-services-item style-two">
+              <div className="single-services-item style-two"  style={{ height: '550px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                <Image src={dummyicon} alt="" />
                 </div>
                 <h5 className="nunito-font">
-                  <a>Achieve Well-Organised Financial Management for IT Services</a>
+                  <a>Development of HR Software from Scratch </a>
                 </h5>
-                <p>We integrate Financial Management functionality into your ITSM platform. This integration helps you effectively use your available resources, get an overview of the cost of your IT processes, and ensure your IT Service Operations are executed within your budgetary constraints.</p>
+                <p style={{ textAlign: "justify" }}>We deploy our talented developers and product managers to develop HR software as per your needs: 
+                <li>Product plan and task allocation </li>
+                <li>Software architecture design </li>
+                <li>UI & UX design  </li>
+                <li>Product development  </li>
+                <li>Software testing and QA   </li>
+                <li>Hr software maintenance and support   </li>
+                <li>Customisation, integration, and deployment support   </li>
+                </p>
               </div>
             </div>
             <div
@@ -167,111 +224,82 @@ const Services = () => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <div className="single-services-item style-two">
+              <div className="single-services-item style-two"  style={{ height: '550px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                <Image src={dummyicon} alt="" />
                 </div>
                 <h5 className="nunito-font">
-                  <a>Overcome IT Service Issues Due to Mergers and Acquisitions</a>
+                  <a>SaaS-Based HR Solution </a>
                 </h5>
-                <p>Managing mergers and acquisitions may be challenging, as you need to add more users, locations, and departments to your current instance. We perform the desired digital workload migrations and integrations to unite additional business units to your IT infrastructure.</p>
+                <p style={{ textAlign: "justify" }}>We design and deploy a SaaS-based HR system: 
+                <li>Multi-tenancy architecture design </li>
+                <li>Customisation strategy and OOTB functionality for your SaaS product. </li>
+                <li>Categorisation for microservices architecture and cloud-native development.</li>
+                
+                </p>
               </div>
             </div>
+            <h3><center> HR Software Service Pricing Options  </center> </h3>
+            <br></br>
+            <p><center> We are flexible with the project execution process. You can choose a suitable HR software service pricing model that goes well with your requirements: </center></p>
+            <div
+              className="col-lg-4 col-md-6 col-sm-6"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="100"
+            >
+              <div className="single-services-item style-two"  style={{ height: '550px' }}>
+                <div className="icon">
+                <Image src={dummyicon} alt="" />
+                </div>
+                <h5 className="nunito-font">
+                  <a>Fixed Price Model  </a>
+                </h5>
+                <p>If your project scope is well-defined, we can divide your project into phases and estimate the price for these phases separately.</p>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-4 col-md-6 col-sm-6"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="100"
+            >
+              <div className="single-services-item style-two"  style={{ height: '550px' }}>
+                <div className="icon">
+                <Image src={dummyicon} alt="" />
+                </div>
+                <h5 className="nunito-font">
+                  <a>Productive Time Capping Model   </a>
+                </h5>
+                <p>We bill as per hours spent for agile, iterative development, reacting to your user feedback, adding features, and changing requirements. .</p>
+              </div>
+            </div>
+
+            
+            <div
+              className="col-lg-4 col-md-6 col-sm-6"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="100"
+            >
+              <div className="single-services-item style-two" style={{ height: '550px' }}>
+                <div className="icon">
+                <Image src={dummyicon} alt="" />
+                </div>
+                <h5 className="nunito-font">
+                  <a>Fixed Monthly Fee Model   </a>
+                </h5>
+                <p>This pricing model suits full-fledged SaaS HR software solutions for deployment and support in the long run .</p>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
 
-      <div className="services-area pt-100 bg-fff4f8  pb-75">
-        <div className="container">
-          <div className="section-title">
-            <h2 className="nunito-font">
-              How Do We Execute ITSM Consulting for Your Business?
-            </h2>
-            <p>We understand that your business may be in different stages of digital transformation. We execute our ITSM Consulting through some well-designed modules to choose from. You can consult us at the beginning stage, decide an ITSM platform, design an ITSM platform for you, or opt for ongoing improvements. Let’s discover our ITSM Consulting Modules:</p>
-          </div>
-          <div className="row justify-content-center justify-content-center">
-            <div
-              className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <div className="services-box">
-                <div className="icon">
-                  <i className="flaticon-assets"></i>
-                </div>
-                <h3 className="nunito-font">
-                  <a>Problem-Centric ITSM Consulting</a>
-                </h3>
-                <p className="w-100" style={{ textAlign: "justify" }}>You come up with a problem related to your IT Service Management, and our ITSM experts resolve it effectively.</p>
-                <h6>Problems Occurred Due to Outsourcing or Related to Employee Performance</h6>
-                <p className="w-100" style={{ textAlign: "justify" }}>We help you bring together different IT departments, business units, vendors, and employees at different business units and locations through powerful integrations. We configure your Service Level Agreements and help you synchronise workflow for different operations or departments.</p>
-                <h6>Improvement in User Experience</h6>
-                <p className="w-100" style={{ textAlign: "justify" }}>Our ITSM experts help you enhance the user experience by setting up surveys and helping you make the most effective use of available service portals and knowledge base at your organisation.</p>
-              </div>
-            </div>
-            <div
-              className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              data-aos-delay="100"
-            >
-              <div className="services-box">
-                <div className="icon">
-                  <i className="flaticon-mortgage"></i>
-                </div>
-                <h3 className="nunito-font">
-                  <a>Selecting an Appropriate ITSM Platform</a>
-                </h3>
-                <p className="w-100" style={{ textAlign: "justify" }}>Our ITSM experts discuss your requirements and goals and suggest the best-suited ITSM platform for your business. We assess and present various ITSM solutions and collaboratively choose the most appropriate platform as per your business-specific needs.</p>
-              </div>
-            </div>
-            <div
-              className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <div className="services-box">
-                <div className="icon">
-                  <i className="flaticon-challenges"></i>
-                </div>
-                <h3 className="nunito-font">
-                  <a>Implementation of the Desired ITSM Platform</a>
-                </h3>
-                <p className="w-100" style={{ textAlign: "justify" }}>If your company is clear about implementing a particular ITSM platform; however, lacks the technical expertise to make the most of the features, we customise the ITSM platform as per your needs.</p>
-                <ul className="overview-list">
-                  <li>•	We work closely with you to study your IT infrastructure, nature and size of business, requirements from an ITSM platform, and your aims.</li>
-                  <li>•	We coordinate with your teams to determine business-specific requirements.</li>
-                  <li>•	Deploy the functionality through the desired ITSM platform.</li>
-                  <li>•	Provide prompt technical support to your system and train your workforce to use the ITSM platform effectively.</li>
-                </ul>
-                <p>We design, develop, customise, deploy, and support your desired ITSM platform.</p>
-              </div>
-            </div>
-            <div
-              className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              data-aos-delay="200"
-            >
-              <div className="services-box">
-                <div className="icon">
-                  <i className="flaticon-gold-bar"></i>
-                </div>
-                <h3 className="nunito-font">
-                  <a>•	Improving Your ITSM as a Continuous Process</a>
-                </h3>
-                <p className="w-100" style={{ textAlign: "justify" }}>Our ITSM experts examine your IT infrastructure for security, productivity, cost-effectiveness, and many other parameters. They find out the flaws in your IT Service Management process and eliminate the root causes of such irregularities through the best solutions. We execute a multi-dimensional approach to improve your ITSM:</p>
-                <ul className="overview-list">
-                  <li>•	Determining the problem or weak point in your system, workflow, and process.</li>
-                  <li>•	Design and implement a long-term, effective solution to eliminate these issues.</li>
-                  <li>•	Assessing the actual results of implementation and rectifying any shortfalls.</li>
-                  <li>•	Rendering continuous, prompt technical support to resolve any technical difficulties.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <div className="goal-area ptb-100">
         <div className="container">
@@ -279,14 +307,15 @@ const Services = () => {
             <div className="col-lg-6 col-md-12">
               <div className="goal-content style-two">
                 <h2 className="nunito-font">
-                  Technologies We Implement
+                Technologies We are Competent in 
                 </h2>
-                <p style={{ textAlign: "justify" }}>SPM Global Technologies are leading enterprise IT service management partners globally. We are certified vendors for various world-renowned ITSM solutions. We help you choose the best-suited ITSM platform, design, customise, develop, and implement them as per your business needs.</p>
-                <h6>We are Technology Partners with leading tech brands, such as:</h6>
+                <p style={{ textAlign: "justify" }}>Our HR Software Development experts are well-versed in the following technologies: .</p>
+                <br></br>
+                <h4>Frontend Programming Languages</h4>
                 <ul className="overview-list">
                   <li data-aos="fade-up" data-aos-duration="1200">
                     <i className="flaticon-draw-check-mark"></i>
-                    ServiceNow
+                    HTML 
                   </li>
                   <li
                     data-aos="fade-up"
@@ -294,7 +323,7 @@ const Services = () => {
                     data-aos-delay="100"
                   >
                     <i className="flaticon-draw-check-mark"></i>
-                    Salesforce
+                    JavaScript 
                   </li>
                   <li
                     data-aos="fade-up"
@@ -302,15 +331,18 @@ const Services = () => {
                     data-aos-delay="200"
                   >
                     <i className="flaticon-draw-check-mark"></i>
-                    BMC Suite of Products
+                    CBS 
 
                   </li>
 
-                  <h6>We also provide Cloud Strategy Consulting and Implementation:</h6>
+                  <li data-aos="fade-up" data-aos-duration="1200">
+                    <i className="flaticon-draw-check-mark"></i>
+                    Javascript Framework
+                  </li>
 
                   <li data-aos="fade-up" data-aos-duration="1200">
                     <i className="flaticon-draw-check-mark"></i>
-                    •	AWS
+                    	Angular 
                   </li>
                   <li
                     data-aos="fade-up"
@@ -318,7 +350,7 @@ const Services = () => {
                     data-aos-delay="300"
                   >
                     <i className="flaticon-draw-check-mark"></i>
-                    •	Microsoft Azure
+                    METEOR 
                   </li>
                   <li
                     data-aos="fade-up"
@@ -326,7 +358,7 @@ const Services = () => {
                     data-aos-delay="200"
                   >
                     <i className="flaticon-draw-check-mark"></i>
-                    •	IBM
+                    Vue.js 
                   </li>
                   <li
                     data-aos="fade-up"
@@ -334,9 +366,953 @@ const Services = () => {
                     data-aos-delay="400"
                   >
                     <i className="flaticon-draw-check-mark"></i>
-                    •	Google Cloud
+                    NEXT 
                   </li>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Ember  
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    ReactJS 
+                  </li>
+<br></br>
+<h4>  
+
+Backend Programming Languages </h4>
+<br></br>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Microsoft .Net 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Java 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Python 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Node 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Php  
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Golang 
+
+ 
+                  </li>
+                  <br></br>
+                  
+                  <h4> Clouds</h4>
+                  <br></br>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Microsoft Azure  
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    AWS 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    IBM Cloud 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Google Cloud 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    DigitalOcean 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Rockspace  
+
+ 
+                  </li>
+                  <br></br>
+
+                  <h4> Mobile</h4>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Android 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    iOS 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    CORDOVA 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Xamarin 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    React Native 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    PWA 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Flutter  
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Ionic  
+
+ 
+                  </li>
+                  <br>
+                  
+                  </br>
+                  <h4> PHP Frameworks </h4>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Symphony  
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Laravel 
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    ZENO FRAMEWORK  
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    CAKEPHP  
+
+ 
+                  </li>
+                  <br></br>
+                  <h4> Java Frameworks & Extensions </h4>
+                  <p className="w-100" style={{ textAlign: "justify" }}>We primarily use Spring Framework (Spring Boot, Spring Data, Spring Framework, Spring Cloud and more), Java Persistence API (JPI) and Hibernate. :</p>
+                  <p className="w-100" style={{ textAlign: "justify" }}>We optionally use Java Enterprise Platform Application Servers (Java EE / Jakarta EE/ J2 EE) like JBoss WildFly. :</p>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Spring   
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    HIBERNATE  
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    WildFly   
+
+ 
+                  </li>
+                  <br></br>
+                  <h4>Real-time Data Processing  </h4>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    RabbitMQ    
+
+ 
+                  </li>
+                 
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Flink   
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Spark Streaming   
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Apache Storm   
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Kafka Streams   
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Amazon Kinesis   
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Azure Event Hub    
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Azure System Analytics 
+ 
+                  </li>
+                  <br></br>
+
+                  <h4> Databases</h4><br></br>
+                  <a > SQL</a>
+                  <br></br>
+
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    SQL Server   
+
+ 
+                  </li>
+                  
+
+
+                  
+                 
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    MySQL 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Oracle   
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    PostgreSQL   
+
+ 
+                  </li>
+                  <br></br>
+
+                  {/* <h4></h4> */}
+                  <a>NOSQL</a>
+                
+                  
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Cassandra 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    KIVE 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Apache HBase 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    nifi 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    MongoDB 
+
+ 
+                  </li>
+                  <br></br>
+                  
+                  <h4>Cloud Databases, Storage, and Warehouses </h4>
+                  <br></br>
+                  <a>AWS</a>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Amazon S3 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Amazon Redshift 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Amazon DynamoDB 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Amazon DocumentDb  
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Amazon RDS 
+
+ 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    AWS Elasticache 
+
+ 
+                  </li>
+                  
+                  <a> Microsoft Azure </a>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Azure Data Lake 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Azure Blob Storage 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Azure Cosmos DB 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Azure SQL Database  
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Azure Kinect DK 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Azure RTOS 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Azure Synapse Analytics 
+                  </li>
+
+                  <a> Google Cloud Platform  </a>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Google Cloud SQL 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Google Cloud Datastore 
+                  </li>
+
+                  <h4>DevOps  </h4>
+                  
+                  <a>Containerisation </a>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Docker 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Kubernetes 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    OPENSHIFT 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    MESOS  
+                  </li>
+                  <a>Automation</a>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Ansible 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Puppet 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    CHEF 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    SALTSTACK 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Terraform 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Packer 
+                  </li>
+
+                  <a>Monitoring </a>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    ZABBIX 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Nagios 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Elasticsearch 
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Prometheus  
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Grafana  
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    DATADOG   
+                  </li>
+
+                  <h4>  Payment Gateways</h4>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    PayPal   
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Square   
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Stripe    
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Alipay   
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Braintree    
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Adyen   
+                  </li>
+
+                  <h4> CRM </h4>
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Salesforce  
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Microsoft Dynamics 365    
+                  </li>
+
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    Zendesk    
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    HubSpot    
+                  </li>
+
+                  <li
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay="400"
+                  >
+                    <i className="flaticon-draw-check-mark"></i>
+                    ORO   
+                  </li>
+
+
                 </ul>
+                <br></br>
               </div>
               <h4>Discuss Your ITSM Requirements</h4>
               <p>Get in touch with our ITSM experts today to discuss your business-specific needs related to ITSM. We will get back to you to discuss your pain points, resolve your queries, and discuss what best we offer.</p>
@@ -352,13 +1328,33 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <SubscribeStyle1 />
       <div className="border-tb" />
+      
+
       <FooterOne />
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=hr-software&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 export default Services;
