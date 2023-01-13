@@ -47,7 +47,7 @@ Most Reliable Custom ERP Solution Company
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={manWithSon} alt="" />
+              <MediaImage name="Enterprise Resource Planning (ERP) Solutions.png" data={seo} />
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@ Most Reliable Custom ERP Solution Company
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={goalImg} alt="goal-image" />
+              <MediaImage name="Custom ERP Development.png" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -99,7 +99,7 @@ Why Choose SPM Global Technologies for Custom ERP Development
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Project Management.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Project Management </a>
@@ -115,7 +115,7 @@ Why Choose SPM Global Technologies for Custom ERP Development
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Production Management.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Production Management</a>
@@ -152,7 +152,7 @@ vendor management, inventory management, logistics management and control.</p>
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Knowledge Management.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Knowledge Management </a>
@@ -168,7 +168,7 @@ vendor management, inventory management, logistics management and control.</p>
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Document Management.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Document Management</a>
@@ -184,7 +184,7 @@ vendor management, inventory management, logistics management and control.</p>
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Data Analytics & Business Intelligence.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Data Analytics & Business Intelligence</a>
@@ -200,7 +200,7 @@ vendor management, inventory management, logistics management and control.</p>
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Sales & Marketing.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Sales & Marketing </a>
@@ -216,7 +216,7 @@ vendor management, inventory management, logistics management and control.</p>
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Finance Management & Accounting.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Finance Management & Accounting</a>
@@ -232,7 +232,7 @@ vendor management, inventory management, logistics management and control.</p>
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Human Resource Management.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Human Resource Management  </a>
@@ -261,7 +261,8 @@ vendor management, inventory management, logistics management and control.</p>
             >
               <div className="services-box">
                 <div className="icon">
-                  <i className="flaticon-assets"></i>
+                <MediaImage name="Increased Effective Communication.png" data={seo} />
+
                 </div>
                 <h3 className="nunito-font">
                   <a>Increased Effective Communication</a>
@@ -281,7 +282,8 @@ vendor management, inventory management, logistics management and control.</p>
             >
               <div className="services-box">
                 <div className="icon">
-                  <i className="flaticon-mortgage"></i>
+                <MediaImage name="Helps Standardise Your Manufacturing Process.png" data={seo} />
+
                 </div>
                 <h3 className="nunito-font">
                   <a>Helps Standardise Your Manufacturing Process </a>
@@ -300,7 +302,7 @@ vendor management, inventory management, logistics management and control.</p>
             >
               <div className="services-box">
                 <div className="icon">
-                  <i className="flaticon-challenges"></i>
+                <MediaImage name="Workflow Visibility and Business Intelligence.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Workflow Visibility and Business Intelligence </a>
@@ -324,7 +326,7 @@ vendor management, inventory management, logistics management and control.</p>
             <h3><center>Our ERP Service Options </center> </h3>
               <div className="services-box">
                 <div className="icon">
-                  <i className="flaticon-gold-bar"></i>
+                <MediaImage name="Developing an ERP Module.png" data={seo} />
                 </div>
                
                 <h3 className="nunito-font">
@@ -350,7 +352,7 @@ vendor management, inventory management, logistics management and control.</p>
           
               <div className="services-box">
                 <div className="icon">
-                  <i className="flaticon-gold-bar"></i>
+                <MediaImage name="Developing a Complete ERP System.png" data={seo} />
                 </div>
                
                 <h3 className="nunito-font">
@@ -378,7 +380,8 @@ vendor management, inventory management, logistics management and control.</p>
            <h3><center>ERP Development Service Pricing Models </center> </h3>
               <div className="services-box">
                 <div className="icon">
-                  <i className="flaticon-gold-bar"></i>
+                <MediaImage name="Fixed Price Model.png" data={seo} />
+
                 </div>
                
                 <h3 className="nunito-font">
@@ -484,7 +487,7 @@ vendor management, inventory management, logistics management and control.</p>
               <h4>Manage Your Business from Almost Anywhere!  </h4>
               {/* <p>Get in touch with our ITSM experts today to discuss your business-specific needs related to ITSM. We will get back to you to discuss your pain points, resolve your queries, and discuss what best we offer.</p> */}
               <ul className="overview-list">
-                  <li>•Easily accessible ERP solutions through different devices and modes. </li>
+                  <li>•Easily accessible ERP solutions through different devices and modes.  .</li>
                   <li>•	Full-function Web Application.  </li>
                   <li>•	Desktop App for some software modules with a complicated user interface.  </li>
                   <li>•	Workflow automation notifications, operations monitoring dashboards, and more on Mobile Apps.    </li>
@@ -501,7 +504,7 @@ vendor management, inventory management, logistics management and control.</p>
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={manWithSon} alt="man-with-son-image" />
+              <Image src={dummyimg} alt="" />
               </div>
             </div>
           </div>
@@ -516,7 +519,6 @@ vendor management, inventory management, logistics management and control.</p>
       <Service1 />
 
       <FooterOne />
-      
     </>
   );
 };
