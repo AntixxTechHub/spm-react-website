@@ -480,7 +480,7 @@ const Navbar5 = () => {
                                       </li>
                                       <li className="nav-item">
                                         <Link
-                                          href="/coming-soon">
+                                          href="/system-software">
                                           <a className="nav-link">
                                             System And Software
                                           </a>
