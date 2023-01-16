@@ -44,7 +44,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={manWithSon} alt="" />
+              <MediaImage name="Human Resource management system software.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={goalImg} alt="goal-image" />
+              <MediaImage name="HR System Architecture We Design.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -114,9 +114,10 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
             
-              <div className="single-services-item style-two" style={{ height: '550px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Unified Solution.png" data={seo} />
+
                 </div>
                 <h5 className="nunito-font">
                   <a>Unified Solution </a>
@@ -130,9 +131,9 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <div className="single-services-item style-two" style={{ height: '550px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Complete Clarity.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Complete Clarity </a>
@@ -146,9 +147,9 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
               data-aos-delay="200"
             >
-              <div className="single-services-item style-two" style={{ height: '550px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Minimised Risk.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Minimised Risk </a>
@@ -177,9 +178,9 @@ const Services = ({ seo }) => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two"  style={{ height: '550px' }}>
+              <div className="single-services-item style-two"  style={{ height: '700px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="HR Software Development Consultancy.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>HR Software Development Consultancy </a>
@@ -200,9 +201,9 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <div className="single-services-item style-two"  style={{ height: '550px' }}>
+              <div className="single-services-item style-two"  style={{ height: '700px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Development of HR Software from Scratch.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Development of HR Software from Scratch </a>
@@ -224,9 +225,9 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <div className="single-services-item style-two"  style={{ height: '550px' }}>
+              <div className="single-services-item style-two"  style={{ height: '700px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="SaaS-Based HR Solution.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>SaaS-Based HR Solution </a>
@@ -250,7 +251,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two"  style={{ height: '550px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Fixed Price Model.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Fixed Price Model  </a>
@@ -267,7 +268,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two"  style={{ height: '550px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Productive Time Capping Model.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Productive Time Capping Model   </a>
@@ -285,7 +286,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '550px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Fixed Monthly Fee Model.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Fixed Monthly Fee Model   </a>
