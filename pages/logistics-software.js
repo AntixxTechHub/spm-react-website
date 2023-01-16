@@ -45,7 +45,8 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="goal-image style-two">
                
-<Image src={dummyimg} alt="" />
+
+              <MediaImage name="Logistics  Software.png" data={seo} />
               </div>
             </div>
           </div>
@@ -62,7 +63,7 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="goal-image">
                 
-<Image src={dummyimg} alt="" />
+              <MediaImage name="Logistics  Application Development.png" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -82,7 +83,7 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
                              <li> Technical support and assessment </li>
 
  </p>
-                <p style={{ textAlign: "justify" }}></p>
+                <p style={{ textAlign: "justify" }}>•	We implement an IT service management platform to help you orchestrate your workflow, and organize your development, testing, and release processes. You can effectively standardize your IT procedures by using the features of this platform.</p>
               </div>
             </div>
           </div>
@@ -104,7 +105,7 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="single-services-item style-two" style={{ height: '500px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Vehicle Tracking.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Vehicle Tracking </a>
@@ -127,7 +128,7 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="single-services-item style-two" style={{ height: '500px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Route Optimisation.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Route Optimisation </a>
@@ -149,7 +150,7 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="single-services-item style-two" style={{ height: '500px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Vehicle Maintenance.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Vehicle Maintenance </a>
@@ -180,7 +181,7 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="single-services-item style-two"style={{ height: '500px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Dispatch Management.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Dispatch Management </a>
@@ -206,7 +207,7 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="single-services-item style-two" style={{ height: '500px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Logistics Expense Management.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Logistics Expense Management </a>
@@ -229,7 +230,7 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="single-services-item style-two"style={{ height: '500px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Accident Detection & Claims.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Accident Detection & Claims </a>
@@ -257,7 +258,7 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="single-services-item style-two" style={{ height: '500px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Third-Party Logistics.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Third-Party Logistics  </a>
@@ -281,7 +282,7 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="single-services-item style-two" style={{ height: '500px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Courier, eCommerce Delivery Service.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Courier, eCommerce Delivery Service  </a>
@@ -319,7 +320,7 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Logistics Application Assessment.png" data={seo} />
                 </div>
               
                 <h5>Logistics Application Assessment   </h5>
@@ -346,7 +347,7 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="For Fleet Owners.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>For Fleet Owners </a>
@@ -372,7 +373,7 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="For Logistics Service Providers.png" data={seo} />
                 
                  
                 </div>
@@ -401,7 +402,7 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Our Logistics Software Solutions Suit Various Vehicles.png" data={seo} />
                   
                 </div>
                 <h3 className="nunito-font">
@@ -429,7 +430,8 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Logistics Software Development & Consulting Partner.png" data={seo} />
+
                 </div>
                 <h3>
                   <a>•	Why Choose Us as Your Logistics Software Development & Consulting Partner? </a>
@@ -465,7 +467,8 @@ Trusted Partner for the Best Logistics Software Solutions in India </h3>
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-              <Image src={dummyimg} alt="" />
+              <MediaImage name="Start Working on Your Logistics Solution.png" data={seo} />
+
               </div>
             </div>
           </div>
