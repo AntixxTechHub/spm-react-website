@@ -66,7 +66,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '500px' }}>
                 <div className="icon">
-                <MediaImage name="Tableau.png" data={seo} />
+                <MediaImage name="Tabuleau 1.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/tableau">
