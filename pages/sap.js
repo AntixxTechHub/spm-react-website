@@ -43,6 +43,11 @@ const Services = ({ seo }) => {
                 <p>
                   High-Performance Analytic Appliance uses in-memory computing, a breakthrough technology that enables analysis of very large, non-aggregated data at unprecedented speed in local memory, enabling complex analyses, plans and simulations in real-time data.
                 </p>
+                <Link href="/sap-hana">
+                  <a className="link-btn">
+                    View More <i className="bx bx-chevron-right"></i>
+                  </a>
+                </Link>
               </div>
             </div>
             <div
