@@ -65,6 +65,11 @@ const Services = ({ seo }) => {
                 <p>
                   The SAP Customer Relationship Management application, not only helps you address your short-term imperatives, but can also help your company achieve differentiated capabilities to compete effectively over the long term.
                 </p>
+                <Link href="/sap-crm">
+                  <a className="link-btn">
+                    View More <i className="bx bx-chevron-right"></i>
+                  </a>
+                </Link>
               </div>
             </div>
             <div
