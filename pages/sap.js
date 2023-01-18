@@ -87,6 +87,11 @@ const Services = ({ seo }) => {
                 <p>
                   The SAP ERP application supports the essential functions of your business processes and operations efficiently and is tailored to specific needs of your industry.
                 </p>
+                <Link href="/sap-erp">
+                  <a className="link-btn">
+                    View More <i className="bx bx-chevron-right"></i>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
