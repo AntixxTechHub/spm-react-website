@@ -661,8 +661,13 @@ const Services = ({ seo }) => {
         </div>
       </div>
 
+      <Service1 
+       ttle="BMC Helix Discovery" 
+
+
+      />
       <SubscribeStyle1 />
-      <Service1 />
+     
       <FooterOne />
     </>
   );
