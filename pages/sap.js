@@ -113,6 +113,11 @@ const Services = ({ seo }) => {
                 </h5>
                 <p>SAP HR, also known as “Human Capital Management” (HCM) is an important module in ERP SAP systems that supports all the processes of human resource management in the enterprise. SAP HR records the data from hiring an employee to its final termination in the organization.
                 </p>
+                <Link href="/sap-hr">
+                  <a className="link-btn">
+                    View More <i className="bx bx-chevron-right"></i>
+                  </a>
+                </Link>
               </div>
             </div>
             <div
