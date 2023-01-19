@@ -19,7 +19,22 @@ const handleBlur = (perem) => {
   }
 }
 
-const services = () => {
+
+
+const PageTopTtle = ({ subTtle, ttle }) => {
+  return (
+    <div className="page-title-area">
+      <div className="container">
+        <div className="page-title-content">
+          <span className="sub-title">{subTtle}</span>
+          <h1>{ttle}</h1>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const services = ({ttle}) => {
   
   return (
     <>
@@ -28,7 +43,19 @@ const services = () => {
       <PageTopTitle
         subTitle=""
         title="Contact US" /> */}
-        <h2><center> Get A Free Trial Service </center></h2>
+        <br></br>
+        <br></br>
+        <h2><center> Get A Free Trial Service On </center></h2>
+        <div
+              className="col-lg-12 col-md-6 col-sm-6"
+              data-aos="flip-right"
+              data-aos-duration="1200"
+            >
+       
+         <center> <strong><h4>   {ttle} </h4></strong>   </center>   
+        
+        
+        </div>
 
      <div className="goal-area ptb-100">
         <div className="container">
@@ -115,6 +142,52 @@ const services = () => {
                           required
                           onBlur={event => handleBlur('00N2v00000XQu8f')}
                         ></textarea>
+
+
+
+<div className="col-lg-12 col-md-12 col-sm-12">
+                      <div className="form-check">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          id="checkme"
+                        />
+                        <label className="form-check-label" htmlFor="checkme">
+                          I would like to receive alerts and updates from SPM Global Technology{" "}
+                          {/* <Link href="/terms-conditions">
+                            <a>Terms of Services</a>
+                          </Link>{" "}
+                          and{" "}
+                          <Link href="/privacy-policy">
+                            <a>Privacy Policy</a>
+                          </Link> */}
+                        </label>
+                      </div>
+                    </div>
+
+
+
+
+
+                        <div className="col-lg-12 col-md-12 col-sm-12">
+                      <div className="form-check">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          id="checkme"
+                        />
+                        <label className="form-check-label" htmlFor="checkme">
+                          Accept{" "}
+                          <Link href="/terms-conditions">
+                            <a>Terms of Services</a>
+                          </Link>{" "}
+                          and{" "}
+                          <Link href="/privacy-policy">
+                            <a>Privacy Policy</a>
+                          </Link>
+                        </label>
+                      </div>
+                    </div>
                       </div>
                       <div style={{display: 'none'}}>
                       <label for="Free_Trial_Service_Request_c">Free Trial Service Requestc</label>
