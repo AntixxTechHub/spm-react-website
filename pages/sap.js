@@ -154,6 +154,11 @@ const Services = ({ seo }) => {
                   <a>SAP PLM</a>
                 </h5>
                 <p>SThe SAP Product Lifecycle Management application provides you with a 360-degree-support for all product-related processes, from the first product idea, through manufacturing to product service.</p>
+                <Link href="/sap-plm">
+                  <a className="link-btn">
+                    View More <i className="bx bx-chevron-right"></i>
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="container">
