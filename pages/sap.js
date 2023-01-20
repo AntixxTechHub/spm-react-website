@@ -134,6 +134,11 @@ const Services = ({ seo }) => {
                 </h5>
                 <p>SAP Business Objects Business Intelligence is a centralized suite for data reporting, visualization, and sharing. As the on-premise BI layer for SAP's Business Technology Platform, it transforms data into useful insights, available anytime, anywhere.
                 </p>
+                <Link href="/sap-business-objects">
+                  <a className="link-btn">
+                    View More <i className="bx bx-chevron-right"></i>
+                  </a>
+                </Link>
               </div>
             </div>
             <div
