@@ -403,8 +403,8 @@ const Services = () => {
                   <Accordion questionsAnswers={questionsAnswers} />
                 </div>
               </div>
-            </div>1
-            
+            </div>
+
           </div>
         </div>
       </div>
