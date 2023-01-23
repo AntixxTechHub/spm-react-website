@@ -96,7 +96,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={implementationmbc} alt="man-with-son-image" />
+                <Image src={implementationmbc} alt="BMC Helix Discovery Implementation Consulting" />
               </div>
             </div>
           </div>
@@ -112,7 +112,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={discovery} alt="" />
+                <Image src={discovery} alt="BMC Helix Discovery App Modeling " />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -132,10 +132,12 @@ const Services = ({ seo }) => {
       <div className="overview-area ptb-100 bg-f9f9f9">
         <div className="container">
           <div className="section-title">
-            <h2 className="nunito-font">Why Do Businesses Rely On BMC Helix Discovery? Ten Benefits of BMC Helix Discovery:</h2>
+            <h2 className="nunito-font">Why Do Businesses Rely On BMC Helix Discovery? </h2>
             <p className="w-100" style={{ textAlign: "justify" }}>
               BMC Helix Discovery derives insights for IT processes improvement. It improves productivity and performance by providing actionable insights to make data-oriented decisions for the qualitative and quantitative improvement in IT asset management, IT service management, and IT infrastructure, IT operations management. An experienced Helix Discovery Consultant helps your business improve productivity by establishing an excellent incident management mechanism. The data-driven insights benefit the businesses to:</p>
             <span className="sub-title purple-color">Here are a few practical benefits that your business enjoys as you adopt this ITSM tool:</span>
+            <span className="sub-title purple-color">Ten Benefits of BMC Helix Discovery:</span>
+
             <div className="overview-item">
               <div className="row align-items-center">
                 <div className="col-lg-6 col-md-6 overview-content">
@@ -220,7 +222,7 @@ const Services = ({ seo }) => {
               >
                 <div className="">
                   <div className="icon">
-                    <Image src={EnhancedSecurity} alt="" />
+                    <Image src={EnhancedSecurity} alt="BMC Helix Discovery Implementation" />
                   </div>
                   <h3 className="nunito-font">Enhanced Security</h3>
                 </div>
@@ -232,7 +234,7 @@ const Services = ({ seo }) => {
               >
                 <div className="">
                   <div className="icon">
-                    <Image src={serviceawareness} alt="" />
+                    <Image src={serviceawareness} alt="Discovery Third Party Vendor" />
                   </div>
                   <h3 className="nunito-font">Service Awareness</h3>
                 </div>
@@ -244,7 +246,7 @@ const Services = ({ seo }) => {
               >
                 <div className="">
                   <div className="icon">
-                    <Image src={costtransparecny} alt="" />
+                    <Image src={costtransparecny} alt="Discovery Service Providers" />
                   </div>
                   <h3 className="nunito-font">Cost Transparency</h3>
                 </div>
@@ -440,7 +442,7 @@ const Services = ({ seo }) => {
                 >
                   <div className="single-services-item style-two" style={{ height: '450px' }}>
                     <div className="icon">
-                      <Image src={planningforbmchelixdiscoveryimplementation} alt="" />
+                      <Image src={planningforbmchelixdiscoveryimplementation} alt="Discovery Support Services" />
                     </div>
                     <h5 className="nunito-font">
                       Planning For BMC Helix Discovery Implementation
@@ -463,7 +465,7 @@ const Services = ({ seo }) => {
                 >
                   <div className="single-services-item style-two" style={{ height: '450px' }}>
                     <div className="icon">
-                      <Image src={maintenanceofbmchelixdiscovery} alt="" />
+                      <Image src={maintenanceofbmchelixdiscovery} alt="Discovery Consultant" />
                     </div>
                     <h5 className="nunito-font">
                       Maintenance of BMC Helix Discovery
@@ -509,7 +511,7 @@ const Services = ({ seo }) => {
                 >
                   <div className="single-services-item style-two" style={{ height: '475px' }}>
                     <div className="icon">
-                      <Image src={securityauditforbmchelixdiscoveryimplementation} alt="" />
+                      <Image src={securityauditforbmchelixdiscoveryimplementation} alt="Discovery Managed Services" />
                     </div>
                     <h5 className="nunito-font">
                       Security Audit for BMC Helix Discovery Implementation
@@ -533,7 +535,7 @@ const Services = ({ seo }) => {
                 >
                   <div className="single-services-item style-two" style={{ height: '475px' }}>
                     <div className="icon">
-                      <Image src={integratingbmchelixdiscovery} alt="" />
+                      <Image src={integratingbmchelixdiscovery} alt="Integrating BMC Helix Discovery" />
                     </div>
                     <h5 className="nunito-font">
                       Integrating BMC Helix Discovery
@@ -557,7 +559,7 @@ const Services = ({ seo }) => {
                 >
                   <div className="single-services-item style-two" style={{ height: '475px' }}>
                     <div className="icon">
-                      <Image src={useofbmchelixdiscovery} alt="icon" />
+                      <Image src={useofbmchelixdiscovery} alt="Helix Discovery Trainings" />
                     </div>
                     <h5 className="nunito-font">
                       Use of BMC Helix Discovery
