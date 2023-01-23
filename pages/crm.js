@@ -330,7 +330,7 @@ Get CRM Services from SPM Global Technologies </h3>
                     data-aos-delay="300"
                   >
                     <i className="flaticon-draw-check-mark"></i>
-                    	CBS 
+                    	CSS 
                   </li>
                   <li
                     data-aos="fade-up"
