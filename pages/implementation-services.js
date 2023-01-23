@@ -24,6 +24,18 @@ const Services = ({ seo }) => {
         subTitle=""
         title="Implementation Services" />
 
+<head>
+          
+          
+          <meta name="description" content="SPM Global Technologies provides Certified Remedy Implementation Experts with extraordinary abilities & out of the box thinking at sensible cost.  "/>
+          <meta name="keywords" content="aws cloud integration,itsm solutions,bmc implementation remedy expert,bmc consulting services,remedy configuration management, Helix Remedy, Remedy ITSM, Remedy On-Demand, Remedy Service Providers, Remedy Consultants, Remedy Trainings" />
+          <link rel="canonical" href="https://www.spmglobaltech.com/implementation-services" />
+          
+
+          
+
+        </head>
+
       <div className="services-area with-top-border pt-100 pb-75">
         <div className="container">
           <div className="row align-items-center">
