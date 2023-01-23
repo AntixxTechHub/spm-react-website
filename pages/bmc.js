@@ -20,12 +20,25 @@ import bmcitsm from "@/public/images/ITSM-Solutions-for-better-productivity.jpg"
 const Services = ({ seo }) => {
   return (
     <>
-    <PageSeo seo={seo} pageName = "bmc" />
-      <PageTitle page="BMC Suite of Products" />
+    <PageSeo seo={seo} pageName = "BMC" />
+      <PageTitle page="BMC" />
       <Navbar />
       <PageTopTitle
         subTitle=""
         title="BMC" />
+
+
+<head>
+          
+          <meta name="title" content="BMC | SPM Global Technologies"/>
+          <meta name="description" content="SPM Global Technologies professionals will help with the smooth & effective implementation of all BMC Solutions Products like TrueSight, Remedyforce."/>
+          <meta name="keywords" content="BMC, Helix Remedyforce, Helix ITSM, TrueSight, Bladelogic, Control-M, BMC Service Providers, BMC Third party vendors, BMC Trainings, BMC Consultants, BMC Vendors, BMC solution Managed Service providers." />
+          <link rel="canonical" href="https://www.spmglobaltech.com/bmc" />
+          
+
+          
+
+        </head>
 
       <div className="services-area with-top-border pt-100 pb-75">
         <div className="container">
@@ -135,7 +148,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                  <Image src={bmc} alt=" BMC Service Providers" />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/bmc-helix-itsm">
@@ -159,7 +172,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                  <Image src={bmc} alt="BMC Helix Remedyforce " />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/bmc-helix-remedyforce">
@@ -183,7 +196,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                  <Image src={bmc} alt="BMC Third party vendors" />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/bmc-helix-discovery">
@@ -214,7 +227,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                  <Image src={bmc} alt="BMC TrueSight " />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/bmc-truesight">
@@ -240,7 +253,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                  <Image src={bmc} alt="BMC Control-M" />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/bmc-control-m">
@@ -264,7 +277,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                  <Image src={bmc} alt="BMC Helix Implementation" />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/bmc-smart-reporting">
@@ -293,7 +306,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                  <Image src={bmc} alt="BMC Software Implementation" />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/bmc-client-management">
@@ -317,7 +330,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                  <Image src={bmc} alt="BMC Consultants" />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/bmc-helix-digital-work-place">
@@ -341,7 +354,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '400px' }}>
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                  <Image src={bmc} alt="BMC Bladelogic" />
                 </div>
                 <h5 className="nunito-font">
                   <Link href="/bmc-bladelogic">
