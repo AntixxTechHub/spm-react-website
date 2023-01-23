@@ -488,7 +488,7 @@ const Navbar5 = () => {
                                       </li>
                                       <li className="nav-item">
                                         <Link
-                                          href="/testing-&-qa">
+                                          href="/testing-qa">
                                           <a className="nav-link">
                                             Testing And QA
                                           </a>
