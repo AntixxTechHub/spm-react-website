@@ -234,7 +234,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '900px' }}>
                 <div className="icon">
-                  <Image src={event} alt="" />
+                  <Image src={event} alt=" BMC Helix Service Providers" />
                 </div>
                 <h5 className="nunito-font">
                   <a>Event & Problem Management</a>
@@ -250,7 +250,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '900px' }}>
                 <div className="icon">
-                  <Image src={dealing} alt="" />
+                  <Image src={dealing} alt="Helix Service Providers" />
                 </div>
                 <h5 className="nunito-font">
                   <a>Dealing with Practical Problems</a>
@@ -283,7 +283,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '900px' }}>
                 <div className="icon">
-                  <Image src={multicloud} alt="" />
+                  <Image src={multicloud} alt="Helix ITSM Consultant" />
                 </div>
                 <h5 className="nunito-font">
                   <a>BMC Helix Multi-Cloud Broker</a>
@@ -299,7 +299,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '900px' }}>
                 <div className="icon">
-                  <Image src={insights} alt="" />
+                  <Image src={insights} alt="BMC Helix Managed Services" />
                 </div>
                 <h5 className="nunito-font">
                   <a>Insights</a>
@@ -331,7 +331,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '900px' }}>
                 <div className="icon">
-                  <Image src={helixdigitalworkplace} alt="" />
+                  <Image src={helixdigitalworkplace} alt="BMC Helix Support Services" />
                 </div>
                 <h5 className="nunito-font">
                   <a>BMC Helix Digital Workplace</a>
@@ -347,7 +347,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '900px' }}>
                 <div className="icon">
-                  <Image src={Assets} alt="" />
+                  <Image src={Assets} alt="BMC Helix ITSM Third Party Vendor" />
                 </div>
                 <h5 className="nunito-font">
                   <a>Management of Assets</a>
@@ -363,7 +363,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '900px' }}>
                 <div className="icon">
-                  <Image src={Configuration} alt="" />
+                  <Image src={Configuration} alt="BMC Helix ITSM Third Party Vendor" />
                 </div>
                 <h5 className="nunito-font">
                   <a>Configuration Management</a>
@@ -379,7 +379,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '900px' }}>
                 <div className="icon">
-                  <Image src={service} alt="" />
+                  <Image src={service} alt="ITSM Third Party Vendor" />
                 </div>
                 <h5 className="nunito-font">
                   <a>Service Request Management</a>
