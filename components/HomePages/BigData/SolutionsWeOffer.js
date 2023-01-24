@@ -100,7 +100,7 @@ const CaseStudies = () => {
                             <p>
                                 Well-designed web & cloud-based apps to enable your users to do more through some clicks.
                             </p>
-                            <Link href="/web-&-cloud-based-apps">
+                            <Link href="/web-cloud-based-apps">
                                 <a className="link-btn">
                                     Learn More <i className="bx bx-chevron-right"></i>
                                 </a>
