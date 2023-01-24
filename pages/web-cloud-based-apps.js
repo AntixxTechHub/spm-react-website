@@ -6,6 +6,9 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 
 
@@ -13,11 +16,11 @@ import FooterOne from "@/components/Layout/Footer/FooterOne";
 import dummyimg from "@/public/images/dummy-img.png";
 import dummyicon from "@/public/images/dummy-icon.png";
 
-
-const Services = () => {
+const Services = ({ seo }) => {
   return (
     <>
-      <PageTitle page="Web & Cloud-based Applications" />
+    <PageSeo seo={seo} pageName = "Web And Cloud-based Applications" />
+      <PageTitle page="Web And Cloud-based Applications" />
       <Navbar />
       <PageTopTitle
         subTitle=""
@@ -40,7 +43,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="web-cloud-based-application-service-work.png" data={seo} />
               </div>
             </div>
           </div>
@@ -55,9 +58,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '500px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="We Add Value to Your Business.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>We Add Value to Your Business</a>
@@ -70,9 +73,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '500px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="We Adopt Agile Culture to Release Your Apps.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>We Adopt Agile Culture to Release Your Apps</a>
@@ -85,9 +88,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '500px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="The Fastest Time to Market.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>The Fastest Time to Market</a>
@@ -104,9 +107,9 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '500px' }}>
+              <div className="single-services-item style-two" style={{ height: '700px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Technical Expertise Matters.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Technical Expertise Matters</a>
@@ -134,7 +137,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="We Adopt the Latest Technology.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>We Adopt the Latest Technology</a>
@@ -149,7 +152,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Best Apps Customised to Your Needs.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Best Apps Customised to Your Needs</a>
@@ -164,7 +167,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="We Deliver SaaS-based Web Applications with the Best ROI.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>We Deliver SaaS-based Web Applications with the Best ROI</a>
@@ -179,7 +182,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="We Execute Projects at Your Convenience.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>We Execute Projects at Your Convenience</a>
@@ -209,7 +212,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Web based  Cloud based Apps.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -308,6 +311,23 @@ const Services = () => {
   );
 };
 
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=web-cloud-based-apps&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 
 export default Services;
