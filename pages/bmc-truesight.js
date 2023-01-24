@@ -129,7 +129,8 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={CompresehensivePerformance} alt="man-with-son-image" />
+                <Image src={CompresehensivePerformance} alt="BMC TrueSight Service Providers
+" />
               </div>
             </div>
           </div>
@@ -211,7 +212,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={actionableintelligence} alt="" />
+                  <Image src={actionableintelligence} alt="TrueSight Consultant" />
                 </div>
                 <h5 className="nunito-font">
                   Actionable intelligence
