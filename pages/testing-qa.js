@@ -317,7 +317,7 @@ Our software testing and QA experts don’t let any aspect of your software prod
 
             </span>
             <h2 className="nunito-font">
-            Consult our Software Testing & QA Experts for Your Queries 
+            Consult our Software Testing & QA Experts for Your Queries. 
             </h2>
           </div>
           
