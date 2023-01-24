@@ -39,6 +39,7 @@ const Services = ({ seo }) => {
   return (
     <>
     <PageSeo seo={seo} pageName = "Testing And QA" />
+    <Navbar/>
       <PageTopTitle
         subTitle=""
         title="Testing And QA " />
