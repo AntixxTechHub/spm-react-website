@@ -53,7 +53,7 @@ const Sidebar = () => {
                 </Link>
                 <div className="info">
                   <h4 className="title">
-                    <Link href="/blogs/blog-details">
+                    <Link href={`/blogs/${blog.attributes.slug}`}>
                       <a>{blog.attributes.title}</a>
                     </Link>
                   </h4>
