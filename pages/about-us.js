@@ -6,7 +6,7 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
-
+import Head from 'next/head'
 
 import Collage from "@/public/images/Collage.png";
 import bmc from "@/public/images/icon/bmc.svg";
@@ -23,6 +23,16 @@ const Services = () => {
       <PageTopTitle
         subTitle=""
         title="About Us" />
+
+<Head>
+        <meta charSet="utf-8"/>
+        <meta name="viewport"content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Add a shopping cart to your site in minutes. Works with any site builder, CMS, and framework. 20 000+ merchants trust our e-commerce solution for their website. Join them!"/>
+        <meta property="og:title" content="Add a Shopping Cart to Any Website in Minutes - Snipcart"/>
+        <meta property="og:url" content="https://snipcart.com/"/>
+        
+        <link rel="canonical" href="https://example.com/products/phone" />
+        </Head>
 
       <div className="goal-area ptb-100">
         <div className="container">
