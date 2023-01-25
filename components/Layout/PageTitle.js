@@ -5,7 +5,7 @@ import { NextSeo } from 'next-seo';
 const PageTitle = ({ page }) => {
   return (
     <NextSeo
-      title={`${page} | SPM Global Technologies | Simplifying digitalisation - for you and your clients`}
+      title={`${page} | SPM Global Technologies `}
     />
   );
 };
