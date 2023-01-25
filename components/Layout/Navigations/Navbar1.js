@@ -640,12 +640,12 @@ const Navbar5 = () => {
                   </div>
                 </div>
                 <div className="info d-flex align-items-center">
-                  <div
+                  {/* <div
                     className="search-icon"
                     onClick={handleToggleSearchModal}
                   >
                     <i className="flaticon-search-interface-symbol"></i>
-                  </div>
+                  </div> */}
                   <div>
                     <button type="button" onClick={handleToggleSidebarModal}>
                       <i className="flaticon-menu"></i>
