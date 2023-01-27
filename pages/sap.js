@@ -25,6 +25,14 @@ const Services = ({ seo }) => {
         subTitle=""
         title="SAP" />
 
+<head>
+<meta name="description" content="The success of any organization relies on powerful communication and data exchange among its functions, and SAP is an efficient way to boost those efforts"/>
+          <meta name="keywords" content=" " />
+          <link rel="canonical" href=" https://www.spmglobaltech.com/sap" />
+          
+          
+        </head>
+
       <div className="services-area with-top-border pt-100 pb-75">
         <div className="container">
           <div className="row justify-content-center">
@@ -35,7 +43,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '430px' }}>
                 <div className="icon">
-                  <Image src={sap} alt="" />
+                  <Image src={sap} alt="SAP HANA" />
                 </div>
                 <h5 className="nunito-font">
                   <a>SAP HANA</a>
@@ -57,7 +65,8 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '430px' }}>
                 <div className="icon">
-                  <Image src={sap} alt="" />
+                  <Image src={sap} alt="SAP CRM
+" />
                 </div>
                 <h5 className="nunito-font">
                   <a>SAP CRM</a>
@@ -79,7 +88,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '430px' }}>
                 <div className="icon">
-                  <Image src={sap} alt="" />
+                  <Image src={sap} alt="SAP ERP" />
                 </div>
                 <h5 className="nunito-font">
                   <a>SAP ERP</a>
@@ -106,7 +115,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '430px' }}>
                 <div className="icon">
-                  <Image src={sap} alt="" />
+                  <Image src={sap} alt="SAP HR" />
                 </div>
                 <h5 className="nunito-font">
                   <a>SAP HR</a>
@@ -127,7 +136,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '430px' }}>
                 <div className="icon">
-                  <Image src={sap} alt="" />
+                  <Image src={sap} alt=" SAP training " />
                 </div>
                 <h5 className="nunito-font">
                   <a>SAP Business Objects</a>
@@ -148,7 +157,8 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '430px' }}>
                 <div className="icon">
-                  <Image src={sap} alt="" />
+                  <Image src={sap} alt=" SAP PLM
+" />
                 </div>
                 <h5 className="nunito-font">
                   <a>SAP PLM</a>
@@ -213,7 +223,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="SAP Technologies.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -229,7 +239,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="SAP Consultants Analyze.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -264,7 +274,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="SAP services.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -281,7 +291,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '375px' }}>
                 <div className="icon">
-                  <Image src={sap} alt="" />
+                  <Image src={sap} alt=" SAP consultants " />
                 </div>
                 <h5 className="nunito-font">
                   <a>SAP Third-party vendors</a>
@@ -297,7 +307,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '375px' }}>
                 <div className="icon">
-                  <Image src={sap} alt="" />
+                  <Image src={sap} alt=" SAP services " />
                 </div>
                 <h5 className="nunito-font">
                   <a>SAP ABAP</a>
@@ -313,7 +323,7 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '375px' }}>
                 <div className="icon">
-                  <Image src={sap} alt="" />
+                  <Image src={sap} alt=" SAP services " />
                 </div>
                 <h5 className="nunito-font">
                   <a>SAP Basis</a>
@@ -335,7 +345,8 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '375px' }}>
                 <div className="icon">
-                  <Image src={sap} alt="" />
+                  <Image src={sap} alt=" SAP Business Objects
+ " />
                 </div>
                 <h5 className="nunito-font">
                   <a>SAP Convergent Charging</a>
@@ -350,7 +361,8 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '375px' }}>
                 <div className="icon">
-                  <Image src={sap} alt="" />
+                  <Image src={sap} alt=" SAP Customer Relationship Management application
+ " />
                 </div>
                 <h5 className="nunito-font">
                   <a>SAP SCM</a>
@@ -366,7 +378,8 @@ const Services = ({ seo }) => {
             >
               <div className="single-services-item style-two" style={{ height: '375px' }}>
                 <div className="icon">
-                  <Image src={sap} alt="" />
+                  <Image src={sap} alt=" SAP Customer Relationship  Management Objects
+ " />
                 </div>
                 <h5 className="nunito-font">
                   <a>SAP SRM</a>
@@ -387,7 +400,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="SAP Transporation Management.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -446,7 +459,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Sales Operation Planning.jpg" data={seo} />
               </div>
             </div>
           </div>
