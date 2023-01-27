@@ -7,7 +7,9 @@ import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
 import Accordion from "@/components/Accordion";
-
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 import dummyicon from "@/public/images/dummy-icon.png";
 
@@ -130,9 +132,11 @@ const questionsAnswers = [
   },
 ];
 
-const Services = () => {
+
+const Services = ({ seo }) => {
   return (
     <>
+    <PageSeo seo={seo} pageName = "SAP ERP" />
       <PageTitle page="SAP ERP" />
       <Navbar />
       <PageTopTitle
@@ -212,7 +216,7 @@ Value Additions from SAP ERP Trainings:  </h4>
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-              <Image src={dummyimg} alt="" />
+              <MediaImage name="SAP ERP Service Providers.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -437,7 +441,7 @@ Value Additions from SAP ERP Trainings:  </h4>
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-              <Image src={dummyimg} alt="" />
+              <MediaImage name="History of SAP ERP Support Services.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -568,7 +572,7 @@ Value Additions from SAP ERP Trainings:  </h4>
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-              <Image src={dummyimg} alt="" />
+              <MediaImage name="Considerations for ERP Implementation.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -768,6 +772,22 @@ Take a look at the few criteria of the Enterprise Resource Planning system: </p>
   );
 };
 
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=sap-erp&populate=*`
+  );
+  const seo = await res.json();
 
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 export default Services;
