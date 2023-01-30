@@ -7,7 +7,9 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
-
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 
 import dummyimg from "@/public/images/dummy-img.png";
@@ -106,10 +108,11 @@ const questionsAnswers = [
 
 
 
-const Services = () => {
+const Services = ({ seo }) => {
   return (
     <>
-      <PageTitle page="SAP PLM" />
+    <PageSeo seo={seo} pageName = "SAP PLM " />
+      <PageTitle page="SAP PLM  " />
       <Navbar />
       <PageTopTitle
         subTitle=""
@@ -159,7 +162,8 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-              <Image src={dummyimg} alt="" />
+              <MediaImage name="SAP PLM.jpg" data={seo} />
+
               </div>
             </div>
           </div>
@@ -175,7 +179,8 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-              <Image src={dummyimg} alt="" />
+              <MediaImage name="Benefits of SAP PLM for your Business.jpg" data={seo} />
+
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -237,7 +242,8 @@ const Services = () => {
             >
               <div className="goal-image style-two">
               {/* <MediaImage name="goal2.jpg" data={seo} /> */}
-              <Image src={dummyimg} alt="" />
+              <MediaImage name="Workflow Orchestration for Added Efficiency.jpg" data={seo} />
+
               </div>
             </div>
           </div>
@@ -253,7 +259,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-              <Image src={dummyimg} alt="" />
+              <MediaImage name="Aligning Actions with Business Goals.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -313,7 +319,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-              <Image src={dummyimg} alt="" />
+              <MediaImage name="SAP PLM Service Providers.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -416,6 +422,23 @@ const Services = () => {
   );
 };
 
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=sap-plm&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 
 
