@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
               <li>
                 <a href="/">Home</a>
               </li>
-              <li>Terms of Use</li>
+              {/* <li>Terms of Use</li> */}
             </ul>
           </div>
         </div>
