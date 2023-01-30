@@ -444,7 +444,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyimg} alt="" />
+                <MediaImage name="Makes the technical learning curve manageable.png" data={seo} />
                 
 
                 </div>
@@ -465,7 +465,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyimg} alt="" />
+                <MediaImage name="Adaptable to any size of organization.jpg" data={seo} />
                 
 
                 </div>
@@ -486,7 +486,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyimg} alt="" />
+                <MediaImage name="Always the best features.png" data={seo} />
                 
 
                 </div>
@@ -515,7 +515,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyimg} alt="" />
+                <MediaImage name="Highly scalable.png" data={seo} />
 
                 </div>
                 <h3 className="nunito-font">
@@ -540,7 +540,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyimg} alt="" />
+                <MediaImage name="Seamless integration and upgrades.png" data={seo} />
 
                 </div>
                 <h3 className="nunito-font">
@@ -561,7 +561,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyimg} alt="" />
+                <MediaImage name="Growth-oriented.png" data={seo} />
                 
 
                 </div>
@@ -583,7 +583,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyimg} alt="" />
+                <MediaImage name="Unique Licensing model.png" data={seo} />
                 
 
                 </div>
@@ -604,7 +604,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyimg} alt="" />
+                <MediaImage name="Service Support.png" data={seo} />
                 
 
                 </div>
