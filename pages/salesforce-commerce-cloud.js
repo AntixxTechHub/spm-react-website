@@ -336,10 +336,10 @@ const Services = ({ seo }) => {
                 </h3>
                 <p style={{ textAlign: "justify" }}>When choosing Commerce Cloud Third Party Vendor, consider the following factors:</p>
                 
-                    <li>Implementation experience</li>
-                    <li>Product expertise of the firm</li>
-                    <li>Customization capabilities</li>
-                    <li>Training programs for clients and individuals</li>
+                    <li>Implementation experience.</li>
+                    <li>Product expertise of the firm.</li>
+                    <li>Customization capabilities.</li>
+                    <li>Training programs for clients and individuals.</li>
                     <li>Prompt technical support services from certified professionals.</li>
                 
               </div>
