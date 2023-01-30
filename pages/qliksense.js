@@ -81,7 +81,7 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '575px' }}
+              <div className="single-services-item style-two" style={{ height: '600px' }}
               >
                 <div className="icon">
                   <Image src={dummyicon} alt="" />
@@ -102,7 +102,7 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '575px' }}
+              <div className="single-services-item style-two" style={{ height: '600px' }}
               >
                 <div className="icon">
                   <Image src={dummyicon} alt="" />
@@ -124,7 +124,7 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '575px' }}
+              <div className="single-services-item style-two" style={{ height: '600px' }}
               >
                 <div className="icon">
                   <Image src={dummyicon} alt="" />
@@ -148,7 +148,7 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '550px' }}
+              <div className="single-services-item style-two" style={{ height: '600px' }}
               >
                 <div className="icon">
                   <Image src={dummyicon} alt="" />
@@ -170,7 +170,7 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '550px' }}
+              <div className="single-services-item style-two" style={{ height: '600px' }}
               >
                 <div className="icon">
                   <Image src={dummyicon} alt="" />
@@ -192,7 +192,7 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '550px' }}
+              <div className="single-services-item style-two" style={{ height: '600px' }}
               >
                 <div className="icon">
                   <Image src={dummyicon} alt="" />
