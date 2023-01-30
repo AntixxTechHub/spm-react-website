@@ -42,7 +42,7 @@ const Services = () => {
                 <h3 className="nunito-font">
                   About SPM Global Technologies
                 </h3>
-                <p style={{ textAlign: "justify" }}>SPM Global Technologies helps business leaders simplify IT solutions so client employees can concentrate on what’s most important – delivery. We build custom software and enable companies to transform and digitalize their businesses. Our range of services spans from custom software solutions and services to support and training for architecture, implementation, integration, and dev-ops. We are located in Bengaluru, India, and serve clients across the globe.</p>
+                <p style={{ textAlign: "justify" }}>SPM Global Technologies helps business leaders simplify IT solutions so client employees can concentrate on what’s most important – delivery. We build custom software and enable companies to transform and digitalize their businesses. Our range of services spans from custom software solutions and services to support and training for architecture, implementation, integration, and dev-ops. We are located in Bengaluru, (India) and serve clients across the globe.</p>
                 <h5 className="nunito-font">
                   Our ability to develop effective, efficient, and scalable code is only the beginning of our capabilities.
                 </h5>
