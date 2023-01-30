@@ -7,6 +7,10 @@ import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
 import Accordion from "@/components/Accordion";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
+import baseApiUrl from "@/utils/baseApiUrl";
+
 
 import bmc from "@/public/images/icon/bmc.svg";
 import integrate from "@/public/images/integrate.png";
@@ -111,11 +115,10 @@ const questionsAnswers = [
   },
 ];
 
-
-const Services = () => {
+const Services = ({ seo }) => {
   return (
     <>
-      <PageTitle page="BMC Client Management" />
+    <PageSeo seo={seo} pageName = "BMC Client Management" />
       <Navbar />
       <PageTopTitle
         subTitle=""
@@ -138,7 +141,8 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={integrate} alt="" />
+                <Image src={integrate} alt=" BMC Helix Client Management Service Providers
+ " />
               </div>
             </div>
           </div>
@@ -154,7 +158,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={business} alt="" />
+                <Image src={business} alt=" Helix Client Management" />
               </div>
             </div>
 
@@ -259,7 +263,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={support} alt="" />
+                <Image src={support} alt=" Helix Client Management Service Providers" />
               </div>
             </div>
           </div>
@@ -355,7 +359,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={features} alt="goal-image" />
+                <Image src={features} alt="Client Management Service Providers" />
               </div>
             </div>
 
@@ -415,7 +419,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={bmc} alt="" />
+                <MediaImage name="Discovery-&-Inventory.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   Discovery & Inventory
@@ -434,7 +438,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={operatingsystems} alt="" />
+                  <Image src={operatingsystems} alt=" Client Management Support Services" />
                 </div>
                 <h5 className="nunito-font">
                   Operation Systems & Application Deployment
@@ -450,7 +454,8 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={bmc} alt="" />
+                <MediaImage name="license-management-of-software.png" data={seo} />
+ 
                 </div>
                 <h5 className="nunito-font">
                   License Management of Software
@@ -466,7 +471,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={patchmanagement} alt="" />
+                  <Image src={patchmanagement} alt="Helix Client Management Training" />
                 </div>
                 <h5 className="nunito-font">
                   Patch Management: BMC Client Management
@@ -483,7 +488,8 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={bmc} alt="" />
+                <MediaImage name="Event management.png" data={seo} />
+ 
                 </div>
                 <h5 className="nunito-font">
                   Event Management
@@ -500,7 +506,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={policycompliance} alt="" />
+                  <Image src={policycompliance} alt=" Client Management Trainings"/>
                 </div>
                 <h5 className="nunito-font">
                   Policy Compliance
@@ -519,7 +525,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={devicesafety} alt="" />
+                  <Image src={devicesafety} alt=" Client Management Vendors"/>
                 </div>
                 <h5 className="nunito-font">
                   Device Safety
@@ -536,7 +542,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={mobiledevicemanagement} alt="" />
+                  <Image src={mobiledevicemanagement} alt="BMC Managed Services"/>
                 </div>
                 <h5 className="nunito-font">
                   Mobile Device Management
@@ -552,7 +558,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={view} alt="" />
+                  <Image src={view} alt=" BMC Consultant"/>
                 </div>
                 <h5 className="nunito-font">
                   Views
@@ -567,7 +573,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={bmc} alt="icon" />
+                <MediaImage name="power-management.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   Power Management
@@ -582,7 +588,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={devicemanagement} alt="" />
+                  <Image src={devicemanagement} alt=" BCM Consultant"/>
                 </div>
                 <h5 className="nunito-font">
                   Device Management
@@ -597,7 +603,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={myapps} alt="" />
+                  <Image src={myapps} alt=" BMC Consultant Client Management " />
                 </div>
                 <h5 className="nunito-font">
                   MyApps
@@ -705,5 +711,23 @@ const Services = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=bmc-client-management&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 export default Services;
