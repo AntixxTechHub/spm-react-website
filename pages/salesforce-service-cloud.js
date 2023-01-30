@@ -125,7 +125,7 @@ const Services = ({ seo }) => {
                 <ul className="overview-list">
                   <li data-aos="fade-up" data-aos-duration="1200">
                     <i className="flaticon-draw-check-mark"></i>
-                    CPG/Retail
+                    Consumer packaged goods / Retail
                   </li>
                   <li
                     data-aos="fade-up"
