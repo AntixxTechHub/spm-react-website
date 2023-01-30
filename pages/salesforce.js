@@ -6,20 +6,37 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
+import baseApiUrl from "@/utils/baseApiUrl";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
 
 import Partner from "@/public/images/Partner.png";
 import Implementing from "@/public/images/Implementing.png";
 import salesforce from "@/public/images/icon/salesforce.svg";
 
 
-const Services = () => {
+const Services = ({ seo }) => {
   return (
     <>
-      <PageTitle page="Salesforce" />
+    <PageSeo seo={seo} pageName = " Salesforce " />
+      <PageTitle page="Salesforce " />
       <Navbar />
       <PageTopTitle
         subTitle=""
         title="Salesforce" />
+        <head>
+          
+          <meta name="title" content="Salesforce | CRM Service Provider | SPM Global Technologies"/>
+          <meta name="description" content="Salesforce is a pioneering CRM. Salesforce Service providers deliver installation & implementation processes including support."/>
+          <meta name="keywords" content="" />
+          <link rel="canonical" href="https://www.spmglobaltech.com/salesforce" />
+          
+
+      
+        </head>
+
+
+
       <div className="services-area with-top-border pt-100 pb-75">
         <div className="container">
           <div className="row align-items-center">
@@ -35,7 +52,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={Partner} alt="" />
+                <Image src={Partner} alt="Salesforce Service Provider" />
               </div>
             </div>
           </div>
@@ -51,7 +68,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={Implementing} alt="" />
+                <Image src={Implementing} alt="Salesforce Third-Party Vendor" />
               </div>
               <div
                 className="btn-box"
@@ -150,16 +167,16 @@ const Services = () => {
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                  <Image src={salesforce} alt="icon" />
+                  <Image src={salesforce} alt="Salesforce Managed Services" />
                 </div>
                 <h5 className="nunito-font">
-                  <Link href="/sales-cloud">
+                  <Link href="/salesforce-sales-cloud">
                     <a>Salesforce Sales Cloud</a>
                   </Link>
                 </h5>
                 <p>
                   It allows sales teams to operate from any place and grow their sales. It grants them advantages…</p>
-                <Link href="/sales-cloud">
+                <Link href="/salesforce-sales-cloud">
                   <a className="link-btn">
                     View More <i className="bx bx-chevron-right"></i>
                   </a>
@@ -173,16 +190,16 @@ const Services = () => {
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                  <Image src={salesforce} alt="icon" />
+                  <Image src={salesforce} alt="Salesforce Third-Party Vendor" />
                 </div>
                 <h5 className="nunito-font">
-                  <Link href="/service-cloud">
+                  <Link href="/salesforce-service-cloud">
                     <a>Salesforce Service Cloud</a>
                   </Link>
                 </h5>
                 <p>
                   It helps to connect customer service, digital service and field service. It gives them a shared...</p>
-                <Link href="/service-cloud">
+                <Link href="/salesforce-service-cloud">
                   <a className="link-btn">
                     View More <i className="bx bx-chevron-right"></i>
                   </a>
@@ -196,16 +213,16 @@ const Services = () => {
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                  <Image src={salesforce} alt="icon" />
+                  <Image src={salesforce} alt="Salesforce Trainings" />
                 </div>
                 <h5 className="nunito-font">
-                  <Link href="/marketing-cloud">
+                  <Link href="/salesforce-marketing-cloud">
                     <a>Salesforce Marketing Cloud</a>
                   </Link>
                 </h5>
                 <p>
                   This solution lets businesses do smarter and impactful marketing across email, social media...</p>
-                <Link href="/marketing-cloud">
+                <Link href="/salesforce-marketing-cloud">
                   <a className="link-btn">
                     View More <i className="bx bx-chevron-right"></i>
                   </a>
@@ -223,16 +240,16 @@ const Services = () => {
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                  <Image src={salesforce} alt="icon" />
+                  <Image src={salesforce} alt="Salesforce Vendors" />
                 </div>
                 <h5 className="nunito-font">
-                  <Link href="/community-cloud">
+                  <Link href="/salesforce-community-cloud">
                     <a>Salesforce Community Cloud</a>
                   </Link>
                 </h5>
                 <p>
                   Community Cloud helps to connect businesses, employees, customers, partners, communities...</p>
-                <Link href="/community-cloud">
+                <Link href="/salesforce-community-cloud">
                   <a className="link-btn">
                     View More <i className="bx bx-chevron-right"></i>
                   </a>
@@ -246,16 +263,16 @@ const Services = () => {
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                  <Image src={salesforce} alt="icon" />
+                  <Image src={salesforce} alt="Salesforce Consultant"/>
                 </div>
                 <h5 className="nunito-font">
-                  <Link href="/commerce-cloud">
+                  <Link href="/salesforce-commerce-cloud">
                     <a>Salesforce Commerce Cloud</a>
                   </Link>
                 </h5>
                 <p>
                   Commerce Cloud enables businesses to provide customers convenient commerce. It...</p>
-                <Link href="/commerce-cloud">
+                <Link href="/salesforce-commerce-cloud">
                   <a className="link-btn">
                     View More <i className="bx bx-chevron-right"></i>
                   </a>
@@ -269,16 +286,16 @@ const Services = () => {
             >
               <div className="single-services-item style-two">
                 <div className="icon">
-                  <Image src={salesforce} alt="icon" />
+                  <Image src={salesforce} alt="Salesforce Service Vendors " />
                 </div>
                 <h5 className="nunito-font">
-                  <Link href="/integration-cloud">
+                  <Link href="/salesforce-integration-cloud">
                     <a>Salesforce Integration Cloud</a>
                   </Link>
                 </h5>
                 <p>
                   It enables businesses to integrate their data from any system whether cloud-based, on-premises...</p>
-                <Link href="/integration-cloud">
+                <Link href="/salesforce-integration-cloud">
                   <a className="link-btn">
                     View More <i className="bx bx-chevron-right"></i>
                   </a>
@@ -295,5 +312,25 @@ const Services = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=salesforce&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
+
+
 
 export default Services;
