@@ -61,7 +61,7 @@ Get CRM Services from SPM Global Technologies </h3>
             >
               <div className="goal-image style-two">
                 
-                 <Image src={dummyimg} alt="" />
+              <MediaImage name="Optimize Customer Relationship Management.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ Get CRM Services from SPM Global Technologies </h3>
             >
               <div className="goal-image">
                 
-                    <Image src={dummyimg} alt="" />
+              <MediaImage name="Benefits of Customer Relationship Management.jpg" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -123,12 +123,12 @@ Get CRM Services from SPM Global Technologies </h3>
           <div className="row justify-content-center justify-content-center">
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="zoom-out"
               data-aos-duration="1200"
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="CRM Consulting.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>CRM Consulting </a>
@@ -142,13 +142,13 @@ Get CRM Services from SPM Global Technologies </h3>
             </div>
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="zoom-out"
               data-aos-duration="1200"
               data-aos-delay="100"
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="CRM Testing.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>CRM Testing </a>
@@ -161,13 +161,13 @@ Get CRM Services from SPM Global Technologies </h3>
 
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="zoom-out"
               data-aos-duration="1200"
               data-aos-delay="100"
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="CRM Implementation.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>CRM Implementation </a>
@@ -181,13 +181,13 @@ Get CRM Services from SPM Global Technologies </h3>
 
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="zoom-out"
               data-aos-duration="1200"
               data-aos-delay="100"
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="CRM Audit, Evaluation & Support.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>CRM Audit, Evaluation & Support </a>
@@ -204,12 +204,12 @@ Get CRM Services from SPM Global Technologies </h3>
 
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="zoom-out"
               data-aos-duration="1200"
             >
               <div className="services-box">
                 <div className="icon">
-                <Image src={dummyicon} alt="" />
+                <MediaImage name="Custom CRM Development.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Custom CRM Development </a>
@@ -543,7 +543,7 @@ Get CRM Services from SPM Global Technologies </h3>
             >
               <div className="goal-image style-two">
                 
-                 <Image src={dummyimg} alt="" />
+              <MediaImage name="Technologies We Use for Developing CRM Solutions.jpg" data={seo} />
               </div>
             </div>
           </div>
