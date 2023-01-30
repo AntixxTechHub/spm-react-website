@@ -22,7 +22,7 @@ const ComingSoon = () => {
   }, []);
 
   const commingSoonTime = () => {
-    let endTime = new Date("November 01, 2022 10:00:00 PDT");
+    let endTime = new Date("February 18, 2023 10:00:00 PDT");
     let endTimeParse = Date.parse(endTime) / 1000;
     let now = new Date();
     let nowParse = Date.parse(now) / 1000;
