@@ -181,10 +181,11 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Improved Customer" data={seo} />
                 </div>
                 <h5 className="nunito-font">
-                  Improved Customer Experience
+                Improved Customer Experience
+
                 </h5>
                 <p style={{ textAlign: "justify" }}>Your customers will be more than happy, as you can attend to their service queries and product requirements well in time. Salesforce Integration Cloud allows you to integrate business apps and access data on varied platforms.</p>
                 <p style={{ textAlign: "justify" }}>As you respond to your customers in time and resolve their difficulties, you experience an improved customer experience. Ultimately, this improved customer satisfaction leads to consistent growth through referrals and repeat orders.</p>
@@ -245,7 +246,7 @@ const Services = ({ seo }) => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Excellent Decision Making " data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Excellent Decision Making Through 360-Degree Customer View</a>
@@ -492,7 +493,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Field Services Lightning Consultant.jpg" data={seo} />
               </div>
             </div>
           </div>

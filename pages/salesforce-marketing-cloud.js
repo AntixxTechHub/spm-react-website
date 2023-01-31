@@ -132,7 +132,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Pardot Specialist.jpg" data={seo} />
               </div>
             </div>
 
@@ -221,7 +221,7 @@ const Services = ({ seo }) => {
           <div className="row justify-content-center justify-content-center">
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="flip-right"
               data-aos-duration="1200"
             >
               <div className="services-box">
@@ -236,7 +236,7 @@ const Services = ({ seo }) => {
             </div>
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="flip-right"
               data-aos-duration="1200"
             >
               <div className="services-box">
@@ -252,7 +252,7 @@ const Services = ({ seo }) => {
             </div>
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="flip-right"
               data-aos-duration="1200"
             >
               <div className="services-box">
@@ -267,7 +267,7 @@ const Services = ({ seo }) => {
             </div>
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="flip-right"
               data-aos-duration="1200"
             >
               <div className="services-box">
@@ -282,7 +282,7 @@ const Services = ({ seo }) => {
             </div>
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="flip-right"
               data-aos-duration="1200"
             >
               <div className="services-box">
@@ -297,7 +297,7 @@ const Services = ({ seo }) => {
             </div>
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="flip-right"
               data-aos-duration="1200"
             >
               <div className="services-box">
@@ -312,7 +312,7 @@ const Services = ({ seo }) => {
             </div>
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="flip-right"
               data-aos-duration="1200"
             >
               <div className="services-box">
@@ -328,7 +328,7 @@ const Services = ({ seo }) => {
             </div>
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="flip-right"
               data-aos-duration="1200"
             >
               <div className="services-box">
@@ -344,7 +344,7 @@ const Services = ({ seo }) => {
             </div>
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="flip-right"
               data-aos-duration="1200"
             >
               <div className="services-box">
@@ -359,7 +359,7 @@ const Services = ({ seo }) => {
             </div>
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="flip-right"
               data-aos-duration="1200"
             >
               <div className="services-box">
@@ -374,7 +374,7 @@ const Services = ({ seo }) => {
             </div>
             <div
               className="col-lg-12 col-md-6 col-sm-6"
-              data-aos="fade-up"
+              data-aos="flip-right"
               data-aos-duration="1200"
             >
               <div className="services-box">
@@ -621,7 +621,7 @@ const Services = ({ seo }) => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Features and Capabilities of Salesforce Marketing Cloud that We Customize.jpg" data={seo} />
               </div>
             </div>
           </div>
