@@ -6,16 +6,19 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
+import PageSeo from "../components/Common/PageSeo";
+import MediaImage from "../components/Common/Media";
+import baseApiUrl from "@/utils/baseApiUrl";
 
 
 import dummyimg from "@/public/images/dummy-img.png";
 import dummyicon from "@/public/images/dummy-icon.png";
 
 
-const Services = () => {
+const Services = ({ seo }) => {
   return (
     <>
-      <PageTitle page="Mobile Apps" />
+      <PageSeo seo={seo} pageName = "Mobile Apps" />
       <Navbar />
       <PageTopTitle
         subTitle=""
@@ -39,7 +42,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Mobile App Development Companies.jpg" data={seo} />
               </div>
             </div>
           </div>
@@ -58,10 +61,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '250px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '150px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>Mobile Wallets</a>
                 </h6>
@@ -72,10 +75,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '250px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '150px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>Billing Apps</a>
                 </h6>
@@ -86,10 +89,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '250px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '150px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>Mobile Banking Apps</a>
                 </h6>
@@ -100,10 +103,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '250px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '150px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>VoIP Apps</a>
                 </h6>
@@ -114,10 +117,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '250px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '150px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>Messaging Apps</a>
                 </h6>
@@ -130,10 +133,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '340px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '230px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>Subscription Video on Demand Apps</a>
                 </h6>
@@ -144,10 +147,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '340px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '230px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>Internet Protocol Television (Live TV) Apps</a>
                 </h6>
@@ -158,10 +161,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '340px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '230px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>Apps for Hospitals (Patient Data and Appointment Scheduling App)</a>
                 </h6>
@@ -172,10 +175,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '340px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '230px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>Telehealth Apps
                     (For Medical Consulting)
@@ -188,10 +191,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '340px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '230px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>Online Shopping Apps (mCommerce)</a>
                 </h6>
@@ -204,10 +207,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '340px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '230px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>Business Intelligence Mobile Apps</a>
                 </h6>
@@ -218,10 +221,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '340px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '230px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>Field Service Management Apps</a>
                 </h6>
@@ -232,10 +235,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '340px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '230px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>Travel Booking and Ticketing Apps
                     (Hotel, Flights, Trains, Buses, Taxi, and Private Tour Bookings)
@@ -248,10 +251,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '340px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '230px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>Augmented Reality Apps
                     (For Furniture & Fashion Shopping & More)
@@ -264,10 +267,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              <div className="single-services-item style-two" style={{ height: '340px' }}>
-                <div className="icon">
+              <div className="single-services-item style-two" style={{ height: '230px' }}>
+                {/* <div className="icon">
                   <Image src={dummyicon} alt="" />
-                </div>
+                </div> */}
                 <h6 className="nunito-font">
                   <a>Custom Mobile Apps as per Your Requirements</a>
                 </h6>
@@ -290,7 +293,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two" style={{ height: '375px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Platform 1.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Platforms</a>
@@ -305,7 +308,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two" style={{ height: '375px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Technologies.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Technologies</a>
@@ -320,7 +323,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two" style={{ height: '375px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Purpose.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Purpose</a>
@@ -339,7 +342,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two" style={{ height: '475px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Audience & Device.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Audience & Device</a>
@@ -354,7 +357,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two" style={{ height: '475px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Achieve Well-Organised Financial Management for IT Services.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Achieve Well-Organised Financial Management for IT Services</a>
@@ -369,7 +372,7 @@ const Services = () => {
             >
               <div className="single-services-item style-two" style={{ height: '475px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Overcome IT Service Issues Due to Mergers and Acquisitions.png" data={seo} />
                 </div>
                 <h5 className="nunito-font">
                   <a>Overcome IT Service Issues Due to Mergers and Acquisitions</a>
@@ -390,7 +393,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Do You Need Expert Advice for Your Mobile App Development Projects.png" data={seo} />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -423,7 +426,7 @@ const Services = () => {
             >
               <div className="services-box" style={{ height: '250px' }}>
                 <div className="icon">
-                  <Image src={dummyimg} alt="" />
+                <MediaImage name="Consulting Services.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Consulting Services</a>
@@ -432,7 +435,7 @@ const Services = () => {
               </div>
               <div className="services-box" style={{ height: '250px' }}>
                 <div className="icon">
-                  <Image src={dummyimg} alt="" />
+                <MediaImage name="Backend Development.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Backend Development</a>
@@ -441,7 +444,7 @@ const Services = () => {
               </div>
               <div className="services-box" style={{ height: '250px' }}>
                 <div className="icon">
-                  <Image src={dummyimg} alt="" />
+                <MediaImage name="Complementing Web App.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Complementing Web App</a>
@@ -450,7 +453,7 @@ const Services = () => {
               </div>
               <div className="services-box" style={{ height: '250px' }}>
                 <div className="icon">
-                  <Image src={dummyimg} alt="" />
+                <MediaImage name="Full-Cycle Mobile App Development.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Full-Cycle Mobile App Development</a>
@@ -465,7 +468,7 @@ const Services = () => {
             >
               <div className="services-box" style={{ height: '250px' }}>
                 <div className="icon">
-                  <Image src={dummyimg} alt="" />
+                <MediaImage name="UI & UX Design.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>UI & UX Design</a>
@@ -474,7 +477,7 @@ const Services = () => {
               </div>
               <div className="services-box" style={{ height: '250px' }}>
                 <div className="icon">
-                  <Image src={dummyimg} alt="" />
+                <MediaImage name="QA & Testing of Mobile Apps.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>QA & Testing of Mobile Apps</a>
@@ -483,7 +486,7 @@ const Services = () => {
               </div>
               <div className="services-box" style={{ height: '250px' }}>
                 <div className="icon">
-                  <Image src={dummyimg} alt="" />
+                <MediaImage name="Mobile App Modernization.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Mobile App Modernization</a>
@@ -492,7 +495,7 @@ const Services = () => {
               </div>
               <div className="services-box" style={{ height: '250px' }}>
                 <div className="icon">
-                  <Image src={dummyimg} alt="" />
+                <MediaImage name="Mobile App Integration.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Mobile App Integration</a>
@@ -507,7 +510,7 @@ const Services = () => {
             >
               <div className="services-box" style={{ height: '250px' }}>
                 <div className="icon">
-                  <Image src={dummyimg} alt="" />
+                <MediaImage name="Maintenance & Technical Support.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Maintenance & Technical Support</a>
@@ -532,7 +535,7 @@ const Services = () => {
             <div className="col-lg-4 col-md-12">
               <div className="single-pricing-box red-light-color" style={{ height: '725px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Consulting.png" data={seo} />
                   <h3>Consulting</h3>
                 </div>
                 <ul className="features-list">
@@ -566,7 +569,7 @@ const Services = () => {
             <div className="col-lg-4 col-md-12">
               <div className="single-pricing-box red-light-color" style={{ height: '725px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Design & Development.png" data={seo} />
                   <h3>Design & Development</h3>
                 </div>
                 <ul className="features-list">
@@ -612,13 +615,12 @@ const Services = () => {
             <div className="col-lg-4 col-md-12">
               <div className="single-pricing-box red-light-color" style={{ height: '725px' }}>
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Mobile app code review and redesign.png" data={seo} />
                 </div>
+                <h3>Mobile app code review and redesign</h3>
+
                 <ul className="features-list">
-                  <li>
-                    <i className="flaticon-draw-check-mark"></i>
-                    Mobile app code review and redesign
-                  </li>
+                  
                   <li>
                     <i className="flaticon-draw-check-mark"></i>
                     UI/UX Audit and Revamp
@@ -663,7 +665,7 @@ const Services = () => {
             >
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Mobile App Development Programming Languages and Toolkits.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Mobile App Development Programming Languages and Toolkits</a>
@@ -675,7 +677,7 @@ const Services = () => {
               </div>
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Programming Languages for Back-end Development.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Programming Languages for Back-end Development</a>
@@ -684,7 +686,7 @@ const Services = () => {
               </div>
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Databases and Data Storages.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Databases and Data Storages</a>
@@ -693,7 +695,7 @@ const Services = () => {
               </div>
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Platforms.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Platforms</a>
@@ -702,7 +704,7 @@ const Services = () => {
               </div>
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Architectures.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Architectures</a>
@@ -711,7 +713,7 @@ const Services = () => {
               </div>
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="DevOps CI-CD Tools.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>DevOps</a>
@@ -725,7 +727,7 @@ const Services = () => {
               </div>
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="APIs.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>APIs</a>
@@ -734,7 +736,7 @@ const Services = () => {
               </div>
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="Monitoring Tools.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>Monitoring Tools</a>
@@ -743,7 +745,7 @@ const Services = () => {
               </div>
               <div className="services-box">
                 <div className="icon">
-                  <Image src={dummyicon} alt="" />
+                <MediaImage name="QA Tools.png" data={seo} />
                 </div>
                 <h3 className="nunito-font">
                   <a>QA Tools</a>
@@ -779,7 +781,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={dummyimg} alt="" />
+              <MediaImage name="Let Our Mobile App Experts Help You Build A Fantastic App.png" data={seo} />
               </div>
             </div>
           </div>
@@ -792,5 +794,23 @@ const Services = () => {
     </>
   );
 };
+
+export async function getStaticProps({ params }) {
+  // console.log(params);
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch(
+    `${baseApiUrl}/api/pages?filters[slug][$eq]=mobile-apps&populate=*`
+  );
+  const seo = await res.json();
+
+  // By returning { props: { blog } }, the Blog component
+  // will receive `blog` as a prop at build time
+  return {
+    props: {
+      seo,
+    },
+  };
+}
 
 export default Services;
