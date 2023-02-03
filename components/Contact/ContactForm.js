@@ -21,12 +21,21 @@ const handleBlur = (perem) => {
   }
 }
 
+const submitContent = () => {
+  if(document.getElementsByName('first_name')[0].value!='' && document.getElementsByName('last_name')[0].value!='' &&  document.getElementsByName('phone')[0].value !='' && document.getElementsByName('email')[0].value!='' && document.getElementsByName('00N2v00000XQu8f')[0].value!=''  && document.getElementsByName('company')[0].value!=''  && document.getElementsByName('country')[0].value!='')
+  {
+    alertContent();
+  }
+
+ 
+};
+
 const alertContent = () => {
   MySwal.fire({
     title: "Congratulations!",
     text: "Your message was successfully send and will back to you soon",
     icon: "success",
-    timer: 30000,
+    timer: 3000,
     timerProgressBar: true,
     showConfirmButton: false,
   });
@@ -187,7 +196,7 @@ const ContactForm = () => {
                     <button id="btnSave"
                         type="submit"
                         className="btn-style-one red-light-color"
-                   onClick={()=>alertContent()}   >
+                   onClick={()=>submitContent()}   >
                         Send Message
                       </button>
                      </div>
