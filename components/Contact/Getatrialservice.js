@@ -33,7 +33,7 @@ const submitContent = () => {
 
 const alertContent = () => {
   MySwal.fire({
-    title: "Congratulations!",
+    title: "Congratulations.!",
     text: "Your message was successfully send and will back to you soon",
     icon: "success",
     timer: 30000,
