@@ -22,6 +22,15 @@ const handleBlur = (perem) => {
   }
 }
 
+const submitContent = () => {
+  if(document.getElementsByName('first_name')[0].value!='' && document.getElementsByName('last_name')[0].value!='' &&  document.getElementsByName('phone')[0].value !='' && document.getElementsByName('email')[0].value!='' && document.getElementsByName('00N2v00000XQu8f')[0].value!=''  && document.getElementsByName('company')[0].value!=''  && document.getElementsByName('country')[0].value!='')
+  {
+    alertContent();
+  }
+
+ 
+};
+
 const alertContent = () => {
   MySwal.fire({
     title: "Congratulations!",
@@ -169,7 +178,7 @@ const ContactForm = () => {
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12">
                       <div className="form-group">
-                        <label>Message...</label>
+                        <label>Message</label>
                         <textarea
                           cols="30"
                           rows="6"
@@ -179,6 +188,33 @@ const ContactForm = () => {
                           onBlur={event => handleBlur('00N2v00000XQu8f')}
                         ></textarea>
                       </div>
+                       {/* Adding checkbox button to the website  */}
+                       <div className="col-lg-12 col-md-12 col-sm-12">
+                      <div className="form-check">
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          id="checkme"
+                          
+                        />
+                        <label className="form-check-label" htmlFor="checkme">
+                          
+                        I understand SPM's{" "}
+                          <Link href="/privacy-policy">
+                            <a>Privacy Policy</a>
+                          </Link>{" "}
+                          and{" "}
+                          <Link href="/terms-conditions">
+                            <a>Terms Of Use</a>
+                          </Link>{" "}
+                          govern the use of information about me{" "}
+                          
+                            
+                        </label>
+                      </div>
+                    </div>
+
+
                       <div style={{display: 'none'}}>
                       <label for="Free_Trial_Service_Request_c">Free Trial Service Requestc</label>
                       <input id="Free_Trial_Service_Request__c" maxLength={40} name="Free_Trial_Service_Request__c" size={20} type="text" defaultValue="True" />
@@ -189,8 +225,8 @@ const ContactForm = () => {
                        <button id="btnSave"
                         type="submit"
                         className="btn-style-one red-light-color"
-                   onClick={()=>alertContent()}   >
-                        Send Message
+                   onClick={()=>submitContent()}   >
+                        Submit
                       </button>
                       </div>
                   </div>
