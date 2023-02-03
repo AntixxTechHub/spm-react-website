@@ -178,7 +178,7 @@ const ContactForm = () => {
                     <div className="form-group">
                       <div className="form-check">
                         <input
-                         class="form-check-input is-invalid"
+                         class="form-check-input is-valid"
                           type="checkbox"
                           value=""
                           className="form-check-input"
@@ -187,7 +187,7 @@ const ContactForm = () => {
                         />
 
                         <label className="form-check-label" htmlFor="checkme">
-                        <label class="form-check-label" for="invalidCheck3">
+                        <label class="form-check-label" for="validCheck3">
                         
                        </label>
 
@@ -201,7 +201,7 @@ const ContactForm = () => {
                           </Link>{" "}
                           and{" "}
                           <Link href="/privacy-policy">
-                            <a>Privacy Policy</a>
+                            <a>Privacy Policy.</a>
                           </Link>
                         </label>
                       </div>
