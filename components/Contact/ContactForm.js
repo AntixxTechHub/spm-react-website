@@ -22,7 +22,7 @@ const handleBlur = (perem) => {
 }
 
 const submitContent = () => {
-  if(document.getElementsByName('first_name')[0].value!='' && document.getElementsByName('last_name')[0].value!='' &&  document.getElementsByName('phone')[0].value !='' && document.getElementsByName('email')[0].value!='' && document.getElementsByName('00N2v00000XQu8f')[0].value!=''  && document.getElementsByName('company')[0].value!=''  && document.getElementsByName('country')[0].value!='' && document.getElementsByName('invalidCheck3')[0].value!='')
+  if(document.getElementsByName('first_name')[0].value!='' && document.getElementsByName('last_name')[0].value!='' &&  document.getElementsByName('phone')[0].value !='' && document.getElementsByName('email')[0].value!='' && document.getElementsByName('00N2v00000XQu8f')[0].value!=''  && document.getElementsByName('company')[0].value!=''  && document.getElementsByName('country')[0].value!='')
   {
     alertContent();
   }
@@ -158,7 +158,7 @@ const ContactForm = () => {
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12">
                       <div className="form-group">
-                        <label>Message</label>
+                        <label>Message...</label>
                         <textarea
                           cols="30"
                           rows="6"
@@ -172,42 +172,25 @@ const ContactForm = () => {
                         <input id="lead_source" maxLength={40} name="lead_source" size={20} type="text" defaultValue="Website" />
                       </div>
                     </div>
-
-
                     <div className="col-lg-12 col-md-12 col-sm-12">
-                    <div className="form-group">
                       <div className="form-check">
                         <input
-                         class="form-check-input is-valid"
                           type="checkbox"
-                          value=""
                           className="form-check-input"
-                          id="invalidCheck3"
-                          required
+                          id="checkme"
                         />
-
                         <label className="form-check-label" htmlFor="checkme">
-                        <label class="form-check-label" for="validCheck3">
-                        
-                       </label>
-
-                       <div class="valid-feedback">
-                           You must agree before submitting.
-                       </div>
-
-                       I agree to your{" "}
+                          Accept{" "}
                           <Link href="/terms-conditions">
                             <a>Terms of Services</a>
                           </Link>{" "}
                           and{" "}
                           <Link href="/privacy-policy">
-                            <a>Privacy Policy.</a>
+                            <a>Privacy Policy</a>
                           </Link>
                         </label>
                       </div>
-                      </div>
                     </div>
-
                     <div className="col-lg-12 col-md-12 col-sm-12">
                     <label className="col-lg-12 col-md-12 col-sm-12" style={{ display: 'none' }} id="isShowErrorMsg">Invalid form value</label>
                     <button id="btnSave"
