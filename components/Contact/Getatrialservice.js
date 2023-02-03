@@ -23,7 +23,7 @@ const handleBlur = (perem) => {
 }
 
 const submitContent = () => {
-  if(document.getElementsByName('first_name')[0].value!='' && document.getElementsByName('last_name')[0].value!='' &&  document.getElementsByName('phone')[0].value !='' && document.getElementsByName('email')[0].value!='' && document.getElementsByName('00N2v00000XQu8f')[0].value!=''  && document.getElementsByName('company')[0].value!=''  && document.getElementsByName('country')[0].value!='')
+  if(document.getElementsByName('first_name')[0].value!='' && document.getElementsByName('last_name')[0].value!='' &&  document.getElementsByName('phone')[0].value !='' && document.getElementsByName('email')[0].value!='' && document.getElementsByName('00N2v00000XQu8f')[0].value!=''  && document.getElementsByName('company')[0].value!=''  && document.getElementsByName('country')[0].value!=''   && document.getElementsByName('invalidCheck3"')[0].value!='')
   {
     alertContent();
   }
@@ -190,14 +190,22 @@ const ContactForm = () => {
                       </div>
                        {/* Adding checkbox button to the website  */}
                        <div className="col-lg-12 col-md-12 col-sm-12">
+                      
+                      <div className="form-group">
                       <div className="form-check">
                         <input
+                         class="form-check-input is-valid"
                           type="checkbox"
+                          value=""
                           className="form-check-input"
-                          id="checkme"
-                          
+                          id="invalidCheck3"
+                          required
                         />
+
                         <label className="form-check-label" htmlFor="checkme">
+                        <label class="form-check-label" for="validCheck3">
+                        
+                       </label>
                           
                         I understand SPM's{" "}
                           <Link href="/privacy-policy">
@@ -212,6 +220,8 @@ const ContactForm = () => {
                             
                         </label>
                       </div>
+                    
+                    </div>
                     </div>
 
 
