@@ -250,7 +250,7 @@ const Navbar5 = () => {
                                 <ul className="megamenu-submenu">
                                   <li className="nav-item">
                                     <Link
-                                      href="/coming-soon"
+                                      href="/it-service-management" activeClassName="active"
                                     >
                                       <a className="nav-link">IT Service Management</a>
                                     </Link>
