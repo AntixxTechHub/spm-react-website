@@ -7,7 +7,8 @@ import Navbar from "@/components/Layout/Navigations/Navbar1";
 import PageTopTitle from "@/components/Common/PageTopTitle";
 import SubscribeStyle1 from "@/components/Common/SubscribeStyle1";
 import FooterOne from "@/components/Layout/Footer/FooterOne";
-
+import dummyimg from "@/public/images/dummy-img.png";
+import dummyicon from "@/public/images/dummy-icon.png";
 
 
 import shapeImg8 from "@/public/images/shape/shape8.png";
@@ -89,18 +90,35 @@ const Services = () => {
         subTitle=""
         title="IT Workflows" />
 
-      {/* <div className="goal-area ptb-100">
+      <div className="goal-area ptb-100">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="goal-content style-two">
                 <h4 className="nunito-font">
-                  BMC Helix ITSM – A Robust Service Management Platforms, Revolutionizing IT
+                ServiceNow IT workflows – Optimize IT operations management with a cloud-based platform  
                 </h4>
+                
+                <br></br>
                 <p className="w-100" style={{ textAlign: "justify" }}>
-                  ITSM (IT Service Management) embraces all activities (like policies, processes, etc.) that an enterprise performs for effective designing, planning, delivery, operation, maintenance, and control of IT service.
+                IT task automation has been a boon to digital businesses. Likewise, ServiceNow IT process automation is a great benefit for skilled staff to eliminate repetitive administrative work. With IT workflows services you can collaborate IT, risk management and security on a single platform. You can deliver resilient services aligned with customer-centric priorities. 
                 </p>
-                <p className="w-100" style={{ textAlign: "justify" }}>BMC Helix ITSM constitutes to be a robust, service management platform, empowering the IT revolution. The intelligent automation and people-centric capability of this software solution, facilitate smart working in the modern agile business. BMC Helix Managed Services are delivered in the cloud along with hybrid or on-premise opportunities.</p>
+                <p className="w-100" style={{ textAlign: "justify" }}>ServiceNow IT Operations Management delivers -  </p>
+                <br></br>
+                <p className="w-100" style={{ textAlign: "justify" }}> 
+                <ul>
+                  <li> • ITOM visibility   </li>
+                  <li> • ITOM health    </li>
+                  <li> • ITOM Optimization     </li>
+
+                </ul>
+                 </p>
+                 <p className="w-100" style={{ textAlign: "justify" }}>Additionally, you can book a free trial service and get to know us more! 
+
+           We are ServiceNow ITSM third-party vendors with exceptional years of experience in providing IT services and solutions. Our services are worldwide and trusted by esteemed organizations.   
+
+          <strong>  We shall be glad to collaborate with you!  </strong> </p>
+
               </div>
             </div>
             <div
@@ -109,7 +127,7 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image style-two">
-                <Image src={itsm} alt="man-with-son-image" />
+              <Image src={dummyimg} alt="" />
               </div>
             </div>
           </div>
@@ -125,18 +143,106 @@ const Services = () => {
               data-aos-duration="1200"
             >
               <div className="goal-image">
-                <Image src={bmcheliximplementation} alt="" />
+              <Image src={dummyimg} alt="" />
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
               <div className="goal-content">
                 <h4 className="nunito-font">
-                  BMC Helix ITSM Scenario supporting the development of BMC Helix ITSM
+                Why deploy ServiceNow IT Operations Management services from third-party vendors?  
                 </h4>
-                <span className="sub-title">BMC Helix Implementation</span>
-                <p className="w-100" style={{ textAlign: "justify" }}>Currently, BMC Helix Managed Services are driven by human and is extremely resource-intensive. Many of the ITSM processes and systems are manual, incorrect, and slow, leading to greater costs and lower productivity. Several BMC Helix Vendors are helping companies to migrate their workloads to the cloud platform for spending less time on upgrades. Helix ITSM Consultants also obtain the flexibility to add power on demand.
+                {/* <span className="sub-title">BMC Helix Implementation</span> */}
+                <p className="w-100" style={{ textAlign: "justify" }}>
+                  <ul>
+                    <li>• They help you get the best ITOM solutions to improve the efficiency of your operations   </li>
+                    <li>• ServiceNow ITOM services make your deliverables with an easy approach  </li>
+                    <li>• IT workflows integration with popular channels like skype, slack, and other bots gets simpler   </li>
+                    <li>• Information sharing is at your fingertips with effective communication   </li>
+                    <li>• Flexible ITSM solutions to boost your profits and IT capacity    </li>
+                    <li>• You will be able to make quick and correct business decisions   </li>
+                  </ul>
                 </p>
-                <p className="w-100" style={{ textAlign: "justify" }}>Entrepreneurs expect easy and successful migration in reduced time. They want to curtail costs but need the power to scale elastically. Service Management is getting disrupted by technologies like artificial intelligence (AI), Machine learning (ML), virtual agents, chatbots, and the Internet of Things (IoT).  These techniques are driving changes in the way, enterprises are providing services in the future. Veteran business leaders are seeking BMC Helix Support Services to resolve real-time business challenges and get an edge over their competitors.</p>
+                <p className="w-100" style={{ textAlign: "justify" }}>We are one of the most reliable service providers with 10+ experienced professionals who help you with ITSM solutions, workflow automation tools and much more.   
+
+            Reach us for consultation and implementation of ServiceNow Knowledge Management services. </p>
+                  <p className="w-100" style={{ textAlign: "justify" }}>
+                  <ul>
+                    <li>• Certified professional support to implement, integrate and upgrade ITSM services    </li>
+                    <li>• Staff Training    </li>
+                    <li>• Cost-effective     </li>
+                    <li>• Support services 24/7    </li>
+                  </ul>
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="goal-area ptb-100">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6 col-md-12">
+              <div className="goal-content style-two">
+                <h4 className="nunito-font">
+                Event Management  
+                </h4>
+                <p className="w-100" style={{ textAlign: "justify" }}>
+                Anomaly Detection in ServiceNow ITOM has a level of processing applied to specific CIs and metrics. It provides Anomaly Map Identification. The groups include gathering metrics only. It reflects upper and lower bounds displaying anomaly scores and the highest processing level creates IT alerts. 
+                </p>
+                <br></br>
+                <p className="w-100" style={{ textAlign: "justify" }}>The enhanced event management application has capabilities that provide features like alert aggregation and root cause analysis. Additionally, the Operational Intelligence Module in ITOM health delivers features like choosing and configuring metrics to monitor, disabling event collection and creating configurations setting rules.  
+
+                 With third-party IT workflow-managed services, organizations can avail anomaly detection to optimize their workflows efficiently and detect issues to avoid user impacts </p>
+                <p className="w-100" style={{ textAlign: "justify" }}> 
+                
+                 </p>
+
+              </div>
+            </div>
+            <div
+              className="col-lg-6 col-md-12"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <div className="goal-image style-two">
+              <Image src={dummyimg} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div className="goal-area with-top-border ptb-100">
+        <div className="container">
+          <div className="row align-items-center">
+            <div
+              className="col-lg-6 col-md-12"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <div className="goal-image">
+              <Image src={dummyimg} alt="" />
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-12">
+              <div className="goal-content">
+                <h4 className="nunito-font">
+                Next-Gen Probable Cause Analysis 
+                </h4>
+                {/* <span className="sub-title">BMC Helix Implementation</span> */}
+                <p className="w-100" style={{ textAlign: "justify" }}>
+                The probable root cause analysis (RCA) offers a list of probable root causes for alerts. Further, the existing data help determine the root cause of an issue.  
+                ServiceNow ITOM’s single data model gives access to all data points and instant visibility into changes along with the context.   
+                </p>
+                <br></br>
+                <p className="w-100" style={{ textAlign: "justify" }}>RCA considers three factors – Alerts, Configuration Item (CI) topology, and change requests on the CIs. It maps the alerts and change requests to the CIs and calculates the route cause score. And, the root cause score determines how RCA populates the probable root causes list.  </p>
+                  <br></br>
+                <p className="w-100" style={{ textAlign: "justify" }}>  
+
+ <strong>  RCA helps the companies to identify the root causes with the context and helps eliminate the errors before alerts happen. You can achieve this solution from the ITSM service vendors.    </strong> </p>
               </div>
             </div>
           </div>
@@ -145,35 +251,45 @@ const Services = () => {
 
       <div className="goal-area ptb-100 br-bottom-100">
         <div className="container">
+          <h3><center> Features of IT workflows </center> </h3>
+          <p className="w-100" style={{ textAlign: "justify" }}>ServiceNow ITOM provides the scalability, security, and availability needed for mission-critical applications. It has features that will make IT operations job easier. 
+                    </p>
           <div className="row align-items-center">
             <div className="col-lg-12 col-md-12">
               <div className="goal-text">
 
                 <ul className="overview-list">
-                  <li data-aos="fade-up" data-aos-duration="1200">
+                  <li data-aos="fade-down-right" data-aos-duration="1200">
                     <i className="flaticon-draw-check-mark"></i>
-                    <h3>Is BMC Helix ITSM cloud-based?</h3>
-                    <p className="w-100" style={{ textAlign: "justify" }}>Built for the cloud, the reimagined BMC Helix Support Services and operation experience remains unparalleled. This provides you with an omnichannel experience through Slack, Skype, Chatbot, and more. Automation is possible with the help of conversational bots and RPA (Robotic Process Automation) bots, that help to automate digital tasks.
+                    <h3>Data Ingestion  </h3>
+                    <p className="w-100" style={{ textAlign: "justify" }}>ServiceNow ITOM’s event management application receives external events via integration or through scripts. While collecting events through scripts configuration is not needed.   
+                          The integration with external systems can be initiated from an ITOM platform using a pull connector, or from an external system using a push mechanism. So, the organizations can handle the events in an easier way. It would be a difficult task to integrate the ServiceNow ITSM efficiently, but, don’t worry. You can find trusted professionals through the IT workflows service providers.  
                     </p>
                   </li>
                   <li
-                    data-aos="fade-up"
+                    data-aos="fade-down-right"
                     data-aos-duration="1200"
                     data-aos-delay="200"
                   >
                     <i className="flaticon-draw-check-mark"></i>
-                    <h3>BMC Helix ITSM or NextGen Remedy:</h3>
+                    <h3>Deep ITSM Integration  </h3>
                     <p className="w-100" style={{ textAlign: "justify" }}>
-                      BMC Helix cloud technology has mobile accessibility. As a result of which, everything remains in the BMC family. Previously called “BMC Remedy”, it facilitated service management in IT companies. IT professionals could easily manage internal issues, with BMC Remedy. It is now updated to work within the Helix technology and it can be hosted on the cloud.
+                    ServiceNow ITOM delivers a comprehensive set of ITOM capabilities that build on existing ServiceNow ITSM investments. In the latest release, the ServiceNow ITSM launched the Integration of a Cloud Call Center with workforce optimization for ITSM. It can smartly route incidents to the right support staff using Artificial Intelligence. Additionally, it can auto-update and close the ticket based on the incident status of the Security Operations module. With this feature, organizations can increase the efficiency of IT workflows and provide security operations services to their customers.
                     </p>
                   </li>
-                  <li data-aos="fade-up" data-aos-duration="1200">
+                  <li data-aos="fade-down-right" data-aos-duration="1200">
                     <i className="flaticon-draw-check-mark"></i>
-                    <h3>How to use Helix BMC?</h3>
+                    <h3>Open Integration  </h3>
                     <p className="w-100" style={{ textAlign: "justify" }}>
-                      BMC Helix Managed Services enable non-coders to co-create. You can seek BMC Helix Trainings for using Helix BMC in the following way:
-                      Configuring enterprise applications through visual drag-and-drop design tools.
-                      Using drag-and-drop connectors, with integration service for communicating with top third-party services as well as core systems.
+                    The ServiceNow platform has over 800 integrations. The ITOM integrates with different monitoring tools and can ingest logs, alerts, metrics, topology, and telemetry. In the latest release, ServiceNow launched user-created integrations support for orchestration and test tools for DevOps. It has also made a few improvements to its Integration hub. With this ServiceNow ITOM feature companies gets remediation through different IT workflows.  
+
+                    </p>
+                  </li>
+                  <li data-aos="fade-down-right" data-aos-duration="1200">
+                    <i className="flaticon-draw-check-mark"></i>
+                    <h3> Service-Centric Monitoring    </h3>
+                    <p className="w-100" style={{ textAlign: "justify" }}>
+                    With the Service-Centric Monitoring feature, you can be facilitated to see the service impact of the infrastructure issues and changes. It offers endo-to-end discovery and service mapping which helps with an accurate, up-to-date CMBD view of IT Infrastructure and services. The resulting information is then used by other ServiceNow applications such as ITOM health, ITOM optimization, and Software Asset management.    
 
                     </p>
                   </li>
@@ -181,44 +297,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="col-lg-12 col-md-12">
-              <div className="goal-text">
-
-                <ul className="overview-list">
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1200"
-                    data-aos-delay="100"
-                  >
-                    <i className="flaticon-draw-check-mark"></i>
-                    <h3>What is the Helix tool?</h3>
-                    <p className="w-100" style={{ textAlign: "justify" }}>
-                      Helix comprises an incident response and computer forensics toolkit, based on standard Knoppix Live bootable CD. It contains several tools for an incident response on Linux systems and Windows
-                    </p>
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1200"
-                    data-aos-delay="200"
-                  >
-                    <i className="flaticon-draw-check-mark"></i>
-                    <h3>What is BMC Helix Discovery?</h3>
-                    <p className="w-100" style={{ textAlign: "justify" }}>
-                      BMC Helix Discovery constitutes a data center discovery solution. This helps to automatically determine data center inventory, configuration, and relationship data, by mapping applications to IT infrastructure. You can manage IT and leverage data for enhancing IT process and productivity, by eliminating guesswork with data-driven decision-making.
-                    </p>
-                  </li>
-                  <li
-                    data-aos="fade-up"
-                    data-aos-duration="1200"
-                    data-aos-delay="100"
-                  >
-                    <i className="flaticon-draw-check-mark"></i>
-                    <h3>What is Helix Change Management</h3>
-                    <p className="w-100" style={{ textAlign: "justify" }}>BMC Helix Service Providers allow agile DevOps organizations to maximize their delivery and improve the overall quality of their services. Helix ITSM Consultants ensure governance and compliance to pursue their journey to become an Autonomous Digital Enterprise. BMC Helix is a simplified change request technique through a guided process.</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            
           </div>
         </div>
 
@@ -227,202 +306,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="services-area with-top-border pt-100 pb-75">
-        <div className="container">
-          <div className="section-title">
-            <h2 className="nunito-font">What are the Features of BMC Helix ITSM?</h2>
-            <span className="sub-title purple-color">Several IT organizations are depending on ITSM services. BMC Helix ITSM has the following features:</span>
-
-          </div>
-          <div className="row justify-content-center">
-            <div
-              className="col-lg-6 col-md-6 col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <div className="single-services-item style-two">
-                <div className="icon">
-                  <Image src={event} alt="" />
-                </div>
-                <h5 className="nunito-font">
-                  <a>Event & Problem Management</a>
-                </h5>
-                <p className="w-100" style={{ textAlign: "justify" }}>BMC Helix Service Providers facilitate building and resolving events quickly through smart, contextual, and practical event matching. BMC Helix Support Services allow natural language, unshaped data access of tickets, and recommended techniques of solving issues in an accurate manner. BMC Helix Vendors make use of improved service analytics to drive efficiency.</p>
-                <p className="w-100" style={{ textAlign: "justify" }}>It helps to get lower call volumes with Omni-channel self-service, through BMC Helix Digital Workplace. Further, it makes the best use of agent productivity with modern User Interfaces. BMC Helix works with the best practices of ITIL (IT Infrastructure Library) with complete training and innovative ITIL procedures.</p>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-md-6 col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <div className="single-services-item style-two">
-                <div className="icon">
-                  <Image src={dealing} alt="" />
-                </div>
-                <h5 className="nunito-font">
-                  <a>Dealing with Practical Problems</a>
-                </h5>
-                <p className="w-100" style={{ textAlign: "justify" }}>BMC Helix ITSM integrates Artificial Intelligence for identifying clusters of recurring events. This helps spontaneous analysis, and reorganizing problem management. Further, this enables agents to emphasize challenge areas and decrease load of the management team.</p>
-                <p className="w-100" style={{ textAlign: "justify" }}>Moreover, this facilitates automating tedious and manual problem management practices. Analysis through Advanced AI k algorithms helps to accurately identify clusters of recurring incidents. Hence, there is a seamless transfer from problem recommendation, and investigation to closure. Further, real-time incident correlation allows for resolving issues from the analyzed trends.
-                </p>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-md-6 col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <div className="single-services-item style-two">
-                <div className="icon">
-                  <Image src={change} alt="" />
-                </div>
-                <h5 className="nunito-font">
-                  <a>Change Release Management</a>
-                </h5>
-                <p className="w-100" style={{ textAlign: "justify" }}>BMC Helix ITSM allows agile DevOps enterprises to maximize their process of delivery and quality of service. This feature enables a simplified change request process with a Drag-and-drop change calendar, automated contextual clash detection as well as making an impact analysis.</p>
-                <p className="w-100" style={{ textAlign: "justify" }}>Added to that, there is improved risk analytics, programming routine changes without interaction along with the delivery of crucial information for the decision-making of the agents.</p>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-md-6 col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <div className="single-services-item style-two">
-                <div className="icon">
-                  <Image src={multicloud} alt="" />
-                </div>
-                <h5 className="nunito-font">
-                  <a>BMC Helix Multi-Cloud Broker</a>
-                </h5>
-                <p className="w-100" style={{ textAlign: "justify" }}>This feature helps to deliver a flawless service through multi-cloud environments. IT managers work in a flexible and configurable cloud-based multi-service. Using this facet, the IT project team members have effective collaboration with various BMC Helix ITSM Third-Party Vendors for resolving issues.</p>
-                <p className="w-100" style={{ textAlign: "justify" }}>Helix ITSM Consultants integrate events, problems, and change management through significant agile development and audit performance competencies for evaluating service integrity. Moreover, Integrated Security Information & Event Management capabilities boost service and operational efficacies.</p>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-md-6 col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <div className="single-services-item style-two">
-                <div className="icon">
-                  <Image src={insights} alt="" />
-                </div>
-                <h5 className="nunito-font">
-                  <a>Insights</a>
-                </h5>
-                <p className="w-100" style={{ textAlign: "justify" }}>BMC Helix ITSM provides the insights to visualize cross-functional services as well as operational management. Powerful analytics and the automatic formation of natural language narratives enable users to get a quick insight into substantial data. In addition, IT professionals visualize data about Changes, Incidents, Metrics, Chatbot Conversations, Service Requests, Events, Capacity, etc. There are several exclusive visualizations in BMC Helix ITSM.</p>
-                <p className="w-100" style={{ textAlign: "justify" }}>Further, you can get customized reports and dashboards and make use of the storyboard feature for producing slide shows with practical data through competent BMC Helix Training. You can also obtain automated insights based on the significance of data and collaborate in a flawless manner.</p>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-md-6 col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <div className="single-services-item style-two">
-                <div className="icon">
-                  <Image src={Knowledge} alt="" />
-                </div>
-                <h5 className="nunito-font">
-                  <a>Knowledge Management</a>
-                </h5>
-                <p className="w-100" style={{ textAlign: "justify" }}>BMC Helix ITSM Third Party Vendor helps you get cohesive, industry-leading knowledge management competencies with smart recommendations. This facilitates bringing the correct information to the end-users and agents for resolving issues in a fast and accurate manner. Integrated knowledge-centered Service enables fast and accurate delivery.</p>
-                <p className="w-100" style={{ textAlign: "justify" }}>In addition, you can get lifecycle management of knowledge articles for getting up-to-date information and curation. Besides, there is the availability of robust multi-media content for enhanced support. BMC Helix Knowledge Management solutions also facilitate real-time conversions and circumstantial responses, improving out-of-the-box capabilities.</p>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-md-6 col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <div className="single-services-item style-two">
-                <div className="icon">
-                  <Image src={helixdigitalworkplace} alt="" />
-                </div>
-                <h5 className="nunito-font">
-                  <a>BMC Helix Digital Workplace</a>
-                </h5>
-                <p className="w-100" style={{ textAlign: "justify" }}>Contemporary self-service offers spontaneous and intelligent customer experience to enable organizations to step into future work. Intellectual self-service enables employees to fast resolve problems before submitting a request. A cohesive service catalog removes misperception, by presenting services from manifold business units in a single set.</p>
-                <p className="w-100" style={{ textAlign: "justify" }}>A customer interface helps employees obtain what they want with a one-stop-shop solution for services. Omni-channel and knowledge management facilitates employees to get the best information, as per their requirements. In addition, easy administration with drag-and-drop allows workflow customization. Furthermore, configuration enhancement enables faster resolution and improved user experience.</p>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-md-6 col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <div className="single-services-item style-two">
-                <div className="icon">
-                  <Image src={Assets} alt="" />
-                </div>
-                <h5 className="nunito-font">
-                  <a>Management of Assets</a>
-                </h5>
-                <p className="w-100" style={{ textAlign: "justify" }}>BMC Helix ITSM also delivers comprehensive lifecycle management of IT assets, from the stage of procurement to the end of the product lifecycle. This helps to track asset devaluation in the due course of time. Moreover, with BMC Helix Trainings, you can ensure compliance, evading audit costs along with software license management.</p>
-                <p className="w-100" style={{ textAlign: "justify" }}>Further, it identifies contract violations and buying opportunities. You can know exactly about the number of assets, asset locations, and the people using them. Consequently, you can make informed decisions about IT changes. Moreover, you can make use of remote support and automated configuration functionalities for client systems.</p>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-md-6 col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <div className="single-services-item style-two">
-                <div className="icon">
-                  <Image src={Configuration} alt="" />
-                </div>
-                <h5 className="nunito-font">
-                  <a>Configuration Management</a>
-                </h5>
-                <p className="w-100" style={{ textAlign: "justify" }}>This feature of BMC Helix ITSM supports the ITSM process through a single-source reference for all IT infrastructure and services. Moreover, it helps to enhance the user experience with a contemporary, persona-based User Interface. You can boost efficiency and stability with a single source of reference for all IT infrastructure and services.</p>
-                <p className="w-100" style={{ textAlign: "justify" }}>Further, it decreases costs through automating tasks that earlier required manual interference. IT managers can reduce risk, through an improved understanding of change dependencies and operate services with strong insights into parameters. This allows smooth integration between support and operational processes.</p>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-md-6 col-sm-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <div className="single-services-item style-two">
-                <div className="icon">
-                  <Image src={service} alt="" />
-                </div>
-                <h5 className="nunito-font">
-                  <a>Service Request Management</a>
-                </h5>
-                <p className="w-100" style={{ textAlign: "justify" }}>The service request management feature of BMC Helix Implementation helps you to describe a catalog of service requests. This reflects the services provided to internal and external clients. You can quickly obtain efficiency in the delivery and IT services support. Self-service solutions of BMC Helix ITSM implementation include incidents, modifications, assets, and work orders.</p>
-                <p className="w-100" style={{ textAlign: "justify" }}>Further, it offers a centralized catalog of requests like price, service targets, and approval guidelines to mechanize and monitor standard requests. This allows self-help through knowledge access for decreasing the number of calls to the service desk.</p>
-              </div>
-            </div>
-            <p className="w-100" style={{ textAlign: "justify" }}>CIOs, Change Managers, IT Operations Managers, as well as Service Desk Managers prefer this predictive, innovative, and intelligent service management for better, faster, accurate, and smarter delivery in a cost-effective way. As per industry research, it is found that organizations obtained significant savings with BMC Helix Vendors, maximizing return on investment.</p>
-            <p className="w-100" style={{ textAlign: "justify" }}>So, why are you waiting for me? Choose BMC Helix ITSM Third-Party Vendor to obtain modern persona-based UX optimized across devices and cognitive automation capabilities. You would be benefitted from IT service support function, integration, and spontaneous change management capabilities. Seek one of the best BMC Helix service providers to get smart reporting, out-of-the-box ITIL processes, and comprehensive knowledge management.</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="faq-area pb-100">
-        <div className="container">
-          <div className="section-title">
-            <span className="sub-title dark-green-color">
-
-            </span>
-            <h2 className="nunito-font">
-              Frequently Asked Questions
-            </h2>
-          </div>
-          <div className="row align-items-center">
-            <div className="col-lg- col-md-12">
-              <div className="faq-accordion">
-                <div className="accordion" id="faqAccordion">
-                  <Accordion questionsAnswers={questionsAnswers} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+      
 
       <SubscribeStyle1 />
       <FooterOne />

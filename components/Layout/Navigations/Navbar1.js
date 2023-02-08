@@ -257,7 +257,7 @@ const Navbar5 = () => {
                                   </li>
                                   <li className="nav-item">
                                     <Link
-                                      href="/coming-soon">
+                                      href="/it-workflows" activeClassName="active" >
                                       <a className="nav-link">
                                         IT Workflows
                                       </a>
