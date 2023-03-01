@@ -265,7 +265,7 @@ const Navbar5 = () => {
                                   </li>
                                   <li className="nav-item">
                                     <Link
-                                      href="/coming-soon">
+                                      href="/knowledge-management" activeClassName="active">
                                       <a className="nav-link">
                                         Knowledge Management
                                       </a>
@@ -274,7 +274,7 @@ const Navbar5 = () => {
 
                                   <li className="nav-item">
                                     <Link
-                                      href="/coming-soon">
+                                      href="/audit-management" activeClassName="active">
                                       <a className="nav-link">
                                         Audit Management
                                       </a>
@@ -282,7 +282,7 @@ const Navbar5 = () => {
                                   </li>
                                   <li className="nav-item">
                                     <Link
-                                      href="/coming-soon">
+                                      href="/configuration-compliance" activeClassName="active" >
                                       <a className="nav-link">
                                         Configuration Compliance
                                       </a>

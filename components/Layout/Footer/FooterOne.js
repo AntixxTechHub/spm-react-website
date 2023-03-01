@@ -213,17 +213,17 @@ const FooterTwo = () => {
               <ul className="footer-contact-info">
                 <li>
                   <i className="bx bx-phone-call"></i>
-                  <span>Mon to Fri : 10:00AM - 06:00PM</span>
-                  <a href="tel:91 9739380513" onClick="gtag('event', 'click', {'event_category': 'footer call', eventLabel: 'Footer Phone number'});"> 91 9739380513 </a>
+                  {/* <span>Mon to Fri : 10:00AM - 06:00PM</span> */}
+                  <a href onClick="gtag('event', 'click', {'event_category': 'footer call', eventLabel: 'Footer Phone number'});"> 91 9739380513 </a>
                 </li>
                 <li>
                   <i className="bx bx-envelope"></i>
-                  <span>Do You Have a Question?</span>
+                  {/* <span>Do You Have a Question?</span> */}
                   <a href="mailto:info@spmglobaltech.com">info@spmglobaltech.com</a>
                 </li>
                 <li>
                   <i className="bx bx-map"></i>
-                  <span>#63/3, Arham Towers, 3rd Floor, Krishna Rajendra Road, 7th Block, Jayanagar, Bengaluru - 560070, India.</span>
+                  <span>#63/3, Arham Towers,  Krishna Rajendra Road, 7th Block, Jayanagar, Bengaluru - 560070, India.</span>
                   <a href="https://www.google.com/maps/place/SPM+Global+Technologies/@12.9462681,77.5959474,15z/data=!4m5!3m4!1s0x0:0xad95b2477702b703!8m2!3d12.9462681!4d77.5959474" target="_blank" rel="noreferrer">
                     Find Us on Map
                   </a>

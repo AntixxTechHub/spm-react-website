@@ -214,7 +214,7 @@ const FooterTwo = () => {
                 <li>
                   <i className="bx bx-phone-call"></i>
                   <span>Mon to Fri : 10:00AM - 06:00PM</span>
-                  <a href="tel:+91 97393 80513">+91 97393 80513</a>
+                  {/* <a href="tel:+91 97393 80513">+91 97393 80513</a> */}
                 </li>
                 <li>
                   <i className="bx bx-envelope"></i>

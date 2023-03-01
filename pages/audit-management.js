@@ -26,59 +26,6 @@ import Configuration from "@/public/images/Configuration.jpg";
 
 
 {/* ------------------------------Faq Q/A--------------------------------- */ }
-const questionsAnswers = [
-  {
-    question: "Q1: What is the benefit of adopting BMC Smart IT?",
-    answer:
-      <p className="w-100" style={{ textAlign: "justify" }}>Answer: BMC Smart IT allows you to create tickets faster. You can create multiple ticket types, such as incidents, work orders, service requests, or change requests with minimal values to fill in. You can use the Smart Record feature to take notes while interacting with your clients. Again, you can collaborate with co-workers effectively through easy and faster integration with various business apps.</p>
-  },
-  {
-    question: "Q2: Does BMC MyIT allow your team members to tackle service requests independently?",
-    answer:
-      <p className="w-100" style={{ textAlign: "justify" }}>Answer: Yes, BMC MyIT allows you to decentralize your work for small instances. Any team member can tackle a particular service request individually with his or her own device. Thus, multiple service requests can be addressed through various team members at the same time, remotely. This feature improves the reaction time to provide services to your clients and helps you achieve better customer satisfaction.</p>
-  },
-  {
-    question: "Q3: Is BMC DWP 'people-centric?",
-    answer:
-      <p className="w-100" style={{ textAlign: "justify" }}>Answer: Yes, the solution is people-centric as it is designed to provide consumer-like experiences to the managerial members of your teams. Thus, your workforce can enjoy the flexibility to work on the scheduled task, while your managers can seamlessly govern the working process, the technology being leveraged, and the team members. Work with certified vendors to deploy BMC DWP in a customized manner for seamless coordination.</p>
-  },
-  {
-    question: "Q4: How is BMC DWPA better than BMC DWP?",
-    answer:
-      <p className="w-100" style={{ textAlign: "justify" }}>Answer: Being the latest version of BMC DWP, the BMC DWPA has some advanced features. BMC DWPA provides better access to your clients so that they can raise service requests to the concerned departments of your organizations such as HR, Support, and so on. This feature adds flexibility to the overall work culture of your organization.</p>
-  },
-  {
-    question: "Q5: Can I get a single dashboard to accommodate the complete service catalog?",
-    answer:
-      <p className="w-100" style={{ textAlign: "justify" }}>Answer: By implementing BMC Digital Workplace Catalog, you can bring all service requests together to a centralized dashboard. This feature helps you manage various service requests, assign service and support tasks to the concerned team members, and monitor the progress of every service request effectively.</p>
-  },
-  {
-    question: "Q6: How do BMC Solutions add flexibility to your service operations?",
-    answer:
-      <p className="w-100" style={{ textAlign: "justify" }}>Answer: BMC Solutions are gaining popularity in the ITSM landscape due to the flexibility they offer. Firstly, most BMC Solutions are accessible through various browser-enabled devices. Thus, it is easy to keep control of your team’s activities and monitor the progress of every project from wherever you are. Then comes the intuitive dashboard that helps you effectively communicate, make correct decisions, and create reports.</p>
-  },
-  {
-    question: "Q7: How can the advanced accessibility of BMC Solutions set you free?",
-    answer:
-      <p className="w-100" style={{ textAlign: "justify" }}>Answer: BMC Solutions are accessible through various browser-enabled devices and are compatible with different operating systems, such as Android, iOS, Windows, and Mac. Thus, you can stay connected with your work through your desktops, laptops, tablet phones, and smartphones from your offices, homes, or wherever you are.</p>
-  },
-  {
-    question: "Q8: How can you achieve better productivity by switching to BMC Solutions?",
-    answer:
-      <p className="w-100" style={{ textAlign: "justify" }}>The entire team would be clear about what they are supposed to do. The team also gets real-time insights and can prepare reports in easy-to-understand formats, like graphs, bar charts, and pie charts. As all the crucial matters are brought to a single dashboard, you can strategize your work accordingly. Assigning implementation to BMC Solutions Managed Services experts is crucial here. That improves the individual performance of every team member, and the organization achieves better productivity.</p>
-  },
-  {
-    question: "Q9: Is it a lengthy and laborious process to implement BMC Solutions for your business?",
-    answer:
-      <p className="w-100" style={{ textAlign: "justify" }}>Answer: No. If you partner with the best asset customization service providers, it takes only a few days to switch to BMC Solutions. Thus, you can get going with the most appreciated ITSM and workflow orchestration tools very soon. Collaborate with an experienced BMC Solutions Consultant to adopt the solutions in a customized manner.</p>
-  },
-  {
-    question: "Q10: Why choosing the best implementation partner is crucial when switching to BMC Solutions?",
-    answer:
-      <p className="w-100" style={{ textAlign: "justify" }}>Answer: BMC Solutions implementation requires thorough product expertise and extensive experience developing, customizing, deploying, and servicing the ITSM tools. If you assign this crucial task to any inexperienced firm, your business may be at risk, as you may not be able to track workflow, projects, and customer service requests in time. So, it is always better to join hands with reputed implementation BMC Solutions Service Providers with adequate experience in BMC Solutions implementation.</p>
-  },
-];
-{/* ------------------------------End Faq Q/A--------------------------------- */ }
 
 const Services = () => {
   return (
@@ -88,18 +35,25 @@ const Services = () => {
       <PageTopTitle
         subTitle=""
         title="Audit Management" />
-{/* 
+        <head>
+
+<meta name="title" content="" />
+<meta name="description" content="ServiceNow Audit Management | Optimize Internal Audits Engagements, Increase Productivity and Boost Profitability" />
+<meta name="keywords" content="Audit Management,Servicenow Audit Management,servicenow audit management solutions,servicenow audit automation,servicenow audit,servicenow audit analytics,servicenow audit management solutions." />
+<link rel="canonical" href="https://www.spmglobaltech.com/audit-management" />
+</head>
+
       <div className="goal-area ptb-100">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="goal-content style-two">
                 <h4 className="nunito-font">
-                  BMC Helix ITSM – A Robust Service Management Platforms, Revolutionizing IT
-                </h4>
+                  ServiceNow Audit Management – Plan, and Enhance Audit Assurance and Increase Productivity                </h4>
                 <p className="w-100" style={{ textAlign: "justify" }}>
-                  ITSM (IT Service Management) embraces all activities (like policies, processes, etc.) that an enterprise performs for effective designing, planning, delivery, operation, maintenance, and control of IT service.
-                </p>
+                  Do you want to plan the audit engagements and execute them hassle-free? Then, opt for ServiceNow Audit Management services from a third-party vendor.
+                  ServiceNow Audit Management service has a set of activities to plan audit engagements and execute them smoothly. It helps in the report findings giving necessary data to the audit committee and executive board.
+                  With Audit Management services, you can prioritize internal audits. The risk data and entity details help you to eliminate periodic audit findings. You can also improve audit assurance and increase productivity.                </p>
                 <p className="w-100" style={{ textAlign: "justify" }}>BMC Helix ITSM constitutes to be a robust, service management platform, empowering the IT revolution. The intelligent automation and people-centric capability of this software solution, facilitate smart working in the modern agile business. BMC Helix Managed Services are delivered in the cloud along with hybrid or on-premise opportunities.</p>
               </div>
             </div>
@@ -131,17 +85,64 @@ const Services = () => {
             <div className="col-lg-6 col-md-12">
               <div className="goal-content">
                 <h4 className="nunito-font">
-                  BMC Helix ITSM Scenario supporting the development of BMC Helix ITSM
-                </h4>
+                  Features of ServiceNow Audit Management</h4>
+                <p> The following features of the ServiceNow Audit Management solutions help your audit automation and increase productivity. </p>
+
                 <span className="sub-title">BMC Helix Implementation</span>
-                <p className="w-100" style={{ textAlign: "justify" }}>Currently, BMC Helix Managed Services are driven by human and is extremely resource-intensive. Many of the ITSM processes and systems are manual, incorrect, and slow, leading to greater costs and lower productivity. Several BMC Helix Vendors are helping companies to migrate their workloads to the cloud platform for spending less time on upgrades. Helix ITSM Consultants also obtain the flexibility to add power on demand.
+                <p className="w-100" style={{ textAlign: "justify" }}>
+                  <strong>Audit Engagement Lifecycle :</strong>This feature helps you organize the process for creating, scheduling, scoping, and executing audits. Additionally, it helps in reporting findings.
+                  <strong>Audit Project Management  :</strong>You can access Product Portfolio Management which helps track engagement resources, costs, and timesheets.
+
+                  <strong>Evidence Requests  :</strong>You can request evidence from frontline users. This evidence gets consolidated for effortless reuse.
+                  <strong>Smart Issue Management   :</strong>AL/ML is utilized to assign, group, and propose remediation for issues. Then, response workflows are automated.
                 </p>
-                <p className="w-100" style={{ textAlign: "justify" }}>Entrepreneurs expect easy and successful migration in reduced time. They want to curtail costs but need the power to scale elastically. Service Management is getting disrupted by technologies like artificial intelligence (AI), Machine learning (ML), virtual agents, chatbots, and the Internet of Things (IoT).  These techniques are driving changes in the way, enterprises are providing services in the future. Veteran business leaders are seeking BMC Helix Support Services to resolve real-time business challenges and get an edge over their competitors.</p>
+                <p className="w-100" style={{ textAlign: "justify" }}>We know that in any organization, regulations and policies keep changing frequently. Keeping the resources in hand to cope with the changes is challenging. To avoid the risk of such change, companies need improvement in visibility into changes and deploy audit aids faster. You can achieve this through a robust solution. Additionally, you can improve information security practices with ServiceNow audit management solutions.
+                  In the Governance, Risk and Compliance journey, the audit management is the final step. It ensures that the actions are performed right for risk mitigation</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div className="goal-area ptb-100">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6 col-md-12">
+              <div className="goal-content style-two">
+                <h4 className="nunito-font">
+                  Benefits of ServiceNow Audit Management Solutions services -</h4>
+                <p className="w-100" style={{ textAlign: "justify" }}>
+                  <ul>
+                    <li><strong> 1.</strong> You can define audit-scope </li>
+                    <li><strong> 2.</strong> Ingesting controls, related policies, tasks, issues, and other related information helps in ensuring regulatory compliance </li>
+                    <li><strong> 3.</strong> Organize audit operations </li>
+                    <li><strong> 4.</strong> Reduced cost with automated evidence collection boosts profitability </li>
+                    <li><strong> 5.</strong> A centralized system of data helps in communication, coordination and completion of tasks related to audits. </li>
+
+
+
+                  </ul>            </p>
+                <p className="w-100" style={{ textAlign: "justify" }}>A trusted third party with expertise in ServiceNow IT management solutions will deliver you the ServiceNow Audit Management solution effectively. And, your search ends here!
+                  We are one of the successful and trusted third-party ServiceNow IT solutions providers. With professionals over 10+ years of experience we assure you of implementation, integration and upgradation of the services.
+                  Choosing us for deploying ServiceNow Audit management services would be your strategic decision because we have </p>
+              </div>
+            </div>
+            <div
+              className="col-lg-6 col-md-12"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <div className="goal-image style-two">
+                <Image src={itsm} alt="man-with-son-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
 
       <div className="goal-area ptb-100 br-bottom-100">
         <div className="container">
@@ -152,8 +153,8 @@ const Services = () => {
                 <ul className="overview-list">
                   <li data-aos="fade-up" data-aos-duration="1200">
                     <i className="flaticon-draw-check-mark"></i>
-                    <h3>Is BMC Helix ITSM cloud-based?</h3>
-                    <p className="w-100" style={{ textAlign: "justify" }}>Built for the cloud, the reimagined BMC Helix Support Services and operation experience remains unparalleled. This provides you with an omnichannel experience through Slack, Skype, Chatbot, and more. Automation is possible with the help of conversational bots and RPA (Robotic Process Automation) bots, that help to automate digital tasks.
+                    <h3>Certified Professionals</h3>
+                    <p className="w-100" style={{ textAlign: "justify" }}>We have expertise with 10+ years of experience in product services. The team includes IT Professionals, Cloud computing specialists, and domain experts in ServiceNow ITSM - making us a pioneer in deploying flexible ITSM Solutions for all-sized businesses
                     </p>
                   </li>
                   <li
@@ -162,18 +163,16 @@ const Services = () => {
                     data-aos-delay="200"
                   >
                     <i className="flaticon-draw-check-mark"></i>
-                    <h3>BMC Helix ITSM or NextGen Remedy:</h3>
+                    <h3>Successful Track Record</h3>
                     <p className="w-100" style={{ textAlign: "justify" }}>
-                      BMC Helix cloud technology has mobile accessibility. As a result of which, everything remains in the BMC family. Previously called “BMC Remedy”, it facilitated service management in IT companies. IT professionals could easily manage internal issues, with BMC Remedy. It is now updated to work within the Helix technology and it can be hosted on the cloud.
+                      We have a successful track record of being one of the best ServiceNow Audit Management service providers. Most of our customers happily chose us as our 24/7 support service has made them achieve the desired productivity.
                     </p>
                   </li>
                   <li data-aos="fade-up" data-aos-duration="1200">
                     <i className="flaticon-draw-check-mark"></i>
-                    <h3>How to use Helix BMC?</h3>
+                    <h3>Transform Products</h3>
                     <p className="w-100" style={{ textAlign: "justify" }}>
-                      BMC Helix Managed Services enable non-coders to co-create. You can seek BMC Helix Trainings for using Helix BMC in the following way:
-                      Configuring enterprise applications through visual drag-and-drop design tools.
-                      Using drag-and-drop connectors, with integration service for communicating with top third-party services as well as core systems.
+                      Our experts help train your staff in implementing, integrating, and updating the Audit Management services with a smooth process
 
                     </p>
                   </li>
@@ -191,10 +190,9 @@ const Services = () => {
                     data-aos-delay="100"
                   >
                     <i className="flaticon-draw-check-mark"></i>
-                    <h3>What is the Helix tool?</h3>
+                    <h3>Customization as per your needs</h3>
                     <p className="w-100" style={{ textAlign: "justify" }}>
-                      Helix comprises an incident response and computer forensics toolkit, based on standard Knoppix Live bootable CD. It contains several tools for an incident response on Linux systems and Windows
-                    </p>
+                      We understand your business-specific need and have adequate resources or product expertise to help develop flexible ServiceNow ITSM solutions. You can rely upon us.                     </p>
                   </li>
                   <li
                     data-aos="fade-up"
@@ -202,9 +200,10 @@ const Services = () => {
                     data-aos-delay="200"
                   >
                     <i className="flaticon-draw-check-mark"></i>
-                    <h3>What is BMC Helix Discovery?</h3>
+                    <h3>A quick responsive team - Just a call away</h3>
                     <p className="w-100" style={{ textAlign: "justify" }}>
-                      BMC Helix Discovery constitutes a data center discovery solution. This helps to automatically determine data center inventory, configuration, and relationship data, by mapping applications to IT infrastructure. You can manage IT and leverage data for enhancing IT process and productivity, by eliminating guesswork with data-driven decision-making.
+                      Call us or email us! Our team will reach you with the technical solutions at the earliest and help resolve the issues in a minimal duration. Our focus lies in the usage of ITSM services uninterrupted.
+                      <strong> We shall be glad to collaborate with you!</strong>
                     </p>
                   </li>
                   <li
@@ -213,8 +212,16 @@ const Services = () => {
                     data-aos-delay="100"
                   >
                     <i className="flaticon-draw-check-mark"></i>
-                    <h3>What is Helix Change Management</h3>
-                    <p className="w-100" style={{ textAlign: "justify" }}>BMC Helix Service Providers allow agile DevOps organizations to maximize their delivery and improve the overall quality of their services. Helix ITSM Consultants ensure governance and compliance to pursue their journey to become an Autonomous Digital Enterprise. BMC Helix is a simplified change request technique through a guided process.</p>
+                    <h3>Reach us for consultation and implementation of ServiceNow Knowledge Management services.</h3>
+                    <p className="w-100" style={{ textAlign: "justify" }}>Certified professional support to implement, integrate and upgrade ITSM services
+                      <strong> Staff Training</strong>
+                      <strong> Cost-effective</strong>
+                      <strong> Support services 24/7 </strong>
+
+                      Additionally, you can book a free trial service and get to know us more!
+                      We are ServiceNow ITSM third-party vendors with exceptional years of experience in providing IT services and solutions. Our services are worldwide and trusted by esteemed organizations.
+                      <strong> We shall be glad to collaborate with you! </strong>
+                    </p>
                   </li>
                 </ul>
               </div>
@@ -402,28 +409,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="faq-area pb-100">
-        <div className="container">
-          <div className="section-title">
-            <span className="sub-title dark-green-color">
-
-            </span>
-            <h2 className="nunito-font">
-              Frequently Asked Questions
-            </h2>
-          </div>
-          <div className="row align-items-center">
-            <div className="col-lg- col-md-12">
-              <div className="faq-accordion">
-                <div className="accordion" id="faqAccordion">
-                  <Accordion questionsAnswers={questionsAnswers} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
+      
       <SubscribeStyle1 />
       <FooterOne />
     </>
