@@ -33,7 +33,7 @@ const Services = () => {
       <Navbar />
       <PageTopTitle
         subTitle=""
-        title="Configuration Compliance" />
+        title="Configuration Compliancee" />
         <head>
 
 <meta name="title" content="" />
